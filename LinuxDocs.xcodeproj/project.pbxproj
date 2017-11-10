@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AC3087BB1FB64C74007846FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087BA1FB64C74007846FC /* AppDelegate.swift */; };
-		AC3087BD1FB64C74007846FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087BC1FB64C74007846FC /* ViewController.swift */; };
+		AC3087BD1FB64C74007846FC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087BC1FB64C74007846FC /* BaseViewController.swift */; };
 		AC3087C01FB64C74007846FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3087BE1FB64C74007846FC /* Main.storyboard */; };
 		AC3087C21FB64C74007846FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3087C11FB64C74007846FC /* Assets.xcassets */; };
 		AC3087C51FB64C74007846FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3087C31FB64C74007846FC /* LaunchScreen.storyboard */; };
 		AC3087D01FB64C75007846FC /* LinuxDocsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087CF1FB64C75007846FC /* LinuxDocsTests.swift */; };
 		AC3087DB1FB64C75007846FC /* LinuxDocsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087DA1FB64C75007846FC /* LinuxDocsUITests.swift */; };
+		AC3087EB1FB64D44007846FC /* DocsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087EA1FB64D44007846FC /* DocsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		AC3087B71FB64C74007846FC /* LinuxDocs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinuxDocs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3087BA1FB64C74007846FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC3087BC1FB64C74007846FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC3087BC1FB64C74007846FC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AC3087BF1FB64C74007846FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC3087C11FB64C74007846FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3087C41FB64C74007846FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		AC3087D61FB64C75007846FC /* LinuxDocsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinuxDocsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3087DA1FB64C75007846FC /* LinuxDocsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxDocsUITests.swift; sourceTree = "<group>"; };
 		AC3087DC1FB64C75007846FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC3087EA1FB64D44007846FC /* DocsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,9 @@
 		AC3087B91FB64C74007846FC /* LinuxDocs */ = {
 			isa = PBXGroup;
 			children = (
-				AC3087BA1FB64C74007846FC /* AppDelegate.swift */,
-				AC3087BC1FB64C74007846FC /* ViewController.swift */,
-				AC3087BE1FB64C74007846FC /* Main.storyboard */,
-				AC3087C11FB64C74007846FC /* Assets.xcassets */,
-				AC3087C31FB64C74007846FC /* LaunchScreen.storyboard */,
-				AC3087C61FB64C74007846FC /* Info.plist */,
+				AC3087EC1FB64D80007846FC /* Views */,
+				AC3087E81FB64CE5007846FC /* Controllers */,
+				AC3087E91FB64D02007846FC /* Supporting Files */,
 			);
 			path = LinuxDocs;
 			sourceTree = "<group>";
@@ -123,6 +122,34 @@
 				AC3087DC1FB64C75007846FC /* Info.plist */,
 			);
 			path = LinuxDocsUITests;
+			sourceTree = "<group>";
+		};
+		AC3087E81FB64CE5007846FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC3087BC1FB64C74007846FC /* BaseViewController.swift */,
+				AC3087EA1FB64D44007846FC /* DocsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AC3087E91FB64D02007846FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC3087BA1FB64C74007846FC /* AppDelegate.swift */,
+				AC3087BE1FB64C74007846FC /* Main.storyboard */,
+				AC3087C11FB64C74007846FC /* Assets.xcassets */,
+				AC3087C31FB64C74007846FC /* LaunchScreen.storyboard */,
+				AC3087C61FB64C74007846FC /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC3087EC1FB64D80007846FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3087BD1FB64C74007846FC /* ViewController.swift in Sources */,
+				AC3087EB1FB64D44007846FC /* DocsTableViewController.swift in Sources */,
+				AC3087BD1FB64C74007846FC /* BaseViewController.swift in Sources */,
 				AC3087BB1FB64C74007846FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42K4FLWU7X;
-				INFOPLIST_FILE = LinuxDocs/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LinuxDocs/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.praveengowda.app.LinuxDocs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,7 +471,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42K4FLWU7X;
-				INFOPLIST_FILE = LinuxDocs/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LinuxDocs/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.praveengowda.app.LinuxDocs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
