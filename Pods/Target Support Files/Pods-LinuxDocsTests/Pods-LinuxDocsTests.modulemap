@@ -1,0 +1,6 @@
+framework module Pods_LinuxDocsTests {
+  umbrella header "Pods-LinuxDocsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,12 @@
+PODS:
+  - VegaScrollFlowLayout (1.1)
+
+DEPENDENCIES:
+  - VegaScrollFlowLayout
+
+SPEC CHECKSUMS:
+  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
+
+PODFILE CHECKSUM: 811da9a461a2cd94980acd997e905f6dccdd7c03
+
+COCOAPODS: 1.3.1

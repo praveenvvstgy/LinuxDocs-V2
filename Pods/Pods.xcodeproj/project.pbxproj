@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DD1C1A7DEDC204F3A32EAC9F52445B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		614EE8F092443A10F1F7D7729A2042DA /* VegaScrollFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 166B037A2B081AB2F27ED39C639B5869 /* VegaScrollFlowLayout-dummy.m */; };
+		71C48FCAE105D3E5088BE3B23CFC9BF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8089BF4A5CADBD22BD690125D23A9FC5 /* Pods-LinuxDocs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 265DEA47FF75DD0AAF90EF0E3B9DB19F /* Pods-LinuxDocs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EAC500B51028BD537394CA91469C5F4 /* VegaScrollFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0981FC95E82E783412D887F94ECA2DF2 /* VegaScrollFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92EC864C31816B7EFDA93A04D13E689E /* Pods-LinuxDocsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30B70943E5257574CF82D2609F1F60C3 /* Pods-LinuxDocsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9421581EB38F98CE809307EC98BC1F4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A04F1D9BBC4858575AF54795161D8C45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A529C9B20140BB918B13EF0D42D15F38 /* VegaScrollFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8D43EA2EA96E614C22573EAC6A01B5 /* VegaScrollFlowLayout.swift */; };
+		B3D0FA1EDC6C851DDB4B694BAA824E0A /* Pods-LinuxDocsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E19AAEEB0AB2E03C02346DA217699F8 /* Pods-LinuxDocsUITests-dummy.m */; };
+		BA616C836051035142ED9CAEC9588684 /* Pods-LinuxDocsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7862CC27B85BEEF4AFDCD9CF56E5A895 /* Pods-LinuxDocsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4B87E9D9ABE93B4AD7C9CCE630AAA77 /* Pods-LinuxDocsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADABEEC185FEE000DA14D78E58FB9AB /* Pods-LinuxDocsTests-dummy.m */; };
+		D9E6D88796A92E10C16545445347E219 /* Pods-LinuxDocs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE180549B906C76A2D8CD0CF082064B /* Pods-LinuxDocs-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AFFA987AEE4D8FD2A8EDB2FEA6029C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7557A10C57A514FE3132359570F0C07A;
+			remoteInfo = VegaScrollFlowLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0981FC95E82E783412D887F94ECA2DF2 /* VegaScrollFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-umbrella.h"; sourceTree = "<group>"; };
+		0AE180549B906C76A2D8CD0CF082064B /* Pods-LinuxDocs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinuxDocs-dummy.m"; sourceTree = "<group>"; };
+		13942B99ED0AA6B21E9D6F0BEA1FFA14 /* Pods_LinuxDocs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LinuxDocs.framework; path = "Pods-LinuxDocs.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A5702DDAAE48ED7570BE52706CB988 /* Pods-LinuxDocsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinuxDocsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		166B037A2B081AB2F27ED39C639B5869 /* VegaScrollFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VegaScrollFlowLayout-dummy.m"; sourceTree = "<group>"; };
+		265DEA47FF75DD0AAF90EF0E3B9DB19F /* Pods-LinuxDocs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinuxDocs-umbrella.h"; sourceTree = "<group>"; };
+		2AFC0EFA4FECEACC7A56938B67A1BBC6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E1C50E3466D7949A2A9C87834C4A94D /* Pods-LinuxDocsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinuxDocsTests.release.xcconfig"; sourceTree = "<group>"; };
+		30B70943E5257574CF82D2609F1F60C3 /* Pods-LinuxDocsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinuxDocsUITests-umbrella.h"; sourceTree = "<group>"; };
+		35E25DBD502B46B9845F7C8FB4C02CFC /* Pods-LinuxDocsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LinuxDocsUITests.modulemap"; sourceTree = "<group>"; };
+		37F86F3B3DBB86C164C0F9F703B07096 /* VegaScrollFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VegaScrollFlowLayout.framework; path = VegaScrollFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ADABEEC185FEE000DA14D78E58FB9AB /* Pods-LinuxDocsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinuxDocsTests-dummy.m"; sourceTree = "<group>"; };
+		3EF77A286C2E67D93A7D91D3820DCAD8 /* Pods-LinuxDocs-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocs-frameworks.sh"; sourceTree = "<group>"; };
+		482C4F13DECD77144B97758FF9165314 /* VegaScrollFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VegaScrollFlowLayout.xcconfig; sourceTree = "<group>"; };
+		56B22D24AAB70A38E81DEA6571A10417 /* Pods-LinuxDocsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinuxDocsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5BC3354C4D6BA055F510808FF0AD8E7F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E19AAEEB0AB2E03C02346DA217699F8 /* Pods-LinuxDocsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinuxDocsUITests-dummy.m"; sourceTree = "<group>"; };
+		6073294C54E0243F719C655F1F626035 /* Pods-LinuxDocs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinuxDocs.release.xcconfig"; sourceTree = "<group>"; };
+		61E9C092F2B9A0F599DA96865C195B4A /* Pods-LinuxDocs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinuxDocs.debug.xcconfig"; sourceTree = "<group>"; };
+		65F14205D2DBCBB545F0BA21BA3A930A /* Pods-LinuxDocsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinuxDocsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6A738DBD4BE124BDB6F90BBE41807ED0 /* Pods-LinuxDocsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinuxDocsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7862CC27B85BEEF4AFDCD9CF56E5A895 /* Pods-LinuxDocsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinuxDocsTests-umbrella.h"; sourceTree = "<group>"; };
+		909A23EB2606ADD129CAB45E8FD10052 /* Pods-LinuxDocsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinuxDocsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9250D80795E8FF3E7531817C699241B9 /* Pods-LinuxDocsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B22B892EBFA85038E4C25519B31D947 /* VegaScrollFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = VegaScrollFlowLayout.modulemap; sourceTree = "<group>"; };
+		A57829DCA0E62BC737642D96729FF0CC /* Pods-LinuxDocsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinuxDocsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A9F4D288F474ED0A6B0680D002FC109F /* Pods-LinuxDocsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinuxDocsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B61614DB245790C6AEB1D29ADCAD2998 /* Pods-LinuxDocsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocsTests-resources.sh"; sourceTree = "<group>"; };
+		C385F0A5AB001BFE73A43EB9227CD945 /* Pods-LinuxDocsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LinuxDocsTests.modulemap"; sourceTree = "<group>"; };
+		CE0ED63DDE3F3A1F3D9906DC316CAAC8 /* Pods-LinuxDocs-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinuxDocs-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D66FF432118F87FE51CFD7456EFE0616 /* Pods-LinuxDocs-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocs-resources.sh"; sourceTree = "<group>"; };
+		E661AA52B7EB5C71E8EC9C4A264D78B1 /* Pods_LinuxDocsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LinuxDocsUITests.framework; path = "Pods-LinuxDocsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8D43EA2EA96E614C22573EAC6A01B5 /* VegaScrollFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VegaScrollFlowLayout.swift; path = VegaScroll/Classes/VegaScrollFlowLayout.swift; sourceTree = "<group>"; };
+		EB8BD1B3AF0B682E86CEF2AE68A65D0C /* Pods-LinuxDocsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocsTests-frameworks.sh"; sourceTree = "<group>"; };
+		EBCA59030E3E948FE5C02D84C244A436 /* VegaScrollFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-prefix.pch"; sourceTree = "<group>"; };
+		ECCC9523CF49B202C818DEE87E2F9BD9 /* Pods_LinuxDocsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LinuxDocsTests.framework; path = "Pods-LinuxDocsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC41229ACC617FCB3E5B2B4E641DEBD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F106D4796BAF5CAF0F02664EF563AA55 /* Pods-LinuxDocs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LinuxDocs.modulemap"; sourceTree = "<group>"; };
+		F2484EAE1B1254C425826AC88220544C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F626C548EE8FA1EC7BEAC7D2C2BDFEA0 /* Pods-LinuxDocs-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinuxDocs-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD84BD2E47F11B00D91D35739A81548E /* Pods-LinuxDocsUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocsUITests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1361A0A33F95EE31E8CF040202655F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04F1D9BBC4858575AF54795161D8C45 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85B9D7760C09BB85536DA1C27DCD1803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD1C1A7DEDC204F3A32EAC9F52445B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB43CD7F7D2239F7C096F82BBDAA771A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C48FCAE105D3E5088BE3B23CFC9BF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFC69D02386EEECC0C4254C637A18275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9421581EB38F98CE809307EC98BC1F4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09F142586ABF6335B3001A627B64237B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92C03E2F122090E3927A3363C512D8F2 /* Pods-LinuxDocs */,
+				6E73942BB597751FA29F2C0CB4F9FE6A /* Pods-LinuxDocsTests */,
+				2A61CFC12400D67BFBB46FE07B80E046 /* Pods-LinuxDocsUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0A1C684B98CC24B6773BA0A32E7F5818 /* VegaScrollFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				EA8D43EA2EA96E614C22573EAC6A01B5 /* VegaScrollFlowLayout.swift */,
+				FB295E1D85C2E1ABD2005FF80F47FC81 /* Support Files */,
+			);
+			name = VegaScrollFlowLayout;
+			path = VegaScrollFlowLayout;
+			sourceTree = "<group>";
+		};
+		2A61CFC12400D67BFBB46FE07B80E046 /* Pods-LinuxDocsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BC3354C4D6BA055F510808FF0AD8E7F /* Info.plist */,
+				35E25DBD502B46B9845F7C8FB4C02CFC /* Pods-LinuxDocsUITests.modulemap */,
+				56B22D24AAB70A38E81DEA6571A10417 /* Pods-LinuxDocsUITests-acknowledgements.markdown */,
+				A57829DCA0E62BC737642D96729FF0CC /* Pods-LinuxDocsUITests-acknowledgements.plist */,
+				5E19AAEEB0AB2E03C02346DA217699F8 /* Pods-LinuxDocsUITests-dummy.m */,
+				9250D80795E8FF3E7531817C699241B9 /* Pods-LinuxDocsUITests-frameworks.sh */,
+				FD84BD2E47F11B00D91D35739A81548E /* Pods-LinuxDocsUITests-resources.sh */,
+				30B70943E5257574CF82D2609F1F60C3 /* Pods-LinuxDocsUITests-umbrella.h */,
+				14A5702DDAAE48ED7570BE52706CB988 /* Pods-LinuxDocsUITests.debug.xcconfig */,
+				65F14205D2DBCBB545F0BA21BA3A930A /* Pods-LinuxDocsUITests.release.xcconfig */,
+			);
+			name = "Pods-LinuxDocsUITests";
+			path = "Target Support Files/Pods-LinuxDocsUITests";
+			sourceTree = "<group>";
+		};
+		6E73942BB597751FA29F2C0CB4F9FE6A /* Pods-LinuxDocsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2484EAE1B1254C425826AC88220544C /* Info.plist */,
+				C385F0A5AB001BFE73A43EB9227CD945 /* Pods-LinuxDocsTests.modulemap */,
+				909A23EB2606ADD129CAB45E8FD10052 /* Pods-LinuxDocsTests-acknowledgements.markdown */,
+				A9F4D288F474ED0A6B0680D002FC109F /* Pods-LinuxDocsTests-acknowledgements.plist */,
+				3ADABEEC185FEE000DA14D78E58FB9AB /* Pods-LinuxDocsTests-dummy.m */,
+				EB8BD1B3AF0B682E86CEF2AE68A65D0C /* Pods-LinuxDocsTests-frameworks.sh */,
+				B61614DB245790C6AEB1D29ADCAD2998 /* Pods-LinuxDocsTests-resources.sh */,
+				7862CC27B85BEEF4AFDCD9CF56E5A895 /* Pods-LinuxDocsTests-umbrella.h */,
+				6A738DBD4BE124BDB6F90BBE41807ED0 /* Pods-LinuxDocsTests.debug.xcconfig */,
+				2E1C50E3466D7949A2A9C87834C4A94D /* Pods-LinuxDocsTests.release.xcconfig */,
+			);
+			name = "Pods-LinuxDocsTests";
+			path = "Target Support Files/Pods-LinuxDocsTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				9B2A24A80D8BCC438660993F035CD212 /* Pods */,
+				B2B7F1592106550B64647FE82D5F4B09 /* Products */,
+				09F142586ABF6335B3001A627B64237B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		92C03E2F122090E3927A3363C512D8F2 /* Pods-LinuxDocs */ = {
+			isa = PBXGroup;
+			children = (
+				2AFC0EFA4FECEACC7A56938B67A1BBC6 /* Info.plist */,
+				F106D4796BAF5CAF0F02664EF563AA55 /* Pods-LinuxDocs.modulemap */,
+				CE0ED63DDE3F3A1F3D9906DC316CAAC8 /* Pods-LinuxDocs-acknowledgements.markdown */,
+				F626C548EE8FA1EC7BEAC7D2C2BDFEA0 /* Pods-LinuxDocs-acknowledgements.plist */,
+				0AE180549B906C76A2D8CD0CF082064B /* Pods-LinuxDocs-dummy.m */,
+				3EF77A286C2E67D93A7D91D3820DCAD8 /* Pods-LinuxDocs-frameworks.sh */,
+				D66FF432118F87FE51CFD7456EFE0616 /* Pods-LinuxDocs-resources.sh */,
+				265DEA47FF75DD0AAF90EF0E3B9DB19F /* Pods-LinuxDocs-umbrella.h */,
+				61E9C092F2B9A0F599DA96865C195B4A /* Pods-LinuxDocs.debug.xcconfig */,
+				6073294C54E0243F719C655F1F626035 /* Pods-LinuxDocs.release.xcconfig */,
+			);
+			name = "Pods-LinuxDocs";
+			path = "Target Support Files/Pods-LinuxDocs";
+			sourceTree = "<group>";
+		};
+		9B2A24A80D8BCC438660993F035CD212 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A1C684B98CC24B6773BA0A32E7F5818 /* VegaScrollFlowLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2B7F1592106550B64647FE82D5F4B09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13942B99ED0AA6B21E9D6F0BEA1FFA14 /* Pods_LinuxDocs.framework */,
+				ECCC9523CF49B202C818DEE87E2F9BD9 /* Pods_LinuxDocsTests.framework */,
+				E661AA52B7EB5C71E8EC9C4A264D78B1 /* Pods_LinuxDocsUITests.framework */,
+				37F86F3B3DBB86C164C0F9F703B07096 /* VegaScrollFlowLayout.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FB295E1D85C2E1ABD2005FF80F47FC81 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFC41229ACC617FCB3E5B2B4E641DEBD /* Info.plist */,
+				9B22B892EBFA85038E4C25519B31D947 /* VegaScrollFlowLayout.modulemap */,
+				482C4F13DECD77144B97758FF9165314 /* VegaScrollFlowLayout.xcconfig */,
+				166B037A2B081AB2F27ED39C639B5869 /* VegaScrollFlowLayout-dummy.m */,
+				EBCA59030E3E948FE5C02D84C244A436 /* VegaScrollFlowLayout-prefix.pch */,
+				0981FC95E82E783412D887F94ECA2DF2 /* VegaScrollFlowLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VegaScrollFlowLayout";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2AF5C9EEEF2F9428A72C1519B611295D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EAC500B51028BD537394CA91469C5F4 /* VegaScrollFlowLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70B14D843EB615F966B290FCE9A95325 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA616C836051035142ED9CAEC9588684 /* Pods-LinuxDocsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A74F4BC53AADF1B20310C96AD9E073D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8089BF4A5CADBD22BD690125D23A9FC5 /* Pods-LinuxDocs-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46377FAF95CE9184F221789F49C809C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92EC864C31816B7EFDA93A04D13E689E /* Pods-LinuxDocsUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		087BE0BA3861C143E572FFFF2EBBCCD3 /* Pods-LinuxDocs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BB1E00AF6351C01B42ECE610AEDC28 /* Build configuration list for PBXNativeTarget "Pods-LinuxDocs" */;
+			buildPhases = (
+				4B0F1C0DB5BE7D6330B1DCEC321175F3 /* Sources */,
+				EB43CD7F7D2239F7C096F82BBDAA771A /* Frameworks */,
+				A74F4BC53AADF1B20310C96AD9E073D3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AA70F8AEE2B071B60292DB800076234 /* PBXTargetDependency */,
+			);
+			name = "Pods-LinuxDocs";
+			productName = "Pods-LinuxDocs";
+			productReference = 13942B99ED0AA6B21E9D6F0BEA1FFA14 /* Pods_LinuxDocs.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73BF0F302D209263E4682313D108C77F /* Pods-LinuxDocsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86BDCB4B34FB5A5D6615EFA2F788D27A /* Build configuration list for PBXNativeTarget "Pods-LinuxDocsTests" */;
+			buildPhases = (
+				B649F9BD42BEA41EC2B43636F010E469 /* Sources */,
+				FFC69D02386EEECC0C4254C637A18275 /* Frameworks */,
+				70B14D843EB615F966B290FCE9A95325 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LinuxDocsTests";
+			productName = "Pods-LinuxDocsTests";
+			productReference = ECCC9523CF49B202C818DEE87E2F9BD9 /* Pods_LinuxDocsTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7557A10C57A514FE3132359570F0C07A /* VegaScrollFlowLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7565FB7BA11138122AB1212401DAC047 /* Build configuration list for PBXNativeTarget "VegaScrollFlowLayout" */;
+			buildPhases = (
+				BD9ED1B67AEB81B37A023DB2AC36BCDE /* Sources */,
+				85B9D7760C09BB85536DA1C27DCD1803 /* Frameworks */,
+				2AF5C9EEEF2F9428A72C1519B611295D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VegaScrollFlowLayout;
+			productName = VegaScrollFlowLayout;
+			productReference = 37F86F3B3DBB86C164C0F9F703B07096 /* VegaScrollFlowLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		942DCCB2B37675B9450D2D0E1A8E2546 /* Pods-LinuxDocsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44AE49BD326C853158949328AC07B19 /* Build configuration list for PBXNativeTarget "Pods-LinuxDocsUITests" */;
+			buildPhases = (
+				50EFA7722F95AAC4D32A339080D5D0EC /* Sources */,
+				1361A0A33F95EE31E8CF040202655F0C /* Frameworks */,
+				D46377FAF95CE9184F221789F49C809C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-LinuxDocsUITests";
+			productName = "Pods-LinuxDocsUITests";
+			productReference = E661AA52B7EB5C71E8EC9C4A264D78B1 /* Pods_LinuxDocsUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B2B7F1592106550B64647FE82D5F4B09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				087BE0BA3861C143E572FFFF2EBBCCD3 /* Pods-LinuxDocs */,
+				73BF0F302D209263E4682313D108C77F /* Pods-LinuxDocsTests */,
+				942DCCB2B37675B9450D2D0E1A8E2546 /* Pods-LinuxDocsUITests */,
+				7557A10C57A514FE3132359570F0C07A /* VegaScrollFlowLayout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B0F1C0DB5BE7D6330B1DCEC321175F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E6D88796A92E10C16545445347E219 /* Pods-LinuxDocs-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50EFA7722F95AAC4D32A339080D5D0EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D0FA1EDC6C851DDB4B694BAA824E0A /* Pods-LinuxDocsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B649F9BD42BEA41EC2B43636F010E469 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B87E9D9ABE93B4AD7C9CCE630AAA77 /* Pods-LinuxDocsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9ED1B67AEB81B37A023DB2AC36BCDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614EE8F092443A10F1F7D7729A2042DA /* VegaScrollFlowLayout-dummy.m in Sources */,
+				A529C9B20140BB918B13EF0D42D15F38 /* VegaScrollFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AA70F8AEE2B071B60292DB800076234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VegaScrollFlowLayout;
+			target = 7557A10C57A514FE3132359570F0C07A /* VegaScrollFlowLayout */;
+			targetProxy = 6AFFA987AEE4D8FD2A8EDB2FEA6029C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0086D583F2F671C869524BC0FC4919C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A738DBD4BE124BDB6F90BBE41807ED0 /* Pods-LinuxDocsTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LinuxDocsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LinuxDocsTests/Pods-LinuxDocsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LinuxDocsTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1D23278938ADF334174C5BF2A4B6B1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		25C465FF1C218C9F42259E9ED03F6164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482C4F13DECD77144B97758FF9165314 /* VegaScrollFlowLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VegaScrollFlowLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout.modulemap";
+				PRODUCT_NAME = VegaScrollFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7CF564C76C2CDF4CFB30AB3D1EC5CF8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A5702DDAAE48ED7570BE52706CB988 /* Pods-LinuxDocsUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LinuxDocsUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LinuxDocsUITests/Pods-LinuxDocsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LinuxDocsUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		995C3A53DEAA96B47E756185345E180D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A750549AD561B310AA2FAC50F4C95F18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6073294C54E0243F719C655F1F626035 /* Pods-LinuxDocs.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LinuxDocs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LinuxDocs/Pods-LinuxDocs.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LinuxDocs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB279405D32ECD91DE8246F6EB8717A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1C50E3466D7949A2A9C87834C4A94D /* Pods-LinuxDocsTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LinuxDocsTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LinuxDocsTests/Pods-LinuxDocsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LinuxDocsTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D310432EC53B058A3117D5DEBBA59281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F14205D2DBCBB545F0BA21BA3A930A /* Pods-LinuxDocsUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LinuxDocsUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LinuxDocsUITests/Pods-LinuxDocsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LinuxDocsUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2EDB880774EA89937EB2E552413CA0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E9C092F2B9A0F599DA96865C195B4A /* Pods-LinuxDocs.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LinuxDocs/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LinuxDocs/Pods-LinuxDocs.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_LinuxDocs;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F57FE164D2F655C99CFF3BE74C8BA381 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482C4F13DECD77144B97758FF9165314 /* VegaScrollFlowLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VegaScrollFlowLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout.modulemap";
+				PRODUCT_NAME = VegaScrollFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995C3A53DEAA96B47E756185345E180D /* Debug */,
+				1D23278938ADF334174C5BF2A4B6B1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54BB1E00AF6351C01B42ECE610AEDC28 /* Build configuration list for PBXNativeTarget "Pods-LinuxDocs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EDB880774EA89937EB2E552413CA0A /* Debug */,
+				A750549AD561B310AA2FAC50F4C95F18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7565FB7BA11138122AB1212401DAC047 /* Build configuration list for PBXNativeTarget "VegaScrollFlowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25C465FF1C218C9F42259E9ED03F6164 /* Debug */,
+				F57FE164D2F655C99CFF3BE74C8BA381 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86BDCB4B34FB5A5D6615EFA2F788D27A /* Build configuration list for PBXNativeTarget "Pods-LinuxDocsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0086D583F2F671C869524BC0FC4919C8 /* Debug */,
+				AB279405D32ECD91DE8246F6EB8717A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44AE49BD326C853158949328AC07B19 /* Build configuration list for PBXNativeTarget "Pods-LinuxDocsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF564C76C2CDF4CFB30AB3D1EC5CF8F /* Debug */,
+				D310432EC53B058A3117D5DEBBA59281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
