@@ -1,0 +1,76 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git config
+   </h1>
+   <blockquote>
+    <p>
+     Manage custom configuration options for git repositories.
+  These configurations can be local (for the current repository) or global (for the current user).
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     List only local configuration entries (stored in
+     <pre><code>.git/config</code></pre>
+     in the current repository):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git config --list --local</code></pre>
+   </p>
+   <ul>
+    <li>
+     List only global configuration entries (stored in
+     <pre><code>~/.gitconfig</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git config --list --global</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all configuration entries that have been defined either locally or globally:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git config --list</code></pre>
+   </p>
+   <ul>
+    <li>
+     Get the value of a given configuration entry:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git config alias.unstage</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set the global value of a given configuration entry:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git config --global alias.unstage "reset HEAD --"</code></pre>
+   </p>
+   <ul>
+    <li>
+     Revert a global configuration entry to its default value:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git config --global --unset alias.unstage</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    trans
+   </h1>
+   <blockquote>
+    <p>
+     Translate Shell is a command-line translator.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Translate a word (language is detected automatically):
+    </li>
+   </ul>
+   <p>
+    <pre><code>trans "{{word_or_sentence_to_translate}}"</code></pre>
+   </p>
+   <ul>
+    <li>
+     Get a brief translation:
+    </li>
+   </ul>
+   <p>
+    <pre><code>trans --brief "{{word_or_sentence_to_translate}}"</code></pre>
+   </p>
+   <ul>
+    <li>
+     Translate a word into french:
+    </li>
+   </ul>
+   <p>
+    <pre><code>trans :{{fr}} {{word}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Translate a word from German to English:
+    </li>
+   </ul>
+   <p>
+    <pre><code>trans {{de}}:{{en}} {{Schmetterling}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Behave like a dictionary to get the meaning of a word:
+    </li>
+   </ul>
+   <p>
+    <pre><code>trans -d {{word}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    gpg
+   </h1>
+   <blockquote>
+    <p>
+     GNU Privacy Guard.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Sign doc.txt without encryption (writes output to doc.txt.asc):
+    </li>
+   </ul>
+   <p>
+    <pre><code>gpg --clearsign {{doc.txt}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Encrypt doc.txt for alice@example.com (output to doc.txt.gpg):
+    </li>
+   </ul>
+   <p>
+    <pre><code>gpg --encrypt --recipient {{alice@example.com}} {{doc.txt}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Encrypt doc.txt with only a passphrase (output to doc.txt.gpg):
+    </li>
+   </ul>
+   <p>
+    <pre><code>gpg --symmetric {{doc.txt}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Decrypt doc.txt.gpg (output to STDOUT):
+    </li>
+   </ul>
+   <p>
+    <pre><code>gpg --decrypt {{doc.txt.gpg}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Import a public key:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gpg --import {{public.gpg}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Export public key for alice@example.com (output to STDOUT):
+    </li>
+   </ul>
+   <p>
+    <pre><code>gpg --export --armor {{alice@example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Export private key for alice@example.com (output to STDOUT):
+    </li>
+   </ul>
+   <p>
+    <pre><code>gpg --export-secret-keys --armor {{alice@example.com}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

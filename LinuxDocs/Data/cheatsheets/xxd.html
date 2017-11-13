@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    xxd
+   </h1>
+   <blockquote>
+    <p>
+     Create a hexadecimal representation (hexdump) from a binary file, or vice-versa.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Generate a hexdump from a binary file and display the output:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xxd {{input_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Generate a hexdump from a binary file and save it as a text file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xxd {{input_file}} {{output_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display the output with 10 columns of one octet (byte) each:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xxd -c {{10}} {{input_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display the output in plain mode, without any gaps between the columns:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xxd -p {{input_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Revert a plaintext hexdump back into binary, and save it as a binary file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xxd -r -p {{input_file}} {{output_file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

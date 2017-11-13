@@ -1,0 +1,80 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    assimp
+   </h1>
+   <blockquote>
+    <p>
+     Command-line client for the Open Asset Import Library.
+  Supports loading of 40+ 3D file formats, and exporting to several popular 3D formats.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     List all supported import formats:
+    </li>
+   </ul>
+   <p>
+    <pre><code>assimp listext</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all supported export formats:
+    </li>
+   </ul>
+   <p>
+    <pre><code>assimp listexport</code></pre>
+   </p>
+   <ul>
+    <li>
+     Convert a file to one of the supported output formats, using the default parameters:
+    </li>
+   </ul>
+   <p>
+    <pre><code>assimp export {{input_file.stl}} {{output_file.obj}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Convert a file using custom parameters (the dox_cmd.h file in assimp's source code lists available parameters):
+    </li>
+   </ul>
+   <p>
+    <pre><code>assimp export {{input_file.stl}} {{output_file.obj}} {{parameters}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display a summary of a 3D file's contents:
+    </li>
+   </ul>
+   <p>
+    <pre><code>assimp info {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all supported subcommands ("verbs"):
+    </li>
+   </ul>
+   <p>
+    <pre><code>assimp help</code></pre>
+   </p>
+   <ul>
+    <li>
+     Get help on a specific subcommand (e.g. the parameters specific to it):
+    </li>
+   </ul>
+   <p>
+    <pre><code>assimp {{subcommand}} --help</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

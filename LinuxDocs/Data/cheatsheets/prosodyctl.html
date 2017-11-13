@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    prosodyctl
+   </h1>
+   <blockquote>
+    <p>
+     The control tool for the Prosody XMPP server.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Show the status of the Prosody server:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo prosodyctl status</code></pre>
+   </p>
+   <ul>
+    <li>
+     Reload the server's configuration files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo prosodyctl reload</code></pre>
+   </p>
+   <ul>
+    <li>
+     Add a user to the Prosody XMPP server:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo prosodyctl adduser {{user@example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set a user's password:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo prosodyctl passwd {{user@example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Permanently delete a user:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo prosodyctl deluser {{user@example.com}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

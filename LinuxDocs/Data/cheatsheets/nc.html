@@ -1,0 +1,95 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    nc
+   </h1>
+   <blockquote>
+    <p>
+     Reads and writes tcp or udp data.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Listen on a specified port:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nc  -l {{port}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to a certain port (you can then write to this port):
+    </li>
+   </ul>
+   <p>
+    <pre><code>nc {{ip_address}} {{port}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set a timeout:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nc -w {{timeout_in_seconds}} {{ipaddress}} {{port}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Serve a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nc -l {{port}} &lt; {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Receive a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nc {{ip_address}} {{port}} &gt; {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Server stay up after client detach:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nc -k -l {{port}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Client stay up after EOF:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nc -q {{timeout}} {{ip_address}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Port scanning:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nc -v -z {{ip_address}} {{port}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Proxy and port forwarding:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nc -l {{port}} | nc {{hostname}} {{port}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

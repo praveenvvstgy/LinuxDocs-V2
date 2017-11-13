@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    pssh
+   </h1>
+   <blockquote>
+    <p>
+     Parallel SSH program.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Run a command on two hosts, and print its output on each server inline:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pssh -i -H "{{host1}} {{host2}}" {{hostname -i}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a command and save the output to separate files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pssh -H {{host1}} -H {{host2}} -o {{path/to/output_dir}} {{hostname -i}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a command on multiple hosts, specified in a new-line separated file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pssh -i -h {{path/to/hosts_file}} {{hostname -i}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a command as root (this asks for the root password):
+    </li>
+   </ul>
+   <p>
+    <pre><code>pssh -i -h {{path/to/hosts_file}} -A -l {{root_username}} {{hostname -i}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a command with extra SSH arguments:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pssh -i -h {{path/to/hosts_file}} -x "{{-O VisualHostKey=yes}}" {{hostname -i}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a command limiting the number of parallel connections to 10:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pssh -i -h {{path/to/hosts_file}} -p {{10}} '{{cd dir; ./script.sh; exit}}'</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

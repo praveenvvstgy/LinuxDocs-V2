@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    heroku
+   </h1>
+   <blockquote>
+    <p>
+     Create and manage Heroku apps from the command line.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Login to your heroku account:
+    </li>
+   </ul>
+   <p>
+    <pre><code>heroku login</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a heroku app:
+    </li>
+   </ul>
+   <p>
+    <pre><code>heroku create</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show logs for an app:
+    </li>
+   </ul>
+   <p>
+    <pre><code>heroku logs --app {{app_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a one-off process inside a dyno (Heroku virtual machine):
+    </li>
+   </ul>
+   <p>
+    <pre><code>heroku run {{process_name}} --app {{app_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List dynos (Heroku virtual machines) for an app:
+    </li>
+   </ul>
+   <p>
+    <pre><code>heroku ps --app {{app_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Permanently destroy an app:
+    </li>
+   </ul>
+   <p>
+    <pre><code>heroku destroy --app {{app_name}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

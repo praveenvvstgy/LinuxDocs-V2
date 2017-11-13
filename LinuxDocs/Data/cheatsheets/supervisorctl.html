@@ -1,0 +1,68 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    supervisorctl
+   </h1>
+   <blockquote>
+    <p>
+     Supervisor is a client/server system that allows its users to control a number of processes on UNIX-like operating systems.
+  Supervisorctl is the command-line client piece of the supervisor which provides a shell-like interface.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Start/stop/restart a process:
+    </li>
+   </ul>
+   <p>
+    <pre><code>supervisorctl {{start|stop|restart}} {{process_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start/stop/restart all processes in a group:
+    </li>
+   </ul>
+   <p>
+    <pre><code>supervisorctl {{start|stop|restart}} {{group_name}}:*</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show last 100
+     <strong>
+      bytes
+     </strong>
+     of process stderr:
+    </li>
+   </ul>
+   <p>
+    <pre><code>supervisorctl tail -100 {{process_name}} stderr</code></pre>
+   </p>
+   <ul>
+    <li>
+     Keep displaying stdout of a process:
+    </li>
+   </ul>
+   <p>
+    <pre><code>supervisorctl tail -f {{process_name}} stdout</code></pre>
+   </p>
+   <ul>
+    <li>
+     Reload process config file to add/remove processes as necessary:
+    </li>
+   </ul>
+   <p>
+    <pre><code>supervisorctl update</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

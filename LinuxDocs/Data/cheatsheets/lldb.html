@@ -1,0 +1,49 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    lldb
+   </h1>
+   <blockquote>
+    <p>
+     The LLVM Low-Level Debugger.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Debug an executable:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lldb {{executable}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Attach
+     <pre><code>lldb</code></pre>
+     to a running process with a given PID:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lldb -p {{pid}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Wait for a new process to launch with a given name, and attach to it:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lldb -w -n {{process_name}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

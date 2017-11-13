@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    7z
+   </h1>
+   <blockquote>
+    <p>
+     A file archiver with high compression ratio.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Archive a file or folder:
+    </li>
+   </ul>
+   <p>
+    <pre><code>7z a {{archived.7z}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Extract an existing 7z file with original directory structure:
+    </li>
+   </ul>
+   <p>
+    <pre><code>7z x {{archived}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Archive using a specific archive type:
+    </li>
+   </ul>
+   <p>
+    <pre><code>7z a -t {{zip|gzip|bzip2|tar|...}} {{archived}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List available archive types:
+    </li>
+   </ul>
+   <p>
+    <pre><code>7z i</code></pre>
+   </p>
+   <ul>
+    <li>
+     List the contents of an archive file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>7z l {{archived}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    browser-sync
+   </h1>
+   <blockquote>
+    <p>
+     Starts local web server that updates browser on file changes.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Start a server from a specific directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>browser-sync start --server {{path/to/directory}} --files {{path/to/directory}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start a server from local directory, watching all css files in some directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>browser-sync start --server --files '{{path/to/directory/*.css}}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create configuration file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>browser-sync init</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start browser-sync from config file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>browser-sync start --config {{config_file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

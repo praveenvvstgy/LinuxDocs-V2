@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    meshlabserver
+   </h1>
+   <blockquote>
+    <p>
+     Command line interface for the MeshLab 3D mesh processing software.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Convert an STL file to an OBJ file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>meshlabserver -i {{input.stl}} -o {{output.obj}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Convert a WRL file to a OFF file, including the vertex and face normals in the output mesh:
+    </li>
+   </ul>
+   <p>
+    <pre><code>meshlabserver -i {{input.wrl}} -o {{output.off}} -om vn fn</code></pre>
+   </p>
+   <ul>
+    <li>
+     Dump a list of all the available processing filters into a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>meshlabserver -d {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Process a 3D file using a filter script created in the MeshLab GUI (Filters &gt; Show current filter script &gt; Save Script):
+    </li>
+   </ul>
+   <p>
+    <pre><code>meshlabserver -i {{input.ply}} -o {{output.ply}} -s {{filter_script.mlx}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Process a 3D file using a filter script, writing the output of the filters into a log file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>meshlabserver -i {{input.x3d}} -o {{output.x3d}} -s {{filter_script.mlx}} -l {{logfile}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

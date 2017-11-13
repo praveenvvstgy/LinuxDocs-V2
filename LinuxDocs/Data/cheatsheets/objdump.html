@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    objdump
+   </h1>
+   <blockquote>
+    <p>
+     View information about object files.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Display the file header information:
+    </li>
+   </ul>
+   <p>
+    <pre><code>objdump -f {{binary}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display the dis-assembled output of executable sections:
+    </li>
+   </ul>
+   <p>
+    <pre><code>objdump -d {{binary}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display a complete binary hex dump of all sections:
+    </li>
+   </ul>
+   <p>
+    <pre><code>objdump -s {{binary}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

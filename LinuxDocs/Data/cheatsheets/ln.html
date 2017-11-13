@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    ln
+   </h1>
+   <blockquote>
+    <p>
+     Creates links to files and folders.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create a symbolic link to a file (or folder):
+    </li>
+   </ul>
+   <p>
+    <pre><code>ln -s {{path/to/file}} {{path/to/symlink}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Overwrite an existing symbolic to point to a different file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ln -sf {{path/to/new_file}} {{path/to/symlink}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a hard link to a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ln {{path/to/file}} {{path/to/hardlink}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

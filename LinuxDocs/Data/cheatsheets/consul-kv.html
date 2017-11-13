@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    consul-kv
+   </h1>
+   <blockquote>
+    <p>
+     Distributed key-value store with health checking and service discovery.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Read a value from the key-value store:
+    </li>
+   </ul>
+   <p>
+    <pre><code>consul kv get {{key}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Store a new key-value pair:
+    </li>
+   </ul>
+   <p>
+    <pre><code>consul kv put {{key}} {{value}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Delete a key-value pair:
+    </li>
+   </ul>
+   <p>
+    <pre><code>consul kv delete {{key}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

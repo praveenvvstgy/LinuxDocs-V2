@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    figlet
+   </h1>
+   <blockquote>
+    <p>
+     Generate ASCII banners from user input.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Generate by directly inputting text:
+    </li>
+   </ul>
+   <p>
+    <pre><code>figlet {{input_text}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Use a custom font file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>figlet {{input_text}} -f {{font_file_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Pipe command output through figlet:
+    </li>
+   </ul>
+   <p>
+    <pre><code>{{command}} | figlet</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show available figlet fonts:
+    </li>
+   </ul>
+   <p>
+    <pre><code>showfigfonts {{optional_string_to_display}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git rebase
+   </h1>
+   <blockquote>
+    <p>
+     Reapply commits from one branch on top of another branch.
+  Commonly used to "move" an entire branch to another base, creating copies of the commits in the new location.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Rebase the current branch on top of the master branch:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git rebase {{master}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start an interactive rebase, which allows the commits to be reordered, omitted, combined or modified:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git rebase -i {{target_base_branch}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Continue a rebase that was interrupted by a merge failure, after editing conflicting files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git rebase --continue</code></pre>
+   </p>
+   <ul>
+    <li>
+     Abort a rebase in progress (e.g. if it is interrupted by a merge conflict):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git rebase --abort</code></pre>
+   </p>
+   <ul>
+    <li>
+     Move part of the current branch onto a new base, providing the old base to start from:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git rebase --onto {{new_base}} {{old_base}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Reapply the last 5 commits in-place, stopping to allow them to be reordered, omitted, combined or modified:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git rebase -i {{HEAD~5}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

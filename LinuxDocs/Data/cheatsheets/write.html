@@ -1,0 +1,50 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    write
+   </h1>
+   <blockquote>
+    <p>
+     Write a message on the terminal of a specified logged in user (ctrl-C to stop writing messages).
+  Use the
+     <pre><code>who</code></pre>
+     command to find out all terminal_ids of all active users active on the system.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Send a message to a given user on a given terminal id:
+    </li>
+   </ul>
+   <p>
+    <pre><code>write {{username}} {{terminal_id}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Send message to "testuser" on terminal "/dev/tty/5":
+    </li>
+   </ul>
+   <p>
+    <pre><code>write {{testuser}} {{tty/5}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Send message to "jhondoe" on pseudo terminal "/dev/pts/5":
+    </li>
+   </ul>
+   <p>
+    <pre><code>write {{jhondoe}} {{pts/5}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

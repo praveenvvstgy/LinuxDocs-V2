@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git worktree
+   </h1>
+   <blockquote>
+    <p>
+     Manage multiple working trees attached to the same repository.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create a new folder with the specified branch checked out into it:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git worktree add {{path/to/folder}} {{branch}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a new folder with a new branch checked out into it:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git worktree add {{path/to/folder}} -b {{new_branch}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all the working directories attached to this repository:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git worktree list</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove a worktree (after deleting worktree folder):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git worktree prune</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

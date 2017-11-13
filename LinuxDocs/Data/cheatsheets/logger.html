@@ -1,0 +1,67 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    logger
+   </h1>
+   <blockquote>
+    <p>
+     Add messages to syslog (/var/log/syslog).
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Log a message to syslog:
+    </li>
+   </ul>
+   <p>
+    <pre><code>logger {{message}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Take input from stdin and log to syslog:
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo {{log_entry}} | logger</code></pre>
+   </p>
+   <ul>
+    <li>
+     Send the output to a remote syslog server running at a given port. Default port is 514:
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo {{log_entry}} | logger --server {{hostname}} --port {{port}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Use a specific tag for every line logged. Default is the name of logged in user:
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo {{log_entry}} | logger --tag {{tag}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Log messages with a given priority. Default is
+     <pre><code>user.notice</code></pre>
+     . See
+     <pre><code>man logger</code></pre>
+     for all priority options:
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo {{log_entry}} | logger --priority {{user.warning}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

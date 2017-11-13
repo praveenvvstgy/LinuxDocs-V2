@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    ldconfig
+   </h1>
+   <blockquote>
+    <p>
+     Configure symlinks and cache for shared library dependencies.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Update symlinks and rebuild the cache (usually run when a new library is installed):
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo ldconfig</code></pre>
+   </p>
+   <ul>
+    <li>
+     Update the symlinks for a given directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo ldconfig -n {{path/to/directory}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Print the libraries in the cache and check whether a given library is present:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ldconfig -p | grep {{library_name}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

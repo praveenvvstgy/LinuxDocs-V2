@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    st-util
+   </h1>
+   <blockquote>
+    <p>
+     Run GDB (GNU Debugger) server to interact with STM32 ARM Cortex microcontoller.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Run GDB server on port 4500:
+    </li>
+   </ul>
+   <p>
+    <pre><code>st-util -p {{4500}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to GDB server:
+    </li>
+   </ul>
+   <p>
+    <pre><code>(gdb) target extended-remote {{localhost}}:{{4500}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Write firmware to device:
+    </li>
+   </ul>
+   <p>
+    <pre><code>(gdb) load {{firmware.elf}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

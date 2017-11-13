@@ -1,0 +1,65 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git branch
+   </h1>
+   <blockquote>
+    <p>
+     Main git command for working with branches.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     List local branches. The current branch is highlighted by
+     <pre><code>*</code></pre>
+     :
+    </li>
+   </ul>
+   <p>
+    <pre><code>git branch</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all branches (local and remote):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git branch -a</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create new branch based on the current commit:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git branch {{branch_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Rename a branch (must not have it checked out to do this):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git branch -m {{old_branch_name}} {{new_branch_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Delete a local branch:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git branch -d {{branch_name}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    adb
+   </h1>
+   <blockquote>
+    <p>
+     Android Debug Bridge: communicate with an Android emulator instance or connected Android devices.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Check whether the adb server process is running and start it:
+    </li>
+   </ul>
+   <p>
+    <pre><code>adb start-server</code></pre>
+   </p>
+   <ul>
+    <li>
+     Terminate the adb server process:
+    </li>
+   </ul>
+   <p>
+    <pre><code>adb kill-server</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start a remote shell in the target emulator/device instance:
+    </li>
+   </ul>
+   <p>
+    <pre><code>adb shell</code></pre>
+   </p>
+   <ul>
+    <li>
+     Push an Android application to an emulator/device:
+    </li>
+   </ul>
+   <p>
+    <pre><code>adb install -r {{path/to/file.apk}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Copy a file/folder from the target device:
+    </li>
+   </ul>
+   <p>
+    <pre><code>adb pull {{path/to/device_file_or_folder}} {{path/to/local_destination_folder}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Copy a file/folder to the target device:
+    </li>
+   </ul>
+   <p>
+    <pre><code>adb push {{path/to/local_file_or_folder}} {{path/to/device_destination_folder}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Get a list of connected devices:
+    </li>
+   </ul>
+   <p>
+    <pre><code>adb devices</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

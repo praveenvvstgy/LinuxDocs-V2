@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -35,15 +35,15 @@
 /* Begin PBXFileReference section */
 		0981FC95E82E783412D887F94ECA2DF2 /* VegaScrollFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-umbrella.h"; sourceTree = "<group>"; };
 		0AE180549B906C76A2D8CD0CF082064B /* Pods-LinuxDocs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinuxDocs-dummy.m"; sourceTree = "<group>"; };
-		13942B99ED0AA6B21E9D6F0BEA1FFA14 /* Pods_LinuxDocs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LinuxDocs.framework; path = "Pods-LinuxDocs.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13942B99ED0AA6B21E9D6F0BEA1FFA14 /* Pods_LinuxDocs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinuxDocs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A5702DDAAE48ED7570BE52706CB988 /* Pods-LinuxDocsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinuxDocsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		166B037A2B081AB2F27ED39C639B5869 /* VegaScrollFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VegaScrollFlowLayout-dummy.m"; sourceTree = "<group>"; };
 		265DEA47FF75DD0AAF90EF0E3B9DB19F /* Pods-LinuxDocs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinuxDocs-umbrella.h"; sourceTree = "<group>"; };
 		2AFC0EFA4FECEACC7A56938B67A1BBC6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E1C50E3466D7949A2A9C87834C4A94D /* Pods-LinuxDocsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinuxDocsTests.release.xcconfig"; sourceTree = "<group>"; };
 		30B70943E5257574CF82D2609F1F60C3 /* Pods-LinuxDocsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinuxDocsUITests-umbrella.h"; sourceTree = "<group>"; };
-		35E25DBD502B46B9845F7C8FB4C02CFC /* Pods-LinuxDocsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LinuxDocsUITests.modulemap"; sourceTree = "<group>"; };
-		37F86F3B3DBB86C164C0F9F703B07096 /* VegaScrollFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VegaScrollFlowLayout.framework; path = VegaScrollFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E25DBD502B46B9845F7C8FB4C02CFC /* Pods-LinuxDocsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LinuxDocsUITests.modulemap"; sourceTree = "<group>"; };
+		37F86F3B3DBB86C164C0F9F703B07096 /* VegaScrollFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VegaScrollFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADABEEC185FEE000DA14D78E58FB9AB /* Pods-LinuxDocsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinuxDocsTests-dummy.m"; sourceTree = "<group>"; };
 		3EF77A286C2E67D93A7D91D3820DCAD8 /* Pods-LinuxDocs-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocs-frameworks.sh"; sourceTree = "<group>"; };
 		482C4F13DECD77144B97758FF9165314 /* VegaScrollFlowLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VegaScrollFlowLayout.xcconfig; sourceTree = "<group>"; };
@@ -58,21 +58,21 @@
 		7862CC27B85BEEF4AFDCD9CF56E5A895 /* Pods-LinuxDocsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LinuxDocsTests-umbrella.h"; sourceTree = "<group>"; };
 		909A23EB2606ADD129CAB45E8FD10052 /* Pods-LinuxDocsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinuxDocsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9250D80795E8FF3E7531817C699241B9 /* Pods-LinuxDocsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocsUITests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B22B892EBFA85038E4C25519B31D947 /* VegaScrollFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = VegaScrollFlowLayout.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B22B892EBFA85038E4C25519B31D947 /* VegaScrollFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = VegaScrollFlowLayout.modulemap; sourceTree = "<group>"; };
 		A57829DCA0E62BC737642D96729FF0CC /* Pods-LinuxDocsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinuxDocsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A9F4D288F474ED0A6B0680D002FC109F /* Pods-LinuxDocsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinuxDocsTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B61614DB245790C6AEB1D29ADCAD2998 /* Pods-LinuxDocsTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocsTests-resources.sh"; sourceTree = "<group>"; };
-		C385F0A5AB001BFE73A43EB9227CD945 /* Pods-LinuxDocsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LinuxDocsTests.modulemap"; sourceTree = "<group>"; };
+		C385F0A5AB001BFE73A43EB9227CD945 /* Pods-LinuxDocsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LinuxDocsTests.modulemap"; sourceTree = "<group>"; };
 		CE0ED63DDE3F3A1F3D9906DC316CAAC8 /* Pods-LinuxDocs-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinuxDocs-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D66FF432118F87FE51CFD7456EFE0616 /* Pods-LinuxDocs-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocs-resources.sh"; sourceTree = "<group>"; };
-		E661AA52B7EB5C71E8EC9C4A264D78B1 /* Pods_LinuxDocsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LinuxDocsUITests.framework; path = "Pods-LinuxDocsUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E661AA52B7EB5C71E8EC9C4A264D78B1 /* Pods_LinuxDocsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinuxDocsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8D43EA2EA96E614C22573EAC6A01B5 /* VegaScrollFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VegaScrollFlowLayout.swift; path = VegaScroll/Classes/VegaScrollFlowLayout.swift; sourceTree = "<group>"; };
 		EB8BD1B3AF0B682E86CEF2AE68A65D0C /* Pods-LinuxDocsTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocsTests-frameworks.sh"; sourceTree = "<group>"; };
 		EBCA59030E3E948FE5C02D84C244A436 /* VegaScrollFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-prefix.pch"; sourceTree = "<group>"; };
-		ECCC9523CF49B202C818DEE87E2F9BD9 /* Pods_LinuxDocsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LinuxDocsTests.framework; path = "Pods-LinuxDocsTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCC9523CF49B202C818DEE87E2F9BD9 /* Pods_LinuxDocsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinuxDocsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC41229ACC617FCB3E5B2B4E641DEBD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F106D4796BAF5CAF0F02664EF563AA55 /* Pods-LinuxDocs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LinuxDocs.modulemap"; sourceTree = "<group>"; };
+		F106D4796BAF5CAF0F02664EF563AA55 /* Pods-LinuxDocs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LinuxDocs.modulemap"; sourceTree = "<group>"; };
 		F2484EAE1B1254C425826AC88220544C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F626C548EE8FA1EC7BEAC7D2C2BDFEA0 /* Pods-LinuxDocs-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinuxDocs-acknowledgements.plist"; sourceTree = "<group>"; };
 		FD84BD2E47F11B00D91D35739A81548E /* Pods-LinuxDocsUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LinuxDocsUITests-resources.sh"; sourceTree = "<group>"; };
@@ -130,7 +130,6 @@
 				EA8D43EA2EA96E614C22573EAC6A01B5 /* VegaScrollFlowLayout.swift */,
 				FB295E1D85C2E1ABD2005FF80F47FC81 /* Support Files */,
 			);
-			name = VegaScrollFlowLayout;
 			path = VegaScrollFlowLayout;
 			sourceTree = "<group>";
 		};
@@ -362,7 +361,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0910;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -513,6 +512,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;

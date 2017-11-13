@@ -1,0 +1,62 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    xargs
+   </h1>
+   <blockquote>
+    <p>
+     Execute a command with piped arguments coming from another command, a file, etc.
+  The input is treated as a single block of text and split into separate arguments on spaces, tabs, newlines and end-of-file.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Main usage pattern:
+    </li>
+   </ul>
+   <p>
+    <pre><code>{{arguments_source}} | xargs {{command}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Delete all files with a
+     <pre><code>.backup</code></pre>
+     extension:
+    </li>
+   </ul>
+   <p>
+    <pre><code>{{find . -name '*.backup'}} | xargs {{rm -v}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Convert newlines in the input into NUL (
+     <pre><code>\0</code></pre>
+     ) characters, and split on those only (useful if the input to xargs contains spaces):
+    </li>
+   </ul>
+   <p>
+    <pre><code>{{arguments_source}} | tr '\n' '\0' | xargs -0 {{command}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute the command once for each input line, replacing any occurrences of the placeholder (here marked as
+     <pre><code>_</code></pre>
+     ) with the input line:
+    </li>
+   </ul>
+   <p>
+    <pre><code>{{arguments_source}} | xargs -I _ {{command}} _ {{optional_extra_arguments}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

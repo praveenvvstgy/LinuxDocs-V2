@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    foreman
+   </h1>
+   <blockquote>
+    <p>
+     Manage Procfile-based applications.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Start an application with the Procfile in the current directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>foreman start</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start an application with a specified Procfile:
+    </li>
+   </ul>
+   <p>
+    <pre><code>foreman start -f {{Procfile}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start a specific application:
+    </li>
+   </ul>
+   <p>
+    <pre><code>foreman start {{process}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Validate Procfile format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>foreman check</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run one-off commands with the process's environment:
+    </li>
+   </ul>
+   <p>
+    <pre><code>foreman run {{command}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start all processes except the one named "worker":
+    </li>
+   </ul>
+   <p>
+    <pre><code>foreman start -m all=1,{{worker}}=0</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

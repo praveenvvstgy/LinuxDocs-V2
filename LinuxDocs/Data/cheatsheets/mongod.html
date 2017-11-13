@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    mongod
+   </h1>
+   <blockquote>
+    <p>
+     The MongoDB database server.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Specify a config file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongod --config {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Specify the port to listen on:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongod --port {{port}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Specify database profiling level. 0 is off, 1 is only slow operations, 2 is all:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongod --profile {{0|1|2}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

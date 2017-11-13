@@ -1,0 +1,73 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    jq
+   </h1>
+   <blockquote>
+    <p>
+     A lightweight and flexible command-line JSON processor.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Output a JSON file, in pretty-print format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{file}} | jq</code></pre>
+   </p>
+   <ul>
+    <li>
+     Output all elements from arrays (or all key-value pairs from objects) in a JSON file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{file}} | jq .[]</code></pre>
+   </p>
+   <ul>
+    <li>
+     Read JSON objects from a file into an array, and output it (inverse of
+     <pre><code>jq .[]</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{file}} | jq --slurp</code></pre>
+   </p>
+   <ul>
+    <li>
+     Output the first element in a JSON file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{file}} | jq .[0]</code></pre>
+   </p>
+   <ul>
+    <li>
+     Output the value of a given key of the first element in a JSON file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{file}} | jq .[0].{{key_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Output the value of a given key of each element in a JSON file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{file}} | jq 'map(.{{key_name}})'</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

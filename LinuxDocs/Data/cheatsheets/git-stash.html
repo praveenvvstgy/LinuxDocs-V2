@@ -1,0 +1,87 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git stash
+   </h1>
+   <blockquote>
+    <p>
+     Stash local Git changes in a temporary area.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Stash current changes, except new (untracked) files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git stash [save {{optional_stash_message}}]</code></pre>
+   </p>
+   <ul>
+    <li>
+     Stash current changes, including new (untracked) files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git stash -u</code></pre>
+   </p>
+   <ul>
+    <li>
+     Interactively select parts of changed files for stashing:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git stash -p</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all stashes (shows stash name, related branch and message):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git stash list</code></pre>
+   </p>
+   <ul>
+    <li>
+     Apply a stash (default is the latest, named stash@{0}):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git stash apply {{optional_stash_name_or_commit}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Apply a stash (default is stash@{0}), and remove it from the stash list if applying doesn't cause conflicts:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git stash pop {{optional_stash_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Drop a stash (default is stash@{0}):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git stash drop {{optional_stash_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Drop all stashes:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git stash clear</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

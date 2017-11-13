@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    locust
+   </h1>
+   <blockquote>
+    <p>
+     Load-testing tool to determine number of concurrent users a system can handle.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Load-test "example.com" with web interface using locustfile.py:
+    </li>
+   </ul>
+   <p>
+    <pre><code>locust --host={{http://example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Use a different test file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>locust --locustfile={{test_file.py}} --host={{http://example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run test without web interface, spawning 1 user a second until there are 100 users:
+    </li>
+   </ul>
+   <p>
+    <pre><code>locust --no-web --clients={{100}} --hatch-rate={{1}} --host={{http://example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start locust in master mode:
+    </li>
+   </ul>
+   <p>
+    <pre><code>locust --master --host={{http://example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect locust slave to master:
+    </li>
+   </ul>
+   <p>
+    <pre><code>locust --slave --host={{http://example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect locust slave to master on a different machine:
+    </li>
+   </ul>
+   <p>
+    <pre><code>locust --slave --master-host={{master_hostname}} --host={{http://example.com}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

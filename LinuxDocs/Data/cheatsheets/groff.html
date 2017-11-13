@@ -1,0 +1,78 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    groff
+   </h1>
+   <blockquote>
+    <p>
+     Typesetting program that reads plain text mixed with formatting commands and produces formatted output.
+  It is the GNU replacement for the
+     <pre><code>troff</code></pre>
+     and
+     <pre><code>nroff</code></pre>
+     Unix commands for text formatting.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Render a man page as plain text, and display the result:
+    </li>
+   </ul>
+   <p>
+    <pre><code>groff -man -T utf8 {{manpage.1}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Render a man page using the ASCII output device, and display it using a pager:
+    </li>
+   </ul>
+   <p>
+    <pre><code>groff -man -T ascii {{manpage.1}} | less</code></pre>
+   </p>
+   <ul>
+    <li>
+     Render a man page into an HTML file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>groff -man -T html {{manpage.1}} &gt; {{page.html}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Process a roff file using the
+     <pre><code>tbl</code></pre>
+     and
+     <pre><code>pic</code></pre>
+     preprocessors, and the
+     <pre><code>me</code></pre>
+     macro set:
+    </li>
+   </ul>
+   <p>
+    <pre><code>groff -t -p -me -T utf8 {{foo.me}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a
+     <pre><code>groff</code></pre>
+     command with preprocessor and macro options guessed by the
+     <pre><code>grog</code></pre>
+     utility:
+    </li>
+   </ul>
+   <p>
+    <pre><code>eval "$(grog -T utf8 {{foo.me}})"</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

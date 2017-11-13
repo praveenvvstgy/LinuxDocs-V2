@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    sass
+   </h1>
+   <blockquote>
+    <p>
+     Converts SCSS or Sass files to CSS.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Convert a SCSS or Sass file to CSS and print out the result:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sass {{inputfile.scss|inputfile.sass}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Convert a SCSS or Sass file to CSS and save the result to a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sass {{inputfile.scss|inputfile.sass}} {{outputfile.css}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Watch a SCSS or Sass file for changes and output or update the CSS file with same filename:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sass --watch {{inputfile.scss|inputfile.sass}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Watch a SCSS or Sass file for changes and output or update the CSS file with the given filename:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sass --watch {{inputfile.scss|inputfile.sass}}:{{outputfile.css}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

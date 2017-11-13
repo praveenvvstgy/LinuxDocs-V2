@@ -1,0 +1,75 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    go
+   </h1>
+   <blockquote>
+    <p>
+     Tool for managing go source code.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Download and install a package, specified by its import path:
+    </li>
+   </ul>
+   <p>
+    <pre><code>go get {{package_path}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Compile and run a source file (it has to contain a
+     <pre><code>main</code></pre>
+     package):
+    </li>
+   </ul>
+   <p>
+    <pre><code>go run {{file}}.go</code></pre>
+   </p>
+   <ul>
+    <li>
+     Compile a source file into a named executable:
+    </li>
+   </ul>
+   <p>
+    <pre><code>go build -o {{executable}} {{file}}.go</code></pre>
+   </p>
+   <ul>
+    <li>
+     Compile the package present in the current directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>go build</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute all test cases of the current package (files have to end with
+     <pre><code>_test.go</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>go test</code></pre>
+   </p>
+   <ul>
+    <li>
+     Compile and install the current package:
+    </li>
+   </ul>
+   <p>
+    <pre><code>go install</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

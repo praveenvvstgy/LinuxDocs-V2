@@ -1,0 +1,73 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    open
+   </h1>
+   <blockquote>
+    <p>
+     Opens files, directories and applications.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Open a file with the associated application:
+    </li>
+   </ul>
+   <p>
+    <pre><code>open {{file.ext}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a graphical macOS application:
+    </li>
+   </ul>
+   <p>
+    <pre><code>open -a {{Application}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a graphical macOS app based on the bundle identifier (refer to
+     <pre><code>osascript</code></pre>
+     for an easy way get this):
+    </li>
+   </ul>
+   <p>
+    <pre><code>open -b {{com.domain.application}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Open the current directory in Finder:
+    </li>
+   </ul>
+   <p>
+    <pre><code>open .</code></pre>
+   </p>
+   <ul>
+    <li>
+     Reveal a file in finder:
+    </li>
+   </ul>
+   <p>
+    <pre><code>open -R {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Open all the files of a given extension in the current directory with the associated application:
+    </li>
+   </ul>
+   <p>
+    <pre><code>open {{*.ext}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

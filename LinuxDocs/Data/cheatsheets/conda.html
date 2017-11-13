@@ -1,0 +1,87 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    conda
+   </h1>
+   <blockquote>
+    <p>
+     Package, dependency and environment management for any programming language.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create a new environment, installing named packages into it:
+    </li>
+   </ul>
+   <p>
+    <pre><code>conda create --name {{environment_name}} {{python=2.7 matplotlib}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all environments:
+    </li>
+   </ul>
+   <p>
+    <pre><code>conda info --envs</code></pre>
+   </p>
+   <ul>
+    <li>
+     Load or unload an environment:
+    </li>
+   </ul>
+   <p>
+    <pre><code>source {{activate|deactivate}} {{environment_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Delete an environment (remove all packages):
+    </li>
+   </ul>
+   <p>
+    <pre><code>conda remove --name {{environment_name}} --all</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search conda channels for a package by name:
+    </li>
+   </ul>
+   <p>
+    <pre><code>conda search {{package_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Install packages into the current environment:
+    </li>
+   </ul>
+   <p>
+    <pre><code>conda install {{python=3.4 numpy}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List currently installed packages in current environment:
+    </li>
+   </ul>
+   <p>
+    <pre><code>conda list</code></pre>
+   </p>
+   <ul>
+    <li>
+     Delete unused packages and caches:
+    </li>
+   </ul>
+   <p>
+    <pre><code>conda clean --all</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    mongodump
+   </h1>
+   <blockquote>
+    <p>
+     Utility to export the contents of a MongoDB instance.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create a dump of all databases (this will place the files inside a folder called "dump"):
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongodump</code></pre>
+   </p>
+   <ul>
+    <li>
+     Specify an output location for the dump:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongodump --out {{path/to/folder}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a dump of a given database:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongodump --db {{database_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a dump of a given collection within a given database:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongodump --collection {{collection_name}} --db {{database_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to a given host running on a given port, and create a dump:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongodump --host {{host}} --port {{port}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a dump of a given database with a given username; user will be prompted for password:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongodump --username {{username}} {{database}} --password</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

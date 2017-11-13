@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    telnet
+   </h1>
+   <blockquote>
+    <p>
+     Connect to a specified port of a host using the telnet protocol.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Telnet to the default port of a host:
+    </li>
+   </ul>
+   <p>
+    <pre><code>telnel {{host}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Telnet to a specific port of a host:
+    </li>
+   </ul>
+   <p>
+    <pre><code>telnet {{ip_address}} {{port}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Exit a telnet session:
+    </li>
+   </ul>
+   <p>
+    <pre><code>quit</code></pre>
+   </p>
+   <ul>
+    <li>
+     Emit the default escape character combination for terminating the session:
+    </li>
+   </ul>
+   <p>
+    <pre><code>Ctrl + ]</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start telnet with "x" as the session termination character:
+    </li>
+   </ul>
+   <p>
+    <pre><code>telnet -e {{x}} {{ip_address}} {{port}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

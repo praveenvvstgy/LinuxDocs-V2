@@ -1,0 +1,50 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    umount
+   </h1>
+   <blockquote>
+    <p>
+     Unlink a filesystem from its mount point, making it no longer accessible.
+  A filesystem cannot be unmounted when it is busy.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Unmount a filesystem, by passing the path to the source it is mounted from:
+    </li>
+   </ul>
+   <p>
+    <pre><code>umount {{path/to/device_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Unmount a filesystem, by passing the path to the target where it is mounted:
+    </li>
+   </ul>
+   <p>
+    <pre><code>umount {{path/to/mounted_directory}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Unmount all mounted filesystems (except the
+     <pre><code>proc</code></pre>
+     filesystem):
+    </li>
+   </ul>
+   <p>
+    <pre><code>umount -a</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    hugo
+   </h1>
+   <blockquote>
+    <p>
+     Hugo is a fast and flexible static site generator.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create a new Hugo site:
+    </li>
+   </ul>
+   <p>
+    <pre><code>hugo new site {{path/to/site}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a new Hugo theme (themes may also be downloaded from https://themes.gohugo.io/):
+    </li>
+   </ul>
+   <p>
+    <pre><code>hugo new theme {{theme_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a new page:
+    </li>
+   </ul>
+   <p>
+    <pre><code>hugo new {{section_name}}/{{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Build a site to the
+     <pre><code>./public/</code></pre>
+     directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>hugo</code></pre>
+   </p>
+   <ul>
+    <li>
+     Build a site including pages that are marked as a "draft":
+    </li>
+   </ul>
+   <p>
+    <pre><code>hugo --buildDrafts</code></pre>
+   </p>
+   <ul>
+    <li>
+     Build a site to a given directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>hugo --destination {{path/to/destination}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Build a site, start up a webserver to serve it, and automatically reload when pages are edited:
+    </li>
+   </ul>
+   <p>
+    <pre><code>hugo server</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

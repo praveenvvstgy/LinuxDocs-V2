@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    mongo
+   </h1>
+   <blockquote>
+    <p>
+     MongoDB interactive shell client.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Connect to a database:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongo {{database}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to a database running on a given host on a given port:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongo --host {{host}} --port {{port}} {{database}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to a database with a given username; user will be prompted for password:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongo --username {{username}} {{database}} --password</code></pre>
+   </p>
+   <ul>
+    <li>
+     Evaluate a javascript expression on the database:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mongo --eval '{{JSON.stringify(db.foo.findOne())}}' {{database}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

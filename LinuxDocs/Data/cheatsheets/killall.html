@@ -1,0 +1,66 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    killall
+   </h1>
+   <blockquote>
+    <p>
+     Send kill signal to all instances of a process by name (must be exact name).
+  All signals except SIGKILL and SIGSTOP can be intercepted by the process, allowing a clean exit.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Terminate a process using the default SIGTERM (terminate) signal:
+    </li>
+   </ul>
+   <p>
+    <pre><code>killall {{process_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List available signal names (to be used without the 'SIG' prefix):
+    </li>
+   </ul>
+   <p>
+    <pre><code>killall --list</code></pre>
+   </p>
+   <ul>
+    <li>
+     Interactively ask for confirmation before termination:
+    </li>
+   </ul>
+   <p>
+    <pre><code>killall -i {{process_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Terminate a process using the SIGINT (interrupt) signal, which is the same signal sent by pressing
+     <pre><code>Ctrl + C</code></pre>
+     :
+    </li>
+   </ul>
+   <p>
+    <pre><code>killall -INT {{process_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Force kill a process:
+    </li>
+   </ul>
+   <p>
+    <pre><code>killall -KILL {{process_name}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

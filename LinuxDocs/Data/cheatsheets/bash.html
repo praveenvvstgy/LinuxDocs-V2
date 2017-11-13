@@ -1,0 +1,75 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    bash
+   </h1>
+   <blockquote>
+    <p>
+     Bourne-Again SHell.
+     <pre><code>sh</code></pre>
+     -compatible command line interpreter.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Start interactive shell:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bash</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute a command:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bash -c "{{command}}"</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run commands from a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bash {{file.sh}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run commands from a file, logging all commands executed to the terminal:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bash -x {{file.sh}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run commands from STDIN:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bash -s</code></pre>
+   </p>
+   <ul>
+    <li>
+     Print the version information of bash (use
+     <pre><code>echo $BASH_VERSION</code></pre>
+     to show just the version string):
+    </li>
+   </ul>
+   <p>
+    <pre><code>bash --version</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

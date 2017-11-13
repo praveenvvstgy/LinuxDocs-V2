@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    svcadm
+   </h1>
+   <blockquote>
+    <p>
+     Manipulate service instances.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Enable a service in the service database:
+    </li>
+   </ul>
+   <p>
+    <pre><code>svcadm enable {{service_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Disable service:
+    </li>
+   </ul>
+   <p>
+    <pre><code>svcadm disable {{service_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Restart a running service:
+    </li>
+   </ul>
+   <p>
+    <pre><code>svcadm restart {{service_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Command service to re-read configuration files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>svcadm refresh {{service_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Clear a service from maintenance state and command it to start:
+    </li>
+   </ul>
+   <p>
+    <pre><code>svcadm clear {{service_name}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    lsof
+   </h1>
+   <blockquote>
+    <p>
+     Lists open files and the corresponding processes.
+  Note: Root privileges (or sudo) is required to list files opened by others.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Find the processes that have a given file open:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lsof {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Find the process that opened a local internet port:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lsof -i :{{port}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Only output the process ID (PID):
+    </li>
+   </ul>
+   <p>
+    <pre><code>lsof -t {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List files opened by the given user:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lsof -u {{username}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List files opened by the given command or process:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lsof -c {{process_or_command_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List files opened by a specific process, given its PID:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lsof -p {{PID}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List open files in a directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lsof +D {{path/to/directory}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

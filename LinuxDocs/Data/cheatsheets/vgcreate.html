@@ -1,0 +1,41 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    vgcreate
+   </h1>
+   <blockquote>
+    <p>
+     Create volume groups combining multiple mass-storage devices.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create a new volume group called vg1 using the
+     <pre><code>/dev/sda1</code></pre>
+     device:
+    </li>
+   </ul>
+   <p>
+    <pre><code>vgcreate {{vg1}} {{/dev/sda1}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a new volume group called vg1 using multiple devices:
+    </li>
+   </ul>
+   <p>
+    <pre><code>vgcreate {{vg1}} {{/dev/sda1}} {{/dev/sdb1}} {{/dev/sdc1}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

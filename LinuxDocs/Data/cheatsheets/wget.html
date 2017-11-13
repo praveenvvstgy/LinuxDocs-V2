@@ -1,0 +1,80 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    wget
+   </h1>
+   <blockquote>
+    <p>
+     Download files from the Web.
+  Supports HTTP, HTTPS, and FTP.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Download the contents of an URL to a file (named "foo" in this case):
+    </li>
+   </ul>
+   <p>
+    <pre><code>wget {{https://example.com/foo}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Download a single web page and all its resources (scripts, stylesheets, images, etc.):
+    </li>
+   </ul>
+   <p>
+    <pre><code>wget --page-requisites --convert-links {{https://example.com/somepage.html}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Download a full website, with 3-second intervals between requests:
+    </li>
+   </ul>
+   <p>
+    <pre><code>wget --mirror --page-requisites --convert-links --wait=3 {{https://example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Download the contents of an URL via authenticated FTP:
+    </li>
+   </ul>
+   <p>
+    <pre><code>wget --ftp-user={{username}} --ftp-password={{password}} {{ftp://example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Limit download speed to 200 kB/s:
+    </li>
+   </ul>
+   <p>
+    <pre><code>wget --limit-rate={{200k}} {{https://example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Continue an incomplete download:
+    </li>
+   </ul>
+   <p>
+    <pre><code>wget -c {{https://example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Retry a given number of times if the download doesn't succeed at first:
+    </li>
+   </ul>
+   <p>
+    <pre><code>wget -t {{number_of_retries}} {{https://example.com}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

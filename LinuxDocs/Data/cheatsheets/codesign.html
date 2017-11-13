@@ -1,0 +1,39 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    codesign
+   </h1>
+   <blockquote>
+    <p>
+     Create and manipulate code signatures for macOS.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Sign an application with a certificate:
+    </li>
+   </ul>
+   <p>
+    <pre><code>codesign -s {{"My Company Name"}} {{/path/to/App.app}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Verify the certificate of an application:
+    </li>
+   </ul>
+   <p>
+    <pre><code>codesign -v {{/path/to/App.app}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

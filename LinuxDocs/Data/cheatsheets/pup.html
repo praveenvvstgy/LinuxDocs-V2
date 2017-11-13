@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    pup
+   </h1>
+   <blockquote>
+    <p>
+     Command line HTML parsing tool.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Transform a raw HTML file into a cleaned, indented, and colored format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{index.html}} | pup --color</code></pre>
+   </p>
+   <ul>
+    <li>
+     Filter HTML by element tag name:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{index.html}} | pup '{{tag}}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Filter HTML by id:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{index.html}} | pup '{{div#id}}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Filter HTML by attribute value:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{index.html}} | pup '{{input[type="text"]}}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Print all text from the filtered HTML elements and their children:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{index.html}} | pup '{{div}} text{}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Print HTML as JSON:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{index.html}} | pup '{{div}} json{}'</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

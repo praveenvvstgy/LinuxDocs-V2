@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    vncserver
+   </h1>
+   <blockquote>
+    <p>
+     Launches a VNC (Virtual Network Computing) desktop.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Launch a VNC Server on next available display:
+    </li>
+   </ul>
+   <p>
+    <pre><code>vncserver</code></pre>
+   </p>
+   <ul>
+    <li>
+     Launch a VNC Server with specific screen geometry:
+    </li>
+   </ul>
+   <p>
+    <pre><code>vncserver --geometry {{width}}x{{height}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Kill an instance of VNC Server running on a specific display:
+    </li>
+   </ul>
+   <p>
+    <pre><code>vncserver --kill :{{display_number}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

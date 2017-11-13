@@ -1,0 +1,62 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    zramctl
+   </h1>
+   <blockquote>
+    <p>
+     Setup and control zram devices.
+  Use
+     <pre><code>mke2fs</code></pre>
+     or
+     <pre><code>mkswap</code></pre>
+     to format zram devices to partitions.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Check if zram is enabled:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lsmod | grep -i zram</code></pre>
+   </p>
+   <ul>
+    <li>
+     Enable zram with 2 devices (use
+     <pre><code>zramctl</code></pre>
+     to configure the devices further):
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo modprobe zram num_devices={{2}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Find and initialise the next free zram device to a 2GB virtual drive using LZ4 compression:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo zramctl --find --size {{2GB}} --algorithm {{lz4}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List currently initialised devices:
+    </li>
+   </ul>
+   <p>
+    <pre><code>zramctl</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    launchctl
+   </h1>
+   <blockquote>
+    <p>
+     A command-line interface to Apple's
+     <pre><code>launchd</code></pre>
+     manager for launch daemons (system-wide services) and launch agents (per-user programs).
+     <pre><code>launchd</code></pre>
+     loads XML-based
+     <pre><code>*.plist</code></pre>
+     files placed in the appropriate locations, and runs the corresponding commands according to their defined schedule.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Activate a user-specific agent to be loaded into
+     <pre><code>launchd</code></pre>
+     whenever the user logs in:
+    </li>
+   </ul>
+   <p>
+    <pre><code>launchctl load ~/Library/LaunchAgents/{{my_script}}.plist</code></pre>
+   </p>
+   <ul>
+    <li>
+     Activate an agent which requires root privileges to run and/or should be loaded whenever any user logs in (note the absence of
+     <pre><code>~</code></pre>
+     in the path):
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo launchctl load /Library/LaunchAgents/{{root_script}}.plist</code></pre>
+   </p>
+   <ul>
+    <li>
+     Activate a system-wide daemon to be loaded whenever the system boots up (even if no user logs in):
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo launchctl load /Library/LaunchDaemons/{{system_daemon}}.plist</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show all loaded agents/daemons, with the PID if the process they specify is currently running, and the exit code returned the last time they ran:
+    </li>
+   </ul>
+   <p>
+    <pre><code>launchctl list</code></pre>
+   </p>
+   <ul>
+    <li>
+     Unload a currently loaded agent, e.g. to make changes (note: the plist file is automatically loaded into
+     <pre><code>launchd</code></pre>
+     after a reboot and/or logging in):
+    </li>
+   </ul>
+   <p>
+    <pre><code>launchctl unload ~/Library/LaunchAgents/{{my_script}}.plist</code></pre>
+   </p>
+   <ul>
+    <li>
+     Manually run a known (loaded) agent/daemon, even if it isn&rsquo;t the right time (note: this command uses the agent's label, rather than the filename):
+    </li>
+   </ul>
+   <p>
+    <pre><code>launchctl start {{my_script}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Manually kill the process associated with a known agent/daemon, if it's running:
+    </li>
+   </ul>
+   <p>
+    <pre><code>launchctl stop {{my_script}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

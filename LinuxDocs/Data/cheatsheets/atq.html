@@ -1,0 +1,51 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    atq
+   </h1>
+   <blockquote>
+    <p>
+     Show jobs scheduled by
+     <pre><code>at</code></pre>
+     or
+     <pre><code>batch</code></pre>
+     commands.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Show the current user's scheduled jobs:
+    </li>
+   </ul>
+   <p>
+    <pre><code>atq</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show jobs from queue named 'a' (queues have single-character names):
+    </li>
+   </ul>
+   <p>
+    <pre><code>atq -q {{a}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show jobs of all users (run as super user):
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo atq</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

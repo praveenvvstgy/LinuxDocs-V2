@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    nasm
+   </h1>
+   <blockquote>
+    <p>
+     The Netwide Assembler, a portable 80x86 assembler.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Assemble
+     <pre><code>source.asm</code></pre>
+     into a binary file
+     <pre><code>source</code></pre>
+     , in the (default) raw binary format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nasm {{source.asm}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Assemble
+     <pre><code>source.asm</code></pre>
+     into a binary file
+     <pre><code>output_file</code></pre>
+     , in the specified format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nasm -f {{format}} {{source.asm}} -o {{output_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List valid output formats (along with basic nasm help):
+    </li>
+   </ul>
+   <p>
+    <pre><code>nasm -hf</code></pre>
+   </p>
+   <ul>
+    <li>
+     Assemble and generate an assembly listing file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nasm -l {{list_file}} {{source.asm}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Add a directory (must be written with trailing slash) to the include file search path before assembling:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nasm -i {{/path/to/include_dir/}} {{source.asm}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

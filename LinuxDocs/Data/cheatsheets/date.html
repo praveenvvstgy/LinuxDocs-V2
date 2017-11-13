@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    date
+   </h1>
+   <blockquote>
+    <p>
+     Set or display the system date.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Display the current date using the default locale's format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>date +"%c"</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display the current date in UTC and ISO 8601 format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>date -u +"%Y-%m-%dT%H:%M:%SZ"</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display the current date as a Unix timestamp (seconds since the Unix epoch):
+    </li>
+   </ul>
+   <p>
+    <pre><code>date +%s</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display a specific date (represented as a Unix timestamp) using the default format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>date -d @1473305798</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

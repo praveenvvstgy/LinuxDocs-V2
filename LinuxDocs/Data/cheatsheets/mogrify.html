@@ -1,0 +1,64 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    mogrify
+   </h1>
+   <blockquote>
+    <p>
+     Perform operations on multiple images, such as resizing, cropping, flipping, and adding effects.
+  Changes are applied directly to the original file.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Resize all JPEG images in the folder to 50% of their initial size:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mogrify -resize {{50%}} {{*.jpg}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Resize all images starting with "DSC" to 800x600:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mogrify -resize {{800x600}} {{DSC*}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Convert all PNG images in the folder to JPEG:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mogrify -format {{jpg}} {{*.png}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Halve the saturation of all image files in the current directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mogrify -modulate {{100,50}} {{*}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Double the brightness of all image files in the current directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mogrify -modulate {{200}} {{*}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    mosh
+   </h1>
+   <blockquote>
+    <p>
+     Mobile Shell (
+     <pre><code>mosh</code></pre>
+     ) is a robust and responsive replacement for SSH.
+     <pre><code>mosh</code></pre>
+     persists connections to remote servers while roaming between networks.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Connect to a remote server:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mosh {{username}}@{{remote_host}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to a remote server with a specific identity (private key):
+    </li>
+   </ul>
+   <p>
+    <pre><code>mosh --ssh="ssh -i {{/path/to/key_file}}" {{username}}@{{remote_host}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to a remote server using a specific port:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mosh --ssh="ssh -p {{2222}}" {{username}}@{{remote_host}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a command on a remote server:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mosh {{remote_host}} -- {{command -with -flags}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Select Mosh UDP port (useful when
+     <pre><code>{{remote_host}}</code></pre>
+     is behind a NAT):
+    </li>
+   </ul>
+   <p>
+    <pre><code>mosh -p {{124}} {{username}}@{{remote_host}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Usage when
+     <pre><code>mosh-server</code></pre>
+     binary is outside standard path:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mosh --server={{/path/to/bin/}}mosh-server {{remote_host}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

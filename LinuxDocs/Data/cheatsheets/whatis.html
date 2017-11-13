@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    whatis
+   </h1>
+   <blockquote>
+    <p>
+     Display one-line descriptions from manual pages.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Display a description from a man page:
+    </li>
+   </ul>
+   <p>
+    <pre><code>whatis {{command}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Don't cut the description off at the end of the line:
+    </li>
+   </ul>
+   <p>
+    <pre><code>whatis --long {{command}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display descriptions for all commands matching a glob:
+    </li>
+   </ul>
+   <p>
+    <pre><code>whatis --wildcard {{net*}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search man page descriptions with a regular expression:
+    </li>
+   </ul>
+   <p>
+    <pre><code>whatis --regex '{{wish[0-9]\.[0-9]}}'</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

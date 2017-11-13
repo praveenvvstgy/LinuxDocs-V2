@@ -1,0 +1,41 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    diffstat
+   </h1>
+   <blockquote>
+    <p>
+     Create a histogram from the output of the
+     <pre><code>diff</code></pre>
+     command.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Display changes in a histogram:
+    </li>
+   </ul>
+   <p>
+    <pre><code>diff {{file1}} {{file2}} | diffstat</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display inserted, deleted and modified changes as a table:
+    </li>
+   </ul>
+   <p>
+    <pre><code>diff {{file1}} {{file2}} | diffstat -t</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

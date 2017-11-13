@@ -1,0 +1,88 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    samtools
+   </h1>
+   <blockquote>
+    <p>
+     Tools for handling high-throughput sequencing (genomics) data.
+  Used for reading/writing/editing/indexing/viewing of data in SAM/BAM/CRAM format.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Convert a SAM input file to BAM stream and save to file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>samtools view -S -b {{input.sam}} &gt; {{output.bam}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Take input from stdin (-) and print the SAM header and any reads overlapping a specific region to stdout:
+    </li>
+   </ul>
+   <p>
+    <pre><code>{{other_command}} | samtools view -h - chromosome:start-end</code></pre>
+   </p>
+   <ul>
+    <li>
+     Sort file and save to BAM (the output format is automatically determined from the output file's extension):
+    </li>
+   </ul>
+   <p>
+    <pre><code>samtools sort {{input}} -o {{output.bam}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Index a sorted BAM file (creates {{sorted_input.bam.bai}}):
+    </li>
+   </ul>
+   <p>
+    <pre><code>samtools index {{sorted_input.bam}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Print alignment statistics about a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>samtools flagstat {{sorted_input}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Count alignments to each index (chromosome / contig):
+    </li>
+   </ul>
+   <p>
+    <pre><code>samtools idxstats {{sorted_indexed_input}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Merge multiple files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>samtools merge {{output}} {{input_1}} [{{input_2}}...]</code></pre>
+   </p>
+   <ul>
+    <li>
+     Split input file according to read groups:
+    </li>
+   </ul>
+   <p>
+    <pre><code>samtools split {{merged_input}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

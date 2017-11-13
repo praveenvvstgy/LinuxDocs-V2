@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    opensnoop
+   </h1>
+   <blockquote>
+    <p>
+     Tool that tracks file opens on your system.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Print all file opens as they occur:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo opensnoop</code></pre>
+   </p>
+   <ul>
+    <li>
+     Track all file opens by a process by name:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo opensnoop -n {{process_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Track all file opens by a process by PID:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo opensnoop -p {{PID}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Track which processes open a specified file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo opensnoop -f {{path/to/file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

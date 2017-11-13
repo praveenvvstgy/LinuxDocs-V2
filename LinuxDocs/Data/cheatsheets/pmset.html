@@ -1,0 +1,74 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    pmset
+   </h1>
+   <blockquote>
+    <p>
+     Configure macOS power management settings, as one might do in System Preferences &gt; Energy Saver.
+  Commands that modify settings must begin with
+     <pre><code>sudo</code></pre>
+     .
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Display the current power management settings:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pmset -g</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display the current power source and battery levels:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pmset -g batt</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set display to never sleep when on charger power:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo pmset -c displaysleep 0</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set display to sleep after 15 minutes when on battery power:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo pmset -b displaysleep 15</code></pre>
+   </p>
+   <ul>
+    <li>
+     Schedule computer to automatically wake up every weekday at 9 AM:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo pmset repeat wake MTWRF 09:00:00</code></pre>
+   </p>
+   <ul>
+    <li>
+     Restore to system defaults:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo pmset -a displaysleep 10 disksleep 10 sleep 30 womp 1</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

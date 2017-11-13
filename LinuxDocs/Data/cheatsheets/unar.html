@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    unar
+   </h1>
+   <blockquote>
+    <p>
+     Extract contents from archive files.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Extract an archive to the current directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>unar {{archive}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Extract an archive to the specified directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>unar -o {{path/to/directory}} {{archive}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Force overwrite if files to be unpacked already exist:
+    </li>
+   </ul>
+   <p>
+    <pre><code>unar -f {{archive}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Force rename if files to be unpacked already exist:
+    </li>
+   </ul>
+   <p>
+    <pre><code>unar -r {{archive}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Force skip if files to be unpacked already exist:
+    </li>
+   </ul>
+   <p>
+    <pre><code>unar -s {{archive}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

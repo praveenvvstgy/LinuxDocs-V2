@@ -1,0 +1,80 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    npm
+   </h1>
+   <blockquote>
+    <p>
+     JavaScript and Node.js package manager.
+  Manage Node.js projects and their module dependencies.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Download and install a module globally:
+    </li>
+   </ul>
+   <p>
+    <pre><code>npm install -g {{module_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Download all dependencies referenced in package.json:
+    </li>
+   </ul>
+   <p>
+    <pre><code>npm install</code></pre>
+   </p>
+   <ul>
+    <li>
+     Download a given dependency required for the application to run, and add it to the package.json:
+    </li>
+   </ul>
+   <p>
+    <pre><code>npm install {{module_name}}@{{version}} --save</code></pre>
+   </p>
+   <ul>
+    <li>
+     Download a given dependency for development purposes, and add it to the package.json:
+    </li>
+   </ul>
+   <p>
+    <pre><code>npm install {{module_name}}@{{version}} --save-dev</code></pre>
+   </p>
+   <ul>
+    <li>
+     Uninstall a module:
+    </li>
+   </ul>
+   <p>
+    <pre><code>npm uninstall {{module_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List a tree of installed modules:
+    </li>
+   </ul>
+   <p>
+    <pre><code>npm list</code></pre>
+   </p>
+   <ul>
+    <li>
+     Interactively create a package.json file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>npm init</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

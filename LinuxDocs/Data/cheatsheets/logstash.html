@@ -1,0 +1,48 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    logstash
+   </h1>
+   <blockquote>
+    <p>
+     An ETL (extract, transform and load) tool.
+  Commonly used to load data from various sources, like databases and log files, into elasticsearch.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Check validity of a logstash configuration:
+    </li>
+   </ul>
+   <p>
+    <pre><code>logstash --configtest --config {{logstash_config.conf}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run logstash using configuration:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo logstash --config {{logstash_config.conf}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run logstash with the most basic inline configuration string:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo logstash -e 'input {} filter {} output {}'</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

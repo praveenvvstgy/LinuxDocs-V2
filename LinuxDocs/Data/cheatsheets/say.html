@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    say
+   </h1>
+   <blockquote>
+    <p>
+     Converts text to speech.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Say a phrase aloud:
+    </li>
+   </ul>
+   <p>
+    <pre><code>say {{"I like to ride my bike."}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Read a file aloud:
+    </li>
+   </ul>
+   <p>
+    <pre><code>say -f {{filename.txt}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Say a phrase with a custom voice and speech rate:
+    </li>
+   </ul>
+   <p>
+    <pre><code>say -v {{voice}} -r {{words_per_minute}} {{"I'm sorry Dave, I can't let you do that."}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List the available voices:
+    </li>
+   </ul>
+   <p>
+    <pre><code>say -v ?</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create an audio file of the spoken text:
+    </li>
+   </ul>
+   <p>
+    <pre><code>say -o {{filename.aiff}} {{"Here's to the Crazy Ones."}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

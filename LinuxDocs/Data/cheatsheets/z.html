@@ -1,0 +1,75 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    z
+   </h1>
+   <blockquote>
+    <p>
+     Tracks the most used directories and enables quickly navigating to them using string or regex patterns.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Go to a directory that contains "foo" in the name:
+    </li>
+   </ul>
+   <p>
+    <pre><code>z {{foo}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Go to a directory that contains "foo" and then "bar":
+    </li>
+   </ul>
+   <p>
+    <pre><code>z {{foo}} {{bar}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Go to the highest-ranked directory matching "foo":
+    </li>
+   </ul>
+   <p>
+    <pre><code>z -r {{foo}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Go to the most recently accessed directory matching "foo":
+    </li>
+   </ul>
+   <p>
+    <pre><code>z -t {{foo}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all directories in
+     <pre><code>z</code></pre>
+     's database matching "foo":
+    </li>
+   </ul>
+   <p>
+    <pre><code>z -l {{foo}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove the current directory from
+     <pre><code>z</code></pre>
+     's database:
+    </li>
+   </ul>
+   <p>
+    <pre><code>z -x .</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

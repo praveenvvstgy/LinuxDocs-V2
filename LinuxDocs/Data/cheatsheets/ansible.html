@@ -1,0 +1,72 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    ansible
+   </h1>
+   <blockquote>
+    <p>
+     Manage groups of computers remotely over SSH.
+  Use the /etc/ansible/hosts file to add new groups/hosts.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     List hosts belonging to a group:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ansible {{group}} --list-hosts</code></pre>
+   </p>
+   <ul>
+    <li>
+     Ping a group of hosts by invoking the ping module:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ansible {{group}} -m ping</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display facts about a group of hosts by invoking the setup module:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ansible {{group}} -m setup</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute a command on a group of hosts by invoking command module with arguments:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ansible {{group}} -m command -a '{{my command}}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute a command with administrative privileges:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ansible {{group}} --become --ask-become-pass -m command -a '{{my command}}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute a command using a custom inventory file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ansible {{group}} -i {{inventory_file}} -m command -a '{{my command}}'</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    eyeD3
+   </h1>
+   <blockquote>
+    <p>
+     Read and manipulate metadata of MP3 files.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     View information about an MP3 file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>eyeD3 {{filename.mp3}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set the title of an MP3 file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>eyeD3 --title {{"A Title"}} {{filename.mp3}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set the album of all the MP3 files in a directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>eyeD3 --album {{"Album Name"}} {{*.mp3}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set the front cover art for an MP3 file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>eyeD3 --add-image {{front_cover.jpeg}}:FRONT_COVER: {{filename.mp3}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

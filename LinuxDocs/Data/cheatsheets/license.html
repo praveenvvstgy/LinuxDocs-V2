@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    license
+   </h1>
+   <blockquote>
+    <p>
+     Create license files for open-source projects.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Print a license to stdout, using the defaults (auto-detected author name, and current year):
+    </li>
+   </ul>
+   <p>
+    <pre><code>license {{license_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Generate a license and save it to a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>license -o {{filename}} {{license_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all available licenses:
+    </li>
+   </ul>
+   <p>
+    <pre><code>license ls</code></pre>
+   </p>
+   <ul>
+    <li>
+     Generate a license with custom author name and year:
+    </li>
+   </ul>
+   <p>
+    <pre><code>license --name {{author}} --year {{release_year}} {{license_name}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

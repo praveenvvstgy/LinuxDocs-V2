@@ -1,0 +1,86 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    xclip
+   </h1>
+   <blockquote>
+    <p>
+     X11 clipboard manipulation tool, similar to
+     <pre><code>xsel</code></pre>
+     .
+  Handles the X primary and secondary selections, plus the system clipboard (
+     <pre><code>Ctrl + C</code></pre>
+     /
+     <pre><code>Ctrl + V</code></pre>
+     ).
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Copy the output from a command to the X11 primary selection area (clipboard):
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo 123 | xclip</code></pre>
+   </p>
+   <ul>
+    <li>
+     Copy the output from a command to a given X11 selection area:
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo 123 | xclip -selection {{primary|secondary|clipboard}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Copy the contents of a file to the system clipboard, using short notation:
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo 123 | xclip -sel clip</code></pre>
+   </p>
+   <ul>
+    <li>
+     Copy the contents of a file into the system clipboard:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xclip -sel clip {{input_file.txt}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Paste the contents of the X11 primary selection area to the console:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xclip -o</code></pre>
+   </p>
+   <ul>
+    <li>
+     Paste the contents of the system clipboard to the console:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xclip -o -sel clip</code></pre>
+   </p>
+   <ul>
+    <li>
+     Paste the contents of the system clipboard into a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xclip -o -sel clip &gt; {{output_file.txt}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

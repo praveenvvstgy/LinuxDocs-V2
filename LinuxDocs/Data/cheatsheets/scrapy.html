@@ -1,0 +1,79 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    scrapy
+   </h1>
+   <blockquote>
+    <p>
+     Web-crawling framework.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create a project:
+    </li>
+   </ul>
+   <p>
+    <pre><code>scrapy startproject {{project_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a spider (in project directory):
+    </li>
+   </ul>
+   <p>
+    <pre><code>scrapy genspider {{spider_name}} {{website_domain}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Edit spider (in project directory):
+    </li>
+   </ul>
+   <p>
+    <pre><code>scrapy edit {{spider_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run spider (in project directory):
+    </li>
+   </ul>
+   <p>
+    <pre><code>scrapy crawl {{spider_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Fetch a webpage as scrapy sees it and print source in stdout:
+    </li>
+   </ul>
+   <p>
+    <pre><code>scrapy fetch {{url}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Open a webpage in the default browser as scrapy sees it (disable javascript for extra fidelity):
+    </li>
+   </ul>
+   <p>
+    <pre><code>scrapy view {{url}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Open scrapy shell for url, which allows interaction with the page source in python shell (or ipython if available):
+    </li>
+   </ul>
+   <p>
+    <pre><code>scrapy shell {{url}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

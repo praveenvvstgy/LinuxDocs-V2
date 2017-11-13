@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    psql
+   </h1>
+   <blockquote>
+    <p>
+     PostgreSQL command-line client.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Connect to database. It connects to localhost using default port 5432 with default user as currently logged in user:
+    </li>
+   </ul>
+   <p>
+    <pre><code>psql {{database}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to database on given server host running on given port with given username, without a password prompt:
+    </li>
+   </ul>
+   <p>
+    <pre><code>psql -h {{host}} -p {{port}} -U {{username}} {{database}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to database; user will be prompted for password:
+    </li>
+   </ul>
+   <p>
+    <pre><code>psql -h {{host}} -p {{port}} -U {{username}} -W {{database}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute a single SQL query or PostgreSQL command on the given database (useful in shell scripts):
+    </li>
+   </ul>
+   <p>
+    <pre><code>psql -c '{{query}}' {{database}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute commands from a file on the given database:
+    </li>
+   </ul>
+   <p>
+    <pre><code>psql {{database}} -f {{file.sql}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git bisect
+   </h1>
+   <blockquote>
+    <p>
+     Use binary search to find the commit that introduced a bug.
+  Git automatically jumps back and forth in the commit graph to progressively narrow down the faulty commit.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Start a bisect session on a commit range bounded by a known buggy commit, and a known clean (typically older) one:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git bisect start {{bad_commit}} {{good_commit}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     For each commit that
+     <pre><code>git bisect</code></pre>
+     selects, mark it as "bad" or "good" after testing it for the issue:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git bisect {{good|bad}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     After
+     <pre><code>git bisect</code></pre>
+     pinpoints the faulty commit, end the bisect session and return to the previous branch:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git bisect reset</code></pre>
+   </p>
+   <ul>
+    <li>
+     Skip a commit during a bisect (e.g. one that fails the tests due to a different issue):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git bisect skip</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

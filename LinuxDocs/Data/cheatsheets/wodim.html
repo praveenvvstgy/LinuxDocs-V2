@@ -1,0 +1,60 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    wodim
+   </h1>
+   <blockquote>
+    <p>
+     Command (aliased as
+     <pre><code>cdrecord</code></pre>
+     on some systems) for recording data to CDs or DVDs.
+  Some invocations of wodim can cause destructive actions, such as erasing all the data on a disc.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Display optical drives available to
+     <pre><code>wodim</code></pre>
+     :
+    </li>
+   </ul>
+   <p>
+    <pre><code>wodim --devices</code></pre>
+   </p>
+   <ul>
+    <li>
+     Record ("burn") an audio-only disc:
+    </li>
+   </ul>
+   <p>
+    <pre><code>wodim dev=/dev/{{optical_drive}} -audio {{track*.cdaudio}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Burn a file to a disc, ejecting the disc once done (some recorders require this):
+    </li>
+   </ul>
+   <p>
+    <pre><code>wodim -eject dev=/dev/{{optical_drive}} -data {{file.iso}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Burn a file to the disc in an optical drive, potentially writing to multiple discs in succession:
+    </li>
+   </ul>
+   <p>
+    <pre><code>wodim -tao dev=/dev/{{optical_drive}} -data {{file.iso}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

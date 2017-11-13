@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    rm
+   </h1>
+   <blockquote>
+    <p>
+     Remove files or directories.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Remove files from arbitrary locations:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rm {{path/to/file}} {{path/to/another/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Recursively remove a directory and all its subdirectories:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rm -r {{path/to/folder}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Forcibly remove a directory, without prompting for confirmation or showing error messages:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rm -rf {{path/to/folder}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Interactively remove multiple files, with a prompt before every removal:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rm -i {{file(s)}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove files in verbose mode, printing a message for each removed file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rm -v {{path/to/folder/*}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

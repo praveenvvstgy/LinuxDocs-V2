@@ -1,0 +1,87 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    fly
+   </h1>
+   <blockquote>
+    <p>
+     Command line tool for concourse-ci.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Authenticate with and save concourse target:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fly --target {{target_name}} login --team-name {{team_name}} -c {{https://ci.example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List targets:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fly targets</code></pre>
+   </p>
+   <ul>
+    <li>
+     List pipelines:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fly -t {{target_name}} pipelines</code></pre>
+   </p>
+   <ul>
+    <li>
+     Upload or update a pipeline:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fly -t {{target_name}} set-pipeline --config {{pipeline.yml}} --pipeline {{pipeline_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Unpause pipeline:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fly -t {{target_name}} unpause-pipeline --pipeline {{pipeline_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show pipeline configuration:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fly -t {{target_name}} get-pipeline --pipeline {{pipeline_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Update local copy of fly:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fly -t {{target_name}} sync</code></pre>
+   </p>
+   <ul>
+    <li>
+     Destroy pipeline:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fly -t {{target_name}} destroy-pipeline --pipeline {{pipeline_name}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

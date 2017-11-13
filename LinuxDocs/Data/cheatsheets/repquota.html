@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    repquota
+   </h1>
+   <blockquote>
+    <p>
+     Display a summary of existing file quotas for a filesystem.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Report stats for all quotas in use:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo repquota -all</code></pre>
+   </p>
+   <ul>
+    <li>
+     Report quota stats for all users, even those who aren't using any of their quota:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo repquota -v {{filesystem}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Report on quotas for users only:
+    </li>
+   </ul>
+   <p>
+    <pre><code>repquota --user {{filesystem}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Report on quotas for groups only:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo repquota --group {{filesystem}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Report on used quota and limits in a human-readable format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo repquota --human-readable {{filesystem}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Report on all quotas for users and groups in a human-readable format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo repquota -augs</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

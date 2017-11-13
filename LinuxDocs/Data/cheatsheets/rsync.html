@@ -1,0 +1,72 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    rsync
+   </h1>
+   <blockquote>
+    <p>
+     Transfer files either to or from a remote host (not between two remote hosts).
+  Can transfer single files, or multiple files matching a pattern.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Transfer file from local to remote host:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rsync {{path/to/file}} {{remote_host_name}}:{{remote_host_location}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Transfer file from remote host to local:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rsync {{remote_host_name}}:{{remote_file_location}} {{local_file_location}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Transfer file in archive (to preserve attributes) and compressed (zipped) mode:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rsync -az {{path/to/file}} {{remote_host_name}}:{{remote_host_location}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Transfer a directory and all its children from a remote to local:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rsync -r {{remote_host_name}}:{{remote_folder_location}} {{local_folder_location}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Transfer only updated files from remote host:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rsync -ru {{remote_host_name}}:{{remote_folder_location}} {{local_folder_location}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Transfer file over SSH and show progress:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rsync -e ssh --progress {{remote_host_name}}:{{remote_file}} {{local_file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

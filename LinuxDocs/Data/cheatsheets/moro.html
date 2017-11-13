@@ -1,0 +1,83 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    moro
+   </h1>
+   <blockquote>
+    <p>
+     Track work time.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Invoke
+     <pre><code>moro</code></pre>
+     without parameters, to set the current time as the start of the working day:
+    </li>
+   </ul>
+   <p>
+    <pre><code>moro</code></pre>
+   </p>
+   <ul>
+    <li>
+     Specify a custom time for the start of the working day:
+    </li>
+   </ul>
+   <p>
+    <pre><code>moro hi {{09:30}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Invoke
+     <pre><code>moro</code></pre>
+     without parameters a second time, to set the current time at the end of the working day:
+    </li>
+   </ul>
+   <p>
+    <pre><code>moro</code></pre>
+   </p>
+   <ul>
+    <li>
+     Specify a custom time for the end of the working day:
+    </li>
+   </ul>
+   <p>
+    <pre><code>moro bye {{17:30}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Add a note on the current working day:
+    </li>
+   </ul>
+   <p>
+    <pre><code>moro note {{3 hours on project Foo}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show a report of time logs and notes for the current working day:
+    </li>
+   </ul>
+   <p>
+    <pre><code>moro report</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show a report of time logs and notes for all working days on record:
+    </li>
+   </ul>
+   <p>
+    <pre><code>moro report --all</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

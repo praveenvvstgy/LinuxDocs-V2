@@ -1,0 +1,79 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    gist
+   </h1>
+   <blockquote>
+    <p>
+     Upload code to https://gist.github.com.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Login in gist on this computer:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gist --login</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a gist from any number of text files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gist {{file.txt}} {{file2.txt}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a private gist with a description:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gist -p -d {{"A meaningful description"}} {{file.txt}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Read contents from STDIN and create a gist from it:
+    </li>
+   </ul>
+   <p>
+    <pre><code>{{echo "hello world"}} | gist</code></pre>
+   </p>
+   <ul>
+    <li>
+     List your public and private gists:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gist -l</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all gists for the currently logged in user:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gist -l {{user_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Use the id from the gist URL to modify or include a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gist -u {{GIST_ID}} {{file.txt}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

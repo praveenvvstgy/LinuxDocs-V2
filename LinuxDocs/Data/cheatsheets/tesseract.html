@@ -1,0 +1,65 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    tesseract
+   </h1>
+   <blockquote>
+    <p>
+     OCR (Optical Character Recognition) engine.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Recognize text in an image and save it to
+     <pre><code>output.txt</code></pre>
+     (the '.txt' extension is added automatically):
+    </li>
+   </ul>
+   <p>
+    <pre><code>tesseract {{image.png}} {{output}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Specify a custom language (default is English) with an ISO 639-2 code (e.g. deu = Deutsch = German):
+    </li>
+   </ul>
+   <p>
+    <pre><code>tesseract -l deu {{image.png}} {{output}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List the ISO 639-2 codes of available languages:
+    </li>
+   </ul>
+   <p>
+    <pre><code>tesseract --list-langs</code></pre>
+   </p>
+   <ul>
+    <li>
+     Specify a custom page segmentation mode (default is 3):
+    </li>
+   </ul>
+   <p>
+    <pre><code>tesseract -psm {{0_to_10}} {{image.png}} {{output}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List page segmentation modes and their descriptions:
+    </li>
+   </ul>
+   <p>
+    <pre><code>tesseract --help-psm</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

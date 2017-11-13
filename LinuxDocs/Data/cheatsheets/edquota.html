@@ -1,0 +1,76 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    edquota
+   </h1>
+   <blockquote>
+    <p>
+     Edit quotas for a user or group. By default it operates on all file systems with quotas.
+  Quota information is stored permanently in the
+     <pre><code>quota.user</code></pre>
+     and
+     <pre><code>quota.group</code></pre>
+     files in the root of the filesystem.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Edit quota of the current user:
+    </li>
+   </ul>
+   <p>
+    <pre><code>edquota --user $(whoami)</code></pre>
+   </p>
+   <ul>
+    <li>
+     Edit quota of a specific user:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo edquota --user {{username}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Edit quota for a group:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo edquota --group {{group}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Restrict operations to a given filesystem (by default edquota operates on all filesystems with quotas):
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo edquota --file-system {{filesystem}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Edit the default grace period:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo edquota -t</code></pre>
+   </p>
+   <ul>
+    <li>
+     Duplicate a quota to other users:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo edquota -p {{reference_user}} {{destination_user1}} {{destination_user2}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

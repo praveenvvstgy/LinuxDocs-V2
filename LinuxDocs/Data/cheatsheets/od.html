@@ -1,0 +1,76 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    od
+   </h1>
+   <blockquote>
+    <p>
+     Display file contents in octal, decimal or hexadecimal format.
+  Optionally display the byte offsets and/or printable representation for each line.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Display file using default settings: octal format, 8 bytes per line, byte offsets in octal, and duplicate lines replaced with
+     <pre><code>*</code></pre>
+     :
+    </li>
+   </ul>
+   <p>
+    <pre><code>od {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display file in verbose mode, i.e. without replacing duplicate lines with
+     <pre><code>*</code></pre>
+     :
+    </li>
+   </ul>
+   <p>
+    <pre><code>od -v {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display file in hexadecimal format (2-byte units), with byte offsets in decimal format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>od --format={{x}} --address-radix={{d}} -v {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display file in hexadecimal format (1-byte units), and 4 bytes per line:
+    </li>
+   </ul>
+   <p>
+    <pre><code>od --format={{x1}} --width={{4}} -v {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display file in hexadecimal format along with its character representation, and do not print byte offsets:
+    </li>
+   </ul>
+   <p>
+    <pre><code>od --format={{xz}} --address-radix={{n}} -v {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Read only 100 bytes of a file starting from the 500th byte:
+    </li>
+   </ul>
+   <p>
+    <pre><code>od --read-bytes {{100}} --skip-bytes={{500}} -v {{path/to/file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

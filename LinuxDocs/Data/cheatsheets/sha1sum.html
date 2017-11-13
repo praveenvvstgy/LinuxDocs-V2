@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    sha1sum
+   </h1>
+   <blockquote>
+    <p>
+     Calculate SHA1 cryptographic checksums.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Calculate the SHA1 checksum for a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sha1sum {{filename1}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Calculate SHA1 checksums for multiple files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sha1sum {{filename1}} {{filename2}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Read a file of SHA1 sums and verify all files have matching checksums:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sha1sum -c {{filename.sha1}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

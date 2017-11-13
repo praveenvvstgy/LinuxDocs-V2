@@ -1,0 +1,56 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    lvcreate
+   </h1>
+   <blockquote>
+    <p>
+     Creates a logical volume in an existing volume group.
+  A volume group is a collection of logical and physical volumes.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create a logical volume of 10 gigabytes in the volume group vg1:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lvcreate -L {{10G}} {{vg1}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a 1500 megabyte linear logical volume named mylv in the volume group vg1:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lvcreate -L {{1500}} -n {{mylv}} {{vg1}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a logical volume called mylv that uses 60% of the total space in volume group vg1:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lvcreate -l {{60%VG}} -n {{mylv}} {{vg1}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a logical volume called mylv that uses all of the unallocated space in the volume group vg1:
+    </li>
+   </ul>
+   <p>
+    <pre><code>lvcreate -l {{100%FREE}} -n {{mylv}} {{vg1}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

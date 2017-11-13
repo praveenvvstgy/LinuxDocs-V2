@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    sar
+   </h1>
+   <blockquote>
+    <p>
+     Monitor performance of various Linux subsystems.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Report I/O and transfer rate issued to physical devices, one per second (press CTRL+C to quit):
+    </li>
+   </ul>
+   <p>
+    <pre><code>sar -b {{1}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Report a total of 10 network device statistics, one per 2 seconds:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sar -n DEV {{2}} {{10}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Report CPU utilization, one per 2 seconds:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sar -u ALL {{2}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Report a total of 20 memory utilization statistics, one per second:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sar -r ALL {{1}} {{20}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Report the run queue length and load averages, one per second:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sar -q {{1}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Report paging statistics, one per 5 seconds:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sar -B {{5}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

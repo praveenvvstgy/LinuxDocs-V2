@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    fd
+   </h1>
+   <blockquote>
+    <p>
+     A simple, fast and user-friendly alternative to find.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Find files under current directory that match a pattern:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fd {{pattern}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Find files that begin with foo:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fd {{'^foo'}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Find files with a specific extension:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fd --extension {{.ext}} {{pattern}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Find files under a specific directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fd {{pattern}} {{path/to/dir}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Include ignored and hidden files in search:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fd --hidden --no-ignore {{pattern}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

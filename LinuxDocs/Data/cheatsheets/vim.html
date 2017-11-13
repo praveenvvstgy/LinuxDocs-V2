@@ -1,0 +1,98 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    vim
+   </h1>
+   <blockquote>
+    <p>
+     Vi IMproved, a programmer's text editor, providing several modes for different kinds of text manipulation.
+  Pressing
+     <pre><code>i</code></pre>
+     enters edit mode.
+     <pre><code>&lt;Esc&gt;</code></pre>
+     goes back to normal mode, which doesn't allow regular text insertion.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Open a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>vim {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Enter text editing mode (insert mode):
+    </li>
+   </ul>
+   <p>
+    <pre><code>&lt;Esc&gt;i</code></pre>
+   </p>
+   <ul>
+    <li>
+     Copy ("yank") or cut ("delete") the current line (paste it with
+     <pre><code>P</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>&lt;Esc&gt;{{yy|dd}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Undo the last operation:
+    </li>
+   </ul>
+   <p>
+    <pre><code>&lt;Esc&gt;u</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search for a pattern in the file (press
+     <pre><code>n</code></pre>
+     /
+     <pre><code>N</code></pre>
+     to go to next/previous match):
+    </li>
+   </ul>
+   <p>
+    <pre><code>&lt;Esc&gt;/{{search_pattern}}&lt;Enter&gt;</code></pre>
+   </p>
+   <ul>
+    <li>
+     Perform a regex substitution in the whole file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>&lt;Esc&gt;:%s/{{pattern}}/{{replacement}}/g&lt;Enter&gt;</code></pre>
+   </p>
+   <ul>
+    <li>
+     Save (write) the file, and quit:
+    </li>
+   </ul>
+   <p>
+    <pre><code>&lt;Esc&gt;:wq&lt;Enter&gt;</code></pre>
+   </p>
+   <ul>
+    <li>
+     Quit without saving:
+    </li>
+   </ul>
+   <p>
+    <pre><code>&lt;Esc&gt;:q!&lt;Enter&gt;</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

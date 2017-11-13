@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    losetup
+   </h1>
+   <blockquote>
+    <p>
+     Set up and control loop devices.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     List loop devices with detailed info:
+    </li>
+   </ul>
+   <p>
+    <pre><code>losetup -a</code></pre>
+   </p>
+   <ul>
+    <li>
+     Attach a file to a given loop device:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo losetup /dev/{{loop}} /{{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Detach all loop devices:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo losetup -D</code></pre>
+   </p>
+   <ul>
+    <li>
+     Detach a given loop device:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo losetup -d /dev/{{loop}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

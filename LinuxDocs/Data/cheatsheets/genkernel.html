@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    genkernel
+   </h1>
+   <blockquote>
+    <p>
+     Gentoo Linux utility to compile and install kernels.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Automatically compile and install a generic kernel:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo genkernel all</code></pre>
+   </p>
+   <ul>
+    <li>
+     Build and install the bzImage|initramfs|kernel|ramdisk only:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo genkernel {{bzImage|initramfs|kernel|ramdisk}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Apply changes to the kernel configuration before compiling and installing:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo genkernel --menuconfig all</code></pre>
+   </p>
+   <ul>
+    <li>
+     Generate a kernel with a custom name:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo genkernel --kernname={{custom_name}} all</code></pre>
+   </p>
+   <ul>
+    <li>
+     Use a kernel source outside of the default directory /usr/src/linux:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo genkernel --kerneldir={{path/to/directory}} all</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    stack
+   </h1>
+   <blockquote>
+    <p>
+     Tool for managing Haskell projects.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create a new project:
+    </li>
+   </ul>
+   <p>
+    <pre><code>stack new {{project_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Install all packages needed by a project:
+    </li>
+   </ul>
+   <p>
+    <pre><code>stack install</code></pre>
+   </p>
+   <ul>
+    <li>
+     Compile a project:
+    </li>
+   </ul>
+   <p>
+    <pre><code>stack build</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run tests inside a project:
+    </li>
+   </ul>
+   <p>
+    <pre><code>stack test</code></pre>
+   </p>
+   <ul>
+    <li>
+     Compile a project and re-compile every time a file changes:
+    </li>
+   </ul>
+   <p>
+    <pre><code>stack build --file-watch</code></pre>
+   </p>
+   <ul>
+    <li>
+     Compile a project and execute a command after compilation:
+    </li>
+   </ul>
+   <p>
+    <pre><code>stack build --exec "{{command}}"</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

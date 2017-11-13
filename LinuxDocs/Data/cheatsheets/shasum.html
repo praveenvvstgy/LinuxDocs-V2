@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    shasum
+   </h1>
+   <blockquote>
+    <p>
+     Calculate or check cryptographic SHA checksums.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Calculate the SHA1 checksum for a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>shasum {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Calculate the SHA256 checksum for a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>shasum --algorithm 256 {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Calculate the SHA512 checksum for multiple files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>shasum --algorithm 512 {{filename1}} {{filename2}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Check a file with a list of sums against the directory's files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>shasum --check {{list_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Calculate the SHA1 checksum from stdin:
+    </li>
+   </ul>
+   <p>
+    <pre><code>{{somecommand}} | shasum</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

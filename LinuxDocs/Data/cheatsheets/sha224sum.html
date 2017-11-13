@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    sha224sum
+   </h1>
+   <blockquote>
+    <p>
+     Calculate SHA224 cryptographic checksums.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Calculate the SHA224 checksum for a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sha224sum {{filename1}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Calculate SHA224 checksums for multiple files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sha224sum {{filename1}} {{filename2}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Read a file of SHA224 sums and verify all files have matching checksums:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sha224sum -c {{filename.sha224}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

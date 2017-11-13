@@ -1,0 +1,78 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    alias
+   </h1>
+   <blockquote>
+    <p>
+     Creates aliases -- words that are replaced by a command string.
+  Aliases expire with the current shell session, unless they're defined in the shell's configuration file, e.g.
+     <pre><code>~/.bashrc</code></pre>
+     .
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create a generic alias:
+    </li>
+   </ul>
+   <p>
+    <pre><code>alias {{word}}="{{command}}"</code></pre>
+   </p>
+   <ul>
+    <li>
+     View the command associated to a given alias:
+    </li>
+   </ul>
+   <p>
+    <pre><code>alias {{word}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove an aliased command:
+    </li>
+   </ul>
+   <p>
+    <pre><code>unalias {{word}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all aliased words:
+    </li>
+   </ul>
+   <p>
+    <pre><code>alias -p</code></pre>
+   </p>
+   <ul>
+    <li>
+     Turn rm into an interactive command:
+    </li>
+   </ul>
+   <p>
+    <pre><code>alias {{rm}}="{{rm -i}}"</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create
+     <pre><code>la</code></pre>
+     as a shortcut for
+     <pre><code>ls -a</code></pre>
+     :
+    </li>
+   </ul>
+   <p>
+    <pre><code>alias {{la}}="{{ls -a}}"</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

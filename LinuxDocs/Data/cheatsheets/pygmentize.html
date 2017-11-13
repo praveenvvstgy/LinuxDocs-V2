@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    pygmentize
+   </h1>
+   <blockquote>
+    <p>
+     Python-based syntax highlighter.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Highlight file syntax and print to standard output (language is inferred from the file extension):
+    </li>
+   </ul>
+   <p>
+    <pre><code>pygmentize {{file.py}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Explicitly set the language for syntax highlighting:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pygmentize -l {{javascript}} {{input_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List available lexers (processors for input languages):
+    </li>
+   </ul>
+   <p>
+    <pre><code>pygmentize -L lexers</code></pre>
+   </p>
+   <ul>
+    <li>
+     Save output to a file in HTML format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pygmentize -f html -o {{output_file.html}} {{input_file.py}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List available output formats:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pygmentize -L formatters</code></pre>
+   </p>
+   <ul>
+    <li>
+     Output an HTML file, with additional formatter options (full page, with line numbers):
+    </li>
+   </ul>
+   <p>
+    <pre><code>pygmentize -f html -O "full,linenos=True" -o {{output_file.html}} {{input_file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

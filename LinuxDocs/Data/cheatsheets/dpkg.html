@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    dpkg
+   </h1>
+   <blockquote>
+    <p>
+     Debian package manager.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Install a package:
+    </li>
+   </ul>
+   <p>
+    <pre><code>dpkg -i {{/path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove a package:
+    </li>
+   </ul>
+   <p>
+    <pre><code>dpkg -r {{package_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List installed packages:
+    </li>
+   </ul>
+   <p>
+    <pre><code>dpkg -l {{pattern}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List package contents:
+    </li>
+   </ul>
+   <p>
+    <pre><code>dpkg -L {{package_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Find out which package owns a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>dpkg -S {{file_name}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

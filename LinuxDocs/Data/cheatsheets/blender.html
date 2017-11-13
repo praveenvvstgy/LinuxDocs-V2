@@ -1,0 +1,86 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    blender
+   </h1>
+   <blockquote>
+    <p>
+     Command-line interface to the Blender 3D computer graphics application.
+  Arguments are executed in the order they are given.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Render all frames of an animation in the background, without loading the UI (output is saved to
+     <pre><code>/tmp</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>blender -b {{filename}}.blend -a</code></pre>
+   </p>
+   <ul>
+    <li>
+     Render an animation using a specific image naming pattern, in a path relative (
+     <pre><code>//</code></pre>
+     ) to the .blend file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>blender -b {{filename}}.blend -o //{{render/frame_###.png}} -a</code></pre>
+   </p>
+   <ul>
+    <li>
+     Render the 10th frame of an animation as a single image, saved to an existing folder (absolute path):
+    </li>
+   </ul>
+   <p>
+    <pre><code>blender -b {{filename}}.blend -o {{/path/to/output_folder}} -f {{10}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Render the second last frame in an animation as a JPEG image, saved to an existing folder (relative path):
+    </li>
+   </ul>
+   <p>
+    <pre><code>blender -b {{filename}}.blend -o //{{output_folder}} -F {{JPEG}} -f {{-2}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Render the animation of a specific scene, starting at frame 10 and ending at frame 500:
+    </li>
+   </ul>
+   <p>
+    <pre><code>blender -b {{filename}}.blend -S {{scene_name}} -s {{10}} -e {{500}} -a</code></pre>
+   </p>
+   <ul>
+    <li>
+     Render an animation at a specific resolution, by passing a Python expression:
+    </li>
+   </ul>
+   <p>
+    <pre><code>blender -b {{filename}}.blend --python-expr '{{import bpy; bpy.data.scenes[0].render.resolution_percentage = 25}}' -a</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start an interactive Blender session in the terminal with a python console (do
+     <pre><code>import bpy</code></pre>
+     after starting):
+    </li>
+   </ul>
+   <p>
+    <pre><code>blender -b --python-console</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

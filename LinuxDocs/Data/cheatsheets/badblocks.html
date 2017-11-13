@@ -1,0 +1,48 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    badblocks
+   </h1>
+   <blockquote>
+    <p>
+     Search a device for bad blocks.
+  Some usages of badblocks can cause destructive actions, such as erasing all the data on a disk, including the partition table.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Search a disk for bad blocks by using a non-destructive read-only test:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo badblocks {{/dev/sda}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search an unmounted disk for bad blocks with a non-destructive read-write test:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo badblocks -n {{/dev/sda}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search an unmounted disk for bad blocks with a destructive write test:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo badblocks -w {{/dev/sda}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

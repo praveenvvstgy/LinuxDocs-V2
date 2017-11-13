@@ -1,0 +1,57 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    tail
+   </h1>
+   <blockquote>
+    <p>
+     Display the last part of a file.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Show last 'num' lines in file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>tail -n {{num}} {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show all file since line 'num':
+    </li>
+   </ul>
+   <p>
+    <pre><code>tail -n +{{num}} {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show last 'num' bytes in file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>tail -c {{num}} {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Keep reading file until
+     <pre><code>Ctrl + C</code></pre>
+     :
+    </li>
+   </ul>
+   <p>
+    <pre><code>tail -f {{file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

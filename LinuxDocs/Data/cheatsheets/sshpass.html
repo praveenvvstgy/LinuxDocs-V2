@@ -1,0 +1,48 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    sshpass
+   </h1>
+   <blockquote>
+    <p>
+     An ssh password provider.
+  It works by creating a TTY, feeding the password into it, and then redirecting stdin to the ssh session.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Connect to a remote server using a password supplied on a file descriptor (in this case, stdin):
+    </li>
+   </ul>
+   <p>
+    <pre><code>sshpass -d {{0}} ssh {{user}}@{{hostname}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to a remote server with the password supplied as an option, and automatically accept unknown ssh keys:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sshpass -p {{password}} ssh -o StrictHostKeyChecking=no {{user}}@{{hostname}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to a remote server using the first line of a file as the password, automatically accept unknown ssh keys, and launch a command:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sshpass -f {{file}} ssh -o StrictHostKeyChecking=no {{user}}@{{hostname}} "{{command}}"</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

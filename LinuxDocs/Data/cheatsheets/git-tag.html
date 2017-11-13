@@ -1,0 +1,72 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git tag
+   </h1>
+   <blockquote>
+    <p>
+     Create, list, delete or verify tags.
+  A tag is a static reference to a specific commit.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     List all tags:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git tag</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a tag with the given name pointing to the current commit:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git tag {{tag_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create an annotated tag with the given message:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git tag {{tag_name}} -m {{tag_message}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Delete the tag with the given name:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git tag -d {{tag_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Get updated tags from upstream:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git fetch --tags</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all tags whose ancestors include a given commit:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git tag --contains {{commit}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -16,7 +16,29 @@
 		AC3087C51FB64C74007846FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3087C31FB64C74007846FC /* LaunchScreen.storyboard */; };
 		AC3087D01FB64C75007846FC /* LinuxDocsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087CF1FB64C75007846FC /* LinuxDocsTests.swift */; };
 		AC3087DB1FB64C75007846FC /* LinuxDocsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087DA1FB64C75007846FC /* LinuxDocsUITests.swift */; };
-		AC3087EB1FB64D44007846FC /* DocsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087EA1FB64D44007846FC /* DocsTableViewController.swift */; };
+		AC3087EE1FB66DBC007846FC /* DocsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087ED1FB66DBC007846FC /* DocsTableViewController.swift */; };
+		AC3087F71FB7982F007846FC /* manpages.json in Resources */ = {isa = PBXBuildFile; fileRef = AC3087F61FB7982F007846FC /* manpages.json */; };
+		AC3087FA1FB79C0B007846FC /* ManPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087F91FB79C0B007846FC /* ManPage.swift */; };
+		AC3087FC1FB7D6BC007846FC /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087FB1FB7D6BC007846FC /* HomeTabBarViewController.swift */; };
+		AC3087FF1FB7D751007846FC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087FE1FB7D751007846FC /* Constant.swift */; };
+		AC9B16991FB817D800BA395F /* DocTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B16971FB817D800BA395F /* DocTableViewCell.swift */; };
+		AC9B169A1FB817D800BA395F /* DocTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9B16981FB817D800BA395F /* DocTableViewCell.xib */; };
+		AC9B169D1FB81BD200BA395F /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B169C1FB81BD200BA395F /* CALayerExtensions.swift */; };
+		AC9B169F1FB81CAE00BA395F /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B169E1FB81CAE00BA395F /* UIKitExtensions.swift */; };
+		AC9B16A11FB8B0A100BA395F /* cheatsheets.json in Resources */ = {isa = PBXBuildFile; fileRef = AC9B16A01FB8B0A100BA395F /* cheatsheets.json */; };
+		AC9B16A31FB8B0B100BA395F /* Cheatsheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B16A21FB8B0B100BA395F /* Cheatsheet.swift */; };
+		AC9B16A71FB8BC1F00BA395F /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B16A61FB8BC1F00BA395F /* PaddingLabel.swift */; };
+		AC9B16AE1FB8BFCE00BA395F /* DocBrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B16AC1FB8BFCE00BA395F /* DocBrowseViewController.swift */; };
+		AC9B16AF1FB8BFCE00BA395F /* DocBrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9B16AD1FB8BFCE00BA395F /* DocBrowseViewController.xib */; };
+		AC9B213A1FB8CDE300BA395F /* cheatsheets in Resources */ = {isa = PBXBuildFile; fileRef = AC9B21391FB8CDE300BA395F /* cheatsheets */; };
+		AC9B21471FB96C7C00BA395F /* stylesheet in Resources */ = {isa = PBXBuildFile; fileRef = AC9B213F1FB96C7200BA395F /* stylesheet */; };
+		AC9B21531FB977F600BA395F /* man8 in Resources */ = {isa = PBXBuildFile; fileRef = AC9B214C1FB977EC00BA395F /* man8 */; };
+		AC9B21541FB977F600BA395F /* man2 in Resources */ = {isa = PBXBuildFile; fileRef = AC9B214D1FB977ED00BA395F /* man2 */; };
+		AC9B21551FB977F600BA395F /* man5 in Resources */ = {isa = PBXBuildFile; fileRef = AC9B214E1FB977EF00BA395F /* man5 */; };
+		AC9B21561FB977F600BA395F /* man1 in Resources */ = {isa = PBXBuildFile; fileRef = AC9B214F1FB977F000BA395F /* man1 */; };
+		AC9B21571FB977F600BA395F /* man3 in Resources */ = {isa = PBXBuildFile; fileRef = AC9B21501FB977F400BA395F /* man3 */; };
+		AC9B21581FB977F600BA395F /* man7 in Resources */ = {isa = PBXBuildFile; fileRef = AC9B21511FB977F500BA395F /* man7 */; };
+		AC9B21591FB977F600BA395F /* man4 in Resources */ = {isa = PBXBuildFile; fileRef = AC9B21521FB977F600BA395F /* man4 */; };
 		FE0214645E9936396215BF98 /* Pods_LinuxDocsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4AC1B64180C9AF9E834A8D /* Pods_LinuxDocsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +77,29 @@
 		AC3087D61FB64C75007846FC /* LinuxDocsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinuxDocsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3087DA1FB64C75007846FC /* LinuxDocsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxDocsUITests.swift; sourceTree = "<group>"; };
 		AC3087DC1FB64C75007846FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC3087EA1FB64D44007846FC /* DocsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsTableViewController.swift; sourceTree = "<group>"; };
+		AC3087ED1FB66DBC007846FC /* DocsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsTableViewController.swift; sourceTree = "<group>"; };
+		AC3087F61FB7982F007846FC /* manpages.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manpages.json; sourceTree = "<group>"; };
+		AC3087F91FB79C0B007846FC /* ManPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManPage.swift; sourceTree = "<group>"; };
+		AC3087FB1FB7D6BC007846FC /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		AC3087FE1FB7D751007846FC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AC9B16971FB817D800BA395F /* DocTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocTableViewCell.swift; sourceTree = "<group>"; };
+		AC9B16981FB817D800BA395F /* DocTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocTableViewCell.xib; sourceTree = "<group>"; };
+		AC9B169C1FB81BD200BA395F /* CALayerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtensions.swift; sourceTree = "<group>"; };
+		AC9B169E1FB81CAE00BA395F /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		AC9B16A01FB8B0A100BA395F /* cheatsheets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cheatsheets.json; sourceTree = "<group>"; };
+		AC9B16A21FB8B0B100BA395F /* Cheatsheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheatsheet.swift; sourceTree = "<group>"; };
+		AC9B16A61FB8BC1F00BA395F /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		AC9B16AC1FB8BFCE00BA395F /* DocBrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocBrowseViewController.swift; sourceTree = "<group>"; };
+		AC9B16AD1FB8BFCE00BA395F /* DocBrowseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocBrowseViewController.xib; sourceTree = "<group>"; };
+		AC9B21391FB8CDE300BA395F /* cheatsheets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cheatsheets; sourceTree = "<group>"; };
+		AC9B213F1FB96C7200BA395F /* stylesheet */ = {isa = PBXFileReference; lastKnownFileType = folder; path = stylesheet; sourceTree = "<group>"; };
+		AC9B214C1FB977EC00BA395F /* man8 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = man8; sourceTree = "<group>"; };
+		AC9B214D1FB977ED00BA395F /* man2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = man2; sourceTree = "<group>"; };
+		AC9B214E1FB977EF00BA395F /* man5 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = man5; sourceTree = "<group>"; };
+		AC9B214F1FB977F000BA395F /* man1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = man1; sourceTree = "<group>"; };
+		AC9B21501FB977F400BA395F /* man3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = man3; sourceTree = "<group>"; };
+		AC9B21511FB977F500BA395F /* man7 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = man7; sourceTree = "<group>"; };
+		AC9B21521FB977F600BA395F /* man4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = man4; sourceTree = "<group>"; };
 		AD4AC1B64180C9AF9E834A8D /* Pods_LinuxDocsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinuxDocsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9DEF5EB1B9218C5D6123A7 /* Pods-LinuxDocsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinuxDocsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinuxDocsTests/Pods-LinuxDocsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E05C6B1764F55C6470FF9B74 /* Pods_LinuxDocsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinuxDocsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +183,10 @@
 		AC3087B91FB64C74007846FC /* LinuxDocs */ = {
 			isa = PBXGroup;
 			children = (
+				AC9B169B1FB81BC200BA395F /* Extensions */,
+				AC3087FD1FB7D742007846FC /* Helpers */,
+				AC3087F81FB79BFF007846FC /* Model */,
+				AC3087EF1FB6749F007846FC /* Data */,
 				AC3087EC1FB64D80007846FC /* Views */,
 				AC3087E81FB64CE5007846FC /* Controllers */,
 				AC3087E91FB64D02007846FC /* Supporting Files */,
@@ -168,7 +216,10 @@
 			isa = PBXGroup;
 			children = (
 				AC3087BC1FB64C74007846FC /* BaseViewController.swift */,
-				AC3087EA1FB64D44007846FC /* DocsTableViewController.swift */,
+				AC3087ED1FB66DBC007846FC /* DocsTableViewController.swift */,
+				AC3087FB1FB7D6BC007846FC /* HomeTabBarViewController.swift */,
+				AC9B16AC1FB8BFCE00BA395F /* DocBrowseViewController.swift */,
+				AC9B16AD1FB8BFCE00BA395F /* DocBrowseViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,8 +239,63 @@
 		AC3087EC1FB64D80007846FC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC9B16971FB817D800BA395F /* DocTableViewCell.swift */,
+				AC9B16981FB817D800BA395F /* DocTableViewCell.xib */,
+				AC9B16A61FB8BC1F00BA395F /* PaddingLabel.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AC3087EF1FB6749F007846FC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AC9B213B1FB96C2600BA395F /* manpages */,
+				AC9B21391FB8CDE300BA395F /* cheatsheets */,
+				AC3087F61FB7982F007846FC /* manpages.json */,
+				AC9B16A01FB8B0A100BA395F /* cheatsheets.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AC3087F81FB79BFF007846FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC3087F91FB79C0B007846FC /* ManPage.swift */,
+				AC9B16A21FB8B0B100BA395F /* Cheatsheet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC3087FD1FB7D742007846FC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AC3087FE1FB7D751007846FC /* Constant.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AC9B169B1FB81BC200BA395F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC9B169C1FB81BD200BA395F /* CALayerExtensions.swift */,
+				AC9B169E1FB81CAE00BA395F /* UIKitExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC9B213B1FB96C2600BA395F /* manpages */ = {
+			isa = PBXGroup;
+			children = (
+				AC9B214F1FB977F000BA395F /* man1 */,
+				AC9B214D1FB977ED00BA395F /* man2 */,
+				AC9B21501FB977F400BA395F /* man3 */,
+				AC9B21521FB977F600BA395F /* man4 */,
+				AC9B214E1FB977EF00BA395F /* man5 */,
+				AC9B21511FB977F500BA395F /* man7 */,
+				AC9B214C1FB977EC00BA395F /* man8 */,
+				AC9B213F1FB96C7200BA395F /* stylesheet */,
+			);
+			path = manpages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,9 +414,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3087F71FB7982F007846FC /* manpages.json in Resources */,
+				AC9B16A11FB8B0A100BA395F /* cheatsheets.json in Resources */,
+				AC9B21531FB977F600BA395F /* man8 in Resources */,
+				AC9B21561FB977F600BA395F /* man1 in Resources */,
+				AC9B21591FB977F600BA395F /* man4 in Resources */,
+				AC9B16AF1FB8BFCE00BA395F /* DocBrowseViewController.xib in Resources */,
+				AC9B21571FB977F600BA395F /* man3 in Resources */,
 				AC3087C51FB64C74007846FC /* LaunchScreen.storyboard in Resources */,
+				AC9B169A1FB817D800BA395F /* DocTableViewCell.xib in Resources */,
 				AC3087C21FB64C74007846FC /* Assets.xcassets in Resources */,
+				AC9B21471FB96C7C00BA395F /* stylesheet in Resources */,
+				AC9B21581FB977F600BA395F /* man7 in Resources */,
+				AC9B21541FB977F600BA395F /* man2 in Resources */,
+				AC9B21551FB977F600BA395F /* man5 in Resources */,
 				AC3087C01FB64C74007846FC /* Main.storyboard in Resources */,
+				AC9B213A1FB8CDE300BA395F /* cheatsheets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,9 +604,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3087EB1FB64D44007846FC /* DocsTableViewController.swift in Sources */,
+				AC9B16A71FB8BC1F00BA395F /* PaddingLabel.swift in Sources */,
+				AC3087FF1FB7D751007846FC /* Constant.swift in Sources */,
+				AC9B16A31FB8B0B100BA395F /* Cheatsheet.swift in Sources */,
+				AC3087FA1FB79C0B007846FC /* ManPage.swift in Sources */,
+				AC9B169F1FB81CAE00BA395F /* UIKitExtensions.swift in Sources */,
+				AC3087EE1FB66DBC007846FC /* DocsTableViewController.swift in Sources */,
+				AC3087FC1FB7D6BC007846FC /* HomeTabBarViewController.swift in Sources */,
+				AC9B16AE1FB8BFCE00BA395F /* DocBrowseViewController.swift in Sources */,
+				AC9B16991FB817D800BA395F /* DocTableViewCell.swift in Sources */,
 				AC3087BD1FB64C74007846FC /* BaseViewController.swift in Sources */,
 				AC3087BB1FB64C74007846FC /* AppDelegate.swift in Sources */,
+				AC9B169D1FB81BD200BA395F /* CALayerExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

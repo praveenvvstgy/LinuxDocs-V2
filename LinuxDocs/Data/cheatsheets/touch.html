@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    touch
+   </h1>
+   <blockquote>
+    <p>
+     Change a file access and modification times (atime, mtime).
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create a new empty file(s) or change the times for existing file(s) to current time:
+    </li>
+   </ul>
+   <p>
+    <pre><code>touch {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set the times on a file to a specific date and time:
+    </li>
+   </ul>
+   <p>
+    <pre><code>touch -t {{YYYYMMDDHHMM.SS}} {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Use the times from a file to set the times on a second file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>touch -r {{filename}} {{filename2}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

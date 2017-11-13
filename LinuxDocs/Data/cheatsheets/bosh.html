@@ -1,0 +1,87 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    bosh
+   </h1>
+   <blockquote>
+    <p>
+     Command line tool to deploy and manage the bosh director.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create local alias for director:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bosh alias-env {{environment-name}} -e {{ip address or url}} --ca-cert {{ca_certificate}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List environments:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bosh environments</code></pre>
+   </p>
+   <ul>
+    <li>
+     Login to the director:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bosh login -e {{environment}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List deployments:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bosh -e {{environment}} deployments</code></pre>
+   </p>
+   <ul>
+    <li>
+     List environment virtual machines:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bosh -e {{environment}} vms -d {{deployment}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Ssh into virtual machine:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bosh -e {{environment}} ssh {{virtual machine}} -d {{deployment}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Upload stemcell:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bosh -e {{environment}} upload-stemcell {{stemcell file or url}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show current cloud config:
+    </li>
+   </ul>
+   <p>
+    <pre><code>bosh -e {{environment}} cloud-config</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

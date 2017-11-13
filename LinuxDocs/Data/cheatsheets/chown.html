@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    chown
+   </h1>
+   <blockquote>
+    <p>
+     Change user and group ownership of files and folders.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Change the owner user of a file/folder:
+    </li>
+   </ul>
+   <p>
+    <pre><code>chown {{user}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Change the owner user and group of a file/folder:
+    </li>
+   </ul>
+   <p>
+    <pre><code>chown {{user}}:{{group}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Recursively change the owner of a folder and its contents:
+    </li>
+   </ul>
+   <p>
+    <pre><code>chown -R {{user}} {{path/to/folder}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Change the owner of a symbolic link:
+    </li>
+   </ul>
+   <p>
+    <pre><code>chown -h {{user}} {{path/to/symlink}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Change the owner of a file/folder to match a reference file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>chown --reference={{path/to/reference_file}} {{path/to/file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

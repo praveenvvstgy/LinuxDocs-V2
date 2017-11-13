@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    pdfgrep
+   </h1>
+   <blockquote>
+    <p>
+     Search text in PDF files.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Find lines that match pattern in a PDF:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pdfgrep {{pattern}} {{file.pdf}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Include file name and page number for each matched line:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pdfgrep --with-filename --page-number {{pattern}} {{file.pdf}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Do a case insensitive search for lines that begin with "foo" and return the first 3 matches:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pdfgrep --max-count {{3}} --ignore-case {{'^foo'}} {{file.pdf}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Find pattern in files with a .pdf extension in the current directory recursively:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pdfgrep --recursive {{pattern}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Find pattern on files that match a specific glob in the current directory recursively:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pdfgrep --recursive --include {{'*book.pdf'}} {{pattern}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

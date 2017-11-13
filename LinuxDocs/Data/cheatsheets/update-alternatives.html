@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    update-alternatives
+   </h1>
+   <blockquote>
+    <p>
+     A convenient tool for maintaining symbolic links to determine default commands.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Add a symbolic link:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo update-alternatives --install {{path/to/symlink}} {{command_name}} {{path/to/command_binary}} {{priority}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Configure a symbolic link for "java":
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo update-alternatives --config {{java}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove a symbolic link:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo update-alternatives --remove {{java}} {{/opt/java/jdk1.8.0_102/bin/java}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display information about a specified command:
+    </li>
+   </ul>
+   <p>
+    <pre><code>update-alternatives --display {{java}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

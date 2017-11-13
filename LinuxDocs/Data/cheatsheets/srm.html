@@ -1,0 +1,56 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    srm
+   </h1>
+   <blockquote>
+    <p>
+     Securely remove files or directories.
+  Overwrites the existing data one or multiple times. Drop in replacement for rm.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Remove a file after a single-pass overwriting with random data:
+    </li>
+   </ul>
+   <p>
+    <pre><code>srm -s {{/path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove a file after seven passes of overwriting with random data:
+    </li>
+   </ul>
+   <p>
+    <pre><code>srm -m {{/path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Recursively remove a directory and its contents overwriting each file with a single-pass of random data:
+    </li>
+   </ul>
+   <p>
+    <pre><code>srm -r -s {{/path/to/folder}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Prompt before every removal:
+    </li>
+   </ul>
+   <p>
+    <pre><code>srm -i {{\*}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

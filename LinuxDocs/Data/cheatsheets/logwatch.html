@@ -1,0 +1,39 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    logwatch
+   </h1>
+   <blockquote>
+    <p>
+     Summarizes many different logs for common services (e.g., apache, pam_unix, sshd, etc.) in a single report.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Analyze logs for a range of dates at certain level of detail:
+    </li>
+   </ul>
+   <p>
+    <pre><code>logwatch --range {{yesterday|today|all|help}} --detail {{low|medium|others}}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Restrict report to only include information for a selected service:
+    </li>
+   </ul>
+   <p>
+    <pre><code>logwatch --range {{all}} --service {{apache|pam_unix|etc}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

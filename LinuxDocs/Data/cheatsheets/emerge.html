@@ -1,0 +1,79 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    emerge
+   </h1>
+   <blockquote>
+    <p>
+     Gentoo Linux package manager utility.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Synchronize all packages:
+    </li>
+   </ul>
+   <p>
+    <pre><code>emerge --sync</code></pre>
+   </p>
+   <ul>
+    <li>
+     Update all packages, including dependencies:
+    </li>
+   </ul>
+   <p>
+    <pre><code>emerge -uDNav @world</code></pre>
+   </p>
+   <ul>
+    <li>
+     Resume a failed updated, skipping the failing package:
+    </li>
+   </ul>
+   <p>
+    <pre><code>emerge --resume --skipfirst</code></pre>
+   </p>
+   <ul>
+    <li>
+     Install a new package, with confirmation:
+    </li>
+   </ul>
+   <p>
+    <pre><code>emerge -av {{package_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove a package, with confirmation:
+    </li>
+   </ul>
+   <p>
+    <pre><code>emerge -Cav {{package_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove orphaned packages (that were installed only as dependencies):
+    </li>
+   </ul>
+   <p>
+    <pre><code>emerge -avc</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search the package database for a keyword:
+    </li>
+   </ul>
+   <p>
+    <pre><code>emerge -S {{keyword}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

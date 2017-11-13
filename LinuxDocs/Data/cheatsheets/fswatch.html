@@ -1,0 +1,57 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    fswatch
+   </h1>
+   <blockquote>
+    <p>
+     A cross-platform file change monitor.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Run a bash command on file creation, update or deletion:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fswatch -0 {{path/to/file}} | xargs -0 {{bash_command}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Watch one or more files and/or directories:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fswatch -0 {{path/to/file}} {{path/to/directory}} {{path/to/another_directory/**/*.js}} | xargs -0 {{bash_command}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Use
+     <pre><code>{}</code></pre>
+     in your bash command as a placeholder for the absolute path to the changed file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fswatch -0 {{path/to/directory}} | xargs -0 -I {} {{bash_command}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Filter by event type, eg. Updated, Deleted or Created:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fswatch -0 --event {{Updated}} {{path/to/directory}} | xargs -0 {{bash_command}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    sshfs
+   </h1>
+   <blockquote>
+    <p>
+     Filesystem client based on ssh.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Mount remote directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sshfs {{username}}@{{remote_host}}:{{remote_directory}} {{mountpoint}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Unmount remote directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fusermount -u {{mountpoint}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Mount remote directory from server with specific port:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sshfs {{username}}@{{remote_host}}:{{remote_directory}} -p {{2222}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Use compression:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sshfs {{username}}@{{remote_host}}:{{remote_directory}} -C</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

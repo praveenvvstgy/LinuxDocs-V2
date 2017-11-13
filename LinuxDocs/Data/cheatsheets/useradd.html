@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    useradd
+   </h1>
+   <blockquote>
+    <p>
+     Create a new user.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create new user:
+    </li>
+   </ul>
+   <p>
+    <pre><code>useradd {{name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create new user with a default home directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>useradd --create-home {{name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create new user with specified shell:
+    </li>
+   </ul>
+   <p>
+    <pre><code>useradd --shell {{/path/to/shell}} {{name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create new user belonging to additional groups (mind the lack of whitespace):
+    </li>
+   </ul>
+   <p>
+    <pre><code>useradd --groups {{group1,group2}} {{name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create new system user without a home directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>useradd --no-create-home --system {{name}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

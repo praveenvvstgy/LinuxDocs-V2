@@ -1,0 +1,90 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    curl
+   </h1>
+   <blockquote>
+    <p>
+     Transfers data from or to a server.
+  Supports most protocols, including HTTP, FTP, and POP3.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Download the contents of an URL to a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>curl {{http://example.com}} -o {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Download a file, saving the output under the filename indicated by the URL:
+    </li>
+   </ul>
+   <p>
+    <pre><code>curl -O {{http://example.com/filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Download a file, following [L]ocation redirects, and automatically [C]ontinuing (resuming) a previous file transfer:
+    </li>
+   </ul>
+   <p>
+    <pre><code>curl -O -L -C - {{http://example.com/filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Send form-encoded data (POST request of type
+     <pre><code>application/x-www-form-urlencoded</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>curl -d {{'name=bob'}} {{http://example.com/form}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Send a request with an extra header, using a custom HTTP method:
+    </li>
+   </ul>
+   <p>
+    <pre><code>curl -H {{'X-My-Header: 123'}} -X {{PUT}} {{http://example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Send data in JSON format, specifying the appropriate content-type header:
+    </li>
+   </ul>
+   <p>
+    <pre><code>curl -d {{'{"name":"bob"}'}} -H {{'Content-Type: application/json'}} {{http://example.com/users/1234}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Pass a user name and password for server authentication:
+    </li>
+   </ul>
+   <p>
+    <pre><code>curl -u myusername:mypassword {{http://example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Pass client certificate and key for a resource, skipping certificate validation:
+    </li>
+   </ul>
+   <p>
+    <pre><code>curl --cert {{client.pem}} --key {{key.pem}} --insecure {{https://example.com}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

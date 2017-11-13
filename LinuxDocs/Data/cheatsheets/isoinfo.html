@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    isoinfo
+   </h1>
+   <blockquote>
+    <p>
+     Utility programs for dumping and verifying ISO disk images.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     List all the files included in an ISO image:
+    </li>
+   </ul>
+   <p>
+    <pre><code>isoinfo -f -i {{path/to/image.iso}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     E[x]tract a specific file from an ISO image and send it out stdout:
+    </li>
+   </ul>
+   <p>
+    <pre><code>isoinfo -i {{path/to/image.iso}} -x {{/PATH/TO/FILE/INSIDE/ISO.EXT}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show header information for an ISO disk image:
+    </li>
+   </ul>
+   <p>
+    <pre><code>isoinfo -d -i {{path/to/image.iso}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

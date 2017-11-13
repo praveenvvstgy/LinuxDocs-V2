@@ -1,0 +1,81 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    perl
+   </h1>
+   <blockquote>
+    <p>
+     The Perl 5 language interpreter.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Parse and execute a Perl script:
+    </li>
+   </ul>
+   <p>
+    <pre><code>perl {{script.pl}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Check syntax errors on a Perl script:
+    </li>
+   </ul>
+   <p>
+    <pre><code>perl -c {{script.pl}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Parse and execute a perl statement:
+    </li>
+   </ul>
+   <p>
+    <pre><code>perl -e {{perl_statement}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a Perl script in debug mode, using
+     <pre><code>perldebug</code></pre>
+     :
+    </li>
+   </ul>
+   <p>
+    <pre><code>perl -d {{script.pl}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Loo[p] over all lines of a file, editing them [i]n-place using a find/replace [e]xpression:
+    </li>
+   </ul>
+   <p>
+    <pre><code>perl -p -i -e 's/{{find}}/{{replace}}/g' {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a find/replace expression on a file, saving the original file with a given extension:
+    </li>
+   </ul>
+   <p>
+    <pre><code>perl -p -i'.old' -e 's/{{find}}/{{replace}}/g' {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a multi-line find/replace expression on a file, and save the result in another file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>perl -p0e 's/{{foo\nbar}}/{{foobar}}/g' {{input_file}} &gt; {{output_file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

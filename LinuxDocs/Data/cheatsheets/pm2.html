@@ -1,0 +1,64 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    pm2
+   </h1>
+   <blockquote>
+    <p>
+     Process manager for Node.js.
+  Used for log management, monitoring and configuring processes.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Start a process with a name that can be used for later operations:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pm2 start {{app.js}} --name {{myapp}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List processes:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pm2 list</code></pre>
+   </p>
+   <ul>
+    <li>
+     Monitor all processes:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pm2 monit</code></pre>
+   </p>
+   <ul>
+    <li>
+     Stop a process:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pm2 stop {{myapp}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Restart a process:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pm2 restart {{myapp}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

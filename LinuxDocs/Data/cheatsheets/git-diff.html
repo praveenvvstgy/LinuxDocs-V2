@@ -1,0 +1,95 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git diff
+   </h1>
+   <blockquote>
+    <p>
+     Show changes to tracked files.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Show unstaged, uncommitted changes:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git diff</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show all uncommitted changes (including staged ones):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git diff HEAD</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show only staged (added, but not yet committed) changes:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git diff --staged</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show changes from all commits since a given date/time (a date expression, e.g. "1 week 2 days" or an ISO date):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git diff 'HEAD@{3 months|weeks|days|hours|seconds ago}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show only names of changed files since a given commit:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git diff --name-only {{commit}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Output a summary of file creations, renames and mode changes since a given commit:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git diff --summary {{commit}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a patch file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git diff &gt; {{target_file}}.patch</code></pre>
+   </p>
+   <ul>
+    <li>
+     Compare a single file between two branches or commits:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git diff {{branch_1}}..{{branch_2}} [--] {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Compare different files from the current branch to other branch:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git diff {{branch}}:{{path/to/file2}} {{path/to/file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

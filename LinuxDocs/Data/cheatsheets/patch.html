@@ -1,0 +1,48 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    patch
+   </h1>
+   <blockquote>
+    <p>
+     Patch a file (or files) with a diff file.
+  Note that diff files contain both the target filenames and list of changes.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Apply a patch:
+    </li>
+   </ul>
+   <p>
+    <pre><code>patch &lt; {{patch_file}}.diff</code></pre>
+   </p>
+   <ul>
+    <li>
+     Apply a patch to current directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>patch -p1 &lt; {{patch_file}}.diff</code></pre>
+   </p>
+   <ul>
+    <li>
+     Apply the reverse of a patch:
+    </li>
+   </ul>
+   <p>
+    <pre><code>patch -R &lt; {{patch_file}}.diff</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

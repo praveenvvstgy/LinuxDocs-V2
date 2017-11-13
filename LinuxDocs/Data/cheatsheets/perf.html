@@ -1,0 +1,57 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    perf
+   </h1>
+   <blockquote>
+    <p>
+     Framework for linux performance counter measurements.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Display basic performance counter stats for a command:
+    </li>
+   </ul>
+   <p>
+    <pre><code>perf stat {{gcc hello.c}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Display system-wide real time performance counter profile:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo perf top</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a command and record its profile into "perf.data":
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo perf record {{command}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Read "perf.data" (created by
+     <pre><code>perf record</code></pre>
+     ) and display the profile:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo perf report</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

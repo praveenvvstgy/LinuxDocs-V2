@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    wall
+   </h1>
+   <blockquote>
+    <p>
+     Write a message on the terminals of users currently logged in.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Send a message:
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo "{{message}}" | wall</code></pre>
+   </p>
+   <ul>
+    <li>
+     Send a message from a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>wall {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Send a message with timeout (default 300):
+    </li>
+   </ul>
+   <p>
+    <pre><code>wall -t {{seconds}} {{file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

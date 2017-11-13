@@ -1,0 +1,48 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    cpio
+   </h1>
+   <blockquote>
+    <p>
+     Copies files in and out of archives.
+  Supports the following archive formats: cpio's custom binary, old ASCII, new ASCII, crc, HPUX binary, HPUX old ASCII, old tar, and POSIX.1 tar.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Take a list of file names from standard input and add them [o]nto an archive in cpio's binary format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo "{{file1}} {{file2}} {{file3}}" | cpio -o &gt; {{archive.cpio}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Copy all files and folders in a directory and add them [o]nto an archive, in [v]erbose mode:
+    </li>
+   </ul>
+   <p>
+    <pre><code>find {{path/to/directory}} | cpio -ov &gt; {{archive.cpio}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     P[i]ck all files from an archive, generating [d]irectories where needed, in [v]erbose mode:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cpio -idv &lt; {{archive.cpio}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

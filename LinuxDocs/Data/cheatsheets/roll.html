@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    roll
+   </h1>
+   <blockquote>
+    <p>
+     Rolls a user-defined dice sequence.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Roll 3 6-sided dice and sums the results:
+    </li>
+   </ul>
+   <p>
+    <pre><code>roll {{3d}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Roll 1 8-sided die, add 3 and sum the results:
+    </li>
+   </ul>
+   <p>
+    <pre><code>roll {{d8 + 3}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Roll 4 6-sided dice, keep the 3 highest results and sum the results:
+    </li>
+   </ul>
+   <p>
+    <pre><code>roll {{4d6h3}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Roll 2 12-sided dice 2 times and show every roll:
+    </li>
+   </ul>
+   <p>
+    <pre><code>roll --verbose {{2{2d12}}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Roll 2 20-sided dice until the result is bigger than 10:
+    </li>
+   </ul>
+   <p>
+    <pre><code>roll "{{2d20&gt;10}}"</code></pre>
+   </p>
+   <ul>
+    <li>
+     Roll 2 5-sided dice 3 times and show the total sum:
+    </li>
+   </ul>
+   <p>
+    <pre><code>roll --sum-series {{3{2d5}}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    rename
+   </h1>
+   <blockquote>
+    <p>
+     Renames multiple files.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Rename files using a Perl Common Regular Expression (substitute 'foo' with 'bar' wherever found):
+    </li>
+   </ul>
+   <p>
+    <pre><code>rename {{'s/foo/bar/'}} {{\*}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Dry-run - display which renames would occur without performing them:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rename -n {{'s/foo/bar/'}} {{\*}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Force renaming even if the operation would overwrite existing files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rename -f {{'s/foo/bar/'}} {{\*}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Convert filenames to lower case (use
+     <pre><code>-f</code></pre>
+     in case-insensitive filesystems to prevent "already exists" errors):
+    </li>
+   </ul>
+   <p>
+    <pre><code>rename 'y/A-Z/a-z/' {{\*}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Replace whitespace with underscores:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rename 's/\s+/_/g' {{\*}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

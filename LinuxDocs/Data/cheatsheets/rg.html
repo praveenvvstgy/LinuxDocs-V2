@@ -1,0 +1,65 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    ripgrep
+   </h1>
+   <blockquote>
+    <p>
+     A fast command-line search tool.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Recursively search the current directory for a regex pattern:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rg {{pattern}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search for pattern including all .gitignored and hidden files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rg -uu {{pattern}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search for a pattern only in a certain filetype (e.g., html, css, etc.):
+    </li>
+   </ul>
+   <p>
+    <pre><code>rg -t {{filetype}} {{pattern}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search for a pattern only in a subset of directories:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rg {{pattern}} {{set_of_subdirs}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search for a pattern in files matching a glob (e.g.,
+     <pre><code>README.*</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>rg {{pattern}} -g {{glob}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

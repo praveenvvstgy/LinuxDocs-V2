@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git log
+   </h1>
+   <blockquote>
+    <p>
+     Show a history of commits.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Show the sequence of commits starting from the current one, in reverse chronological order:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git log</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show the history of a particular file or directory, including differences:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git log -p {{path}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show only the first line of each commit message:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git log --oneline</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show all commits, tags and branches for the entire repo in a graph format:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git log --oneline --decorate --all --graph</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show only commits whose messages include a given string (case-insensitively):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git log -i --grep {{search_string}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    ansible-playbook
+   </h1>
+   <blockquote>
+    <p>
+     Execute tasks defined in playbook on remote machines over SSH.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Run tasks in playbook:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ansible-playbook {{playbook}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run tasks in playbook with custom host inventory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ansible-playbook {{playbook}} -i {{inventory_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run tasks in playbook with extra variables defined via the command line:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ansible-playbook {{playbook}} -e "{{variable1}}={{value1}} {{variable2}}={{value2}}"</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run tasks in playbook with extra variables defined in a json file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ansible-playbook {{playbook}} -e "@{{variables.json}}"</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

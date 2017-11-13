@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    sqlite3
+   </h1>
+   <blockquote>
+    <p>
+     The command-line interface to SQLite 3, which is a self-contained file-based embedded SQL engine.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Start an interactive shell with a new database:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sqlite3</code></pre>
+   </p>
+   <ul>
+    <li>
+     Open an interactive shell against an existing database:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sqlite3 {{path/to/database.sqlite3}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute an SQL statement against a database and then exit:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sqlite3 {{path/to/database.sqlite3}} '{{SELECT * FROM some_table;}}'</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

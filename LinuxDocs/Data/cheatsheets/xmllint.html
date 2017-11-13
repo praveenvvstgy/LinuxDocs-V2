@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    xmllint
+   </h1>
+   <blockquote>
+    <p>
+     XML parser and linter that supports XPath, a syntax for navigating XML trees.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Return all nodes (tags) named "foo":
+    </li>
+   </ul>
+   <p>
+    <pre><code>xmllint --xpath "//{{foo}}" {{source_file.xml}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Return the contents of the first node named "foo" as a string:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xmllint --xpath "string(//{{foo}})" {{source_file.xml}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Return the href attribute of the second anchor element in an html file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xmllint --html --xpath "string(//a[2]/@href)" webpage.xhtml</code></pre>
+   </p>
+   <ul>
+    <li>
+     Return human-readable (indented) XML from file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xmllint --format {{source_file.xml}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Check that a XML file meets the requirements of its DOCTYPE declaration:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xmllint --valid {{source_file.xml}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Validate XML against DTD schema hosted online:
+    </li>
+   </ul>
+   <p>
+    <pre><code>xmllint --dtdvalid {{URL}} {{source_file.xml}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    cat
+   </h1>
+   <blockquote>
+    <p>
+     Print and concatenate files.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Print the contents of a file to the standard output:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Concatenate several files into the target file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{file1}} {{file2}} &gt; {{target_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Append several files into the target file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{file1}} {{file2}} &gt;&gt; {{target_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Number all output lines:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat -n {{file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

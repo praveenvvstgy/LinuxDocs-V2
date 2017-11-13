@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    pgrep
+   </h1>
+   <blockquote>
+    <p>
+     Find or signal process by name.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Return PIDs of any running processes with a matching command string:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pgrep {{process_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search full command line with parameters instead of just the process name:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pgrep -f "{{process_name}} {{parameter}}"</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search for process run by a specific user:
+    </li>
+   </ul>
+   <p>
+    <pre><code>pgrep -u root {{process_name}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

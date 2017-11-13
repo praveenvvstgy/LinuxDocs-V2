@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    ping
+   </h1>
+   <blockquote>
+    <p>
+     Send ICMP ECHO_REQUEST packets to network hosts.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Ping host:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ping {{host}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Ping a host only a specific number of times:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ping -c {{count}} {{host}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Ping host, specifying the interval in seconds between requests (default is 1 second):
+    </li>
+   </ul>
+   <p>
+    <pre><code>ping -i {{seconds}} {{host}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Ping host without trying to lookup symbolic names for addresses:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ping -n {{host}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Ping host and ring the bell when a packet is received (if your terminal supports it):
+    </li>
+   </ul>
+   <p>
+    <pre><code>ping -a {{host}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

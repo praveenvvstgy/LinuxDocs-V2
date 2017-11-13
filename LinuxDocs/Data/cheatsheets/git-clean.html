@@ -1,0 +1,67 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git clean
+   </h1>
+   <blockquote>
+    <p>
+     Remove untracked files from the working tree.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Delete files that are not tracked by git:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git clean</code></pre>
+   </p>
+   <ul>
+    <li>
+     Interactively delete files that are not tracked by git:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git clean -i</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show what files would be deleted without actually deleting them:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git clean --dry-run</code></pre>
+   </p>
+   <ul>
+    <li>
+     Forcefully delete files that are not tracked by git:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git clean -f</code></pre>
+   </p>
+   <ul>
+    <li>
+     Delete untracked files, including ignored files in
+     <pre><code>.gitignore</code></pre>
+     and
+     <pre><code>.git/info/exclude</code></pre>
+     :
+    </li>
+   </ul>
+   <p>
+    <pre><code>git clean -x</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

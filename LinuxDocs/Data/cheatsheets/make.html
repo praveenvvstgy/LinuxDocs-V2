@@ -1,0 +1,72 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    make
+   </h1>
+   <blockquote>
+    <p>
+     Task runner for targets described in Makefile.
+  Mostly used to control the compilation of an executable from source code.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Call the first target specified in the Makefile (usually named "all"):
+    </li>
+   </ul>
+   <p>
+    <pre><code>make</code></pre>
+   </p>
+   <ul>
+    <li>
+     Call a specific target:
+    </li>
+   </ul>
+   <p>
+    <pre><code>make {{target}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Call a specific target, executing 4 jobs at a time in parallel:
+    </li>
+   </ul>
+   <p>
+    <pre><code>make -J{{4}} {{target}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Use a specific Makefile:
+    </li>
+   </ul>
+   <p>
+    <pre><code>make --file {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute make from another directory:
+    </li>
+   </ul>
+   <p>
+    <pre><code>make --directory {{directory}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Force making of a target, even if source files are unchanged:
+    </li>
+   </ul>
+   <p>
+    <pre><code>make --always-make {{target}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

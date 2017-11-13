@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    peerflix
+   </h1>
+   <blockquote>
+    <p>
+     Stream video- or audio-based torrents to a media player.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Stream the largest media file in a torrent:
+    </li>
+   </ul>
+   <p>
+    <pre><code>peerflix "{{torrent_url|magnet_link}}"</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all streamable files contained in a torrent (given as a magnet link):
+    </li>
+   </ul>
+   <p>
+    <pre><code>peerflix "{{magnet:?xt=urn:btih:0123456789abcdef0123456789abcdef01234567}}" --list</code></pre>
+   </p>
+   <ul>
+    <li>
+     Stream the largest file in a torrent, given as a torrent URL, to VLC:
+    </li>
+   </ul>
+   <p>
+    <pre><code>peerflix "{{http://example.net/music.torrent}}" --vlc</code></pre>
+   </p>
+   <ul>
+    <li>
+     Stream the largest file in a torrent to MPlayer, with subtitles:
+    </li>
+   </ul>
+   <p>
+    <pre><code>peerflix "{{torrent_url|magnet_link}}" --mplayer --subtitles {{subtitle-file.srt}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Stream all files from a torrent to Airplay:
+    </li>
+   </ul>
+   <p>
+    <pre><code>peerflix "{{torrent_url|magnet_link}}" --all --airplay</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

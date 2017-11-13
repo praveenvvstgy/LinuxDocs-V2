@@ -1,0 +1,79 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    zip
+   </h1>
+   <blockquote>
+    <p>
+     Package and compress (archive) files into zip file.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Package and compress a directory and its contents, [r]ecursively:
+    </li>
+   </ul>
+   <p>
+    <pre><code>zip -r {{compressed.zip}} {{/path/to/dir}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     E[x]clude unwanted files from being added to the compressed archive:
+    </li>
+   </ul>
+   <p>
+    <pre><code>zip -r {{compressed.zip}} {{path/to/dir}} -x {{path/to/exclude}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Archive a directory and its contents with the highest level [9] of compression:
+    </li>
+   </ul>
+   <p>
+    <pre><code>zip -r -{{9}} {{compressed.zip}} {{/path/to/dir}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Package and compress multiple directories and files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>zip -r {{compressed.zip}} {{/path/to/dir1 /path/to/dir2 /path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create an encrypted archive (user will be prompted for a password):
+    </li>
+   </ul>
+   <p>
+    <pre><code>zip -e -r {{compressed.zip}} {{path/to/dir}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Add files to an existing zip file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>zip {{compressed.zip}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Delete files from an existing zip file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>zip -d {{compressed.zip}} "{{foo/*.tmp}}"</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

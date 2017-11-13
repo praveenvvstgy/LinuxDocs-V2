@@ -1,0 +1,50 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    vimdiff
+   </h1>
+   <blockquote>
+    <p>
+     Open up to four files in vim and show the differences between them.
+  See
+     <pre><code>vim</code></pre>
+     documentation for working with files and navigating within a window.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Open two files and show the differences (up to four files can be compared):
+    </li>
+   </ul>
+   <p>
+    <pre><code>vimdiff {{file1}} {{file2}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Open two files using a horizontal window split instead of the default vertical split:
+    </li>
+   </ul>
+   <p>
+    <pre><code>vimdiff -o {{file1}} {{file2}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Move the cursor to the window on the left|right|up|down:
+    </li>
+   </ul>
+   <p>
+    <pre><code>Ctrl + w {{h|l|k|j}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

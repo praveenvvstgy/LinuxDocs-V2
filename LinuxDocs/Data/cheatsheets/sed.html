@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    sed
+   </h1>
+   <blockquote>
+    <p>
+     Run replacements based on regular expressions.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Replace the first occurrence of a string in a file, and print the result:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sed 's/{{find}}/{{replace}}/' {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Replace all occurrences of an extended regular expression in a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sed -r 's/{{regex}}/{{replace}}/g' {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Replace all occurrences of a string in a file, overwriting the file (i.e. in-place):
+    </li>
+   </ul>
+   <p>
+    <pre><code>sed -i 's/{{find}}/{{replace}}/g' {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Replace only on lines matching the line pattern:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sed '/{{line_pattern}}/s/{{find}}/{{replace}}/' {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Apply multiple find-replace expressions to a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sed -e 's/{{find}}/{{replace}}/' -e 's/{{find}}/{{replace}}/' {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Replace separator / by any other character not used in the find or replace patterns, e.g., #:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sed 's#{{find}}#{{replace}}#' {{filename}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

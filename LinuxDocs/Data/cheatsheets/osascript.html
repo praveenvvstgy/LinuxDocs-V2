@@ -1,0 +1,79 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    osascript
+   </h1>
+   <blockquote>
+    <p>
+     Run AppleScript or JavaScript for Automation (JXA) from the command line.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Run an AppleScript command:
+    </li>
+   </ul>
+   <p>
+    <pre><code>osascript -e '{{say "Hello world"}}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run multiple AppleScript commands:
+    </li>
+   </ul>
+   <p>
+    <pre><code>osascript -e '{{say "Hello"}}' -e '{{say "world"}}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a compiled (
+     <pre><code>*.scpt</code></pre>
+     ), bundled (
+     <pre><code>*.scptd</code></pre>
+     ), or plaintext (
+     <pre><code>*.applescript</code></pre>
+     ) AppleScript file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>osascript {{path/to/apple.scpt}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Get the bundle identifier of an application (useful for
+     <pre><code>open -b</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>osascript -e 'id of app "{{Application}}"'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a JavaScript command:
+    </li>
+   </ul>
+   <p>
+    <pre><code>osascript -l JavaScript -e '{{console.log("Hello world");}}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a JavaScript file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>osascript -l JavaScript {{path/to/script.js}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

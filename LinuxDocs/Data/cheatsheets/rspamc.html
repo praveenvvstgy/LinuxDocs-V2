@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    rspamc
+   </h1>
+   <blockquote>
+    <p>
+     Command line client for rspamd servers.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Train the bayesian filter to recognise an email as spam:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rspamc learn_spam {{path/to/email_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Train the bayesian filter to recognise an email as ham:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rspamc learn_ham {{path/to/email_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Generate a manual report on an email:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rspamc symbols {{path/to/email_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show server statistics:
+    </li>
+   </ul>
+   <p>
+    <pre><code>rspamc stat</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

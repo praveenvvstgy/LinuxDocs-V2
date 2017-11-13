@@ -1,0 +1,72 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    quotacheck
+   </h1>
+   <blockquote>
+    <p>
+     Scan a filesystem for disk usage; create, check and repair quota files.
+  It is best to run quota check with quotas turned off to prevent damage or loss to quota files.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Check quotas on all mounted non-NFS filesystems:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo quotacheck --all</code></pre>
+   </p>
+   <ul>
+    <li>
+     Force check even if quotas are enabled (this can cause damage or loss to quota files):
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo quotacheck --force {{mountpoint}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Check quotas on a given filesystem in debug mode:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo quotacheck --debug {{mountpoint}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Check quotas on a given filesystem, displaying the progress:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo quotacheck --verbose {{mountpoint}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Check user quotas:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo quotacheck --user {{user}} {{mountpoint}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Check group quotas:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sudo quotacheck --group {{group}} {{mountpoint}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

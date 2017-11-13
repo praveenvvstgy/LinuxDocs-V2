@@ -1,0 +1,88 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    svgo
+   </h1>
+   <blockquote>
+    <p>
+     SVG Optimizer: a Nodejs-based tool for optimizing Scalable Vector Graphics files.
+  It applies a series of transformation rules (plugins), which can be toggled individually.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Optimize a file using the default plugins (overwrites the original file):
+    </li>
+   </ul>
+   <p>
+    <pre><code>svgo {{test.svg}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Optimize a file and save the result to another file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>svgo {{test.svg}} {{test.min.svg}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Optimize all SVG files within a folder (overwrites the original files):
+    </li>
+   </ul>
+   <p>
+    <pre><code>svgo -f {{path/to/folder/with/svg/files}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Optimize all SVG files within a folder and save the resulting files to another folder:
+    </li>
+   </ul>
+   <p>
+    <pre><code>svgo -f {{path/to/input/folder}} -o {{path/to/output/folder}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Optimize SVG content passed from another command, and save the result to a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>{{cat test.svg}} | svgo -i - -o {{test.min.svg}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Optimize a file and print out the result:
+    </li>
+   </ul>
+   <p>
+    <pre><code>svgo {{test.svg}} -o -</code></pre>
+   </p>
+   <ul>
+    <li>
+     Optimize a file making sure a given plugin is enabled:
+    </li>
+   </ul>
+   <p>
+    <pre><code>svgo --enable={{plugin_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show available plugins:
+    </li>
+   </ul>
+   <p>
+    <pre><code>svgo --show-plugins</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

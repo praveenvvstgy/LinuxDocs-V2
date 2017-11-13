@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    redis-cli
+   </h1>
+   <blockquote>
+    <p>
+     Opens a connection to a Redis server.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Connect to the local server:
+    </li>
+   </ul>
+   <p>
+    <pre><code>redis-cli</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to a remote server on the default port (6379):
+    </li>
+   </ul>
+   <p>
+    <pre><code>redis-cli -h {{host}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Connect to a remote server specifying a port number:
+    </li>
+   </ul>
+   <p>
+    <pre><code>redis-cli -h {{host}} -p {{port}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Specify a password:
+    </li>
+   </ul>
+   <p>
+    <pre><code>redis-cli -a {{password}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute Redis command:
+    </li>
+   </ul>
+   <p>
+    <pre><code>redis-cli {{redis_command}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

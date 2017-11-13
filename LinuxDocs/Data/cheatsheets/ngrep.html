@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    ngrep
+   </h1>
+   <blockquote>
+    <p>
+     Filter network traffic packets using regular expressions.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Capture traffic of all interfaces:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ngrep -d any</code></pre>
+   </p>
+   <ul>
+    <li>
+     Capture traffic of a specific interface:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ngrep -d {{eth0}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Capture traffic crossing port 22 of interface eth0:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ngrep -d {{eth0}} port {{22}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Capture traffic from or to a host:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ngrep host {{www.example.com}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Filter keyword 'User-Agent:' of interface eth0:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ngrep -d {{eth0}} '{{User-Agent:}}'</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

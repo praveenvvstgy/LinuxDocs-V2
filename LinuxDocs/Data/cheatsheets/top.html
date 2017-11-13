@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    top
+   </h1>
+   <blockquote>
+    <p>
+     Display dynamic real-time information about running processes.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Start top:
+    </li>
+   </ul>
+   <p>
+    <pre><code>top</code></pre>
+   </p>
+   <ul>
+    <li>
+     Do not show any idle or zombie processes:
+    </li>
+   </ul>
+   <p>
+    <pre><code>top -i</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show only processes owned by given user:
+    </li>
+   </ul>
+   <p>
+    <pre><code>top -u {{user_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show only the processes with the given PID(s), passed as a comma-separated list. (Normally you wouldn't know PIDs off hand. This example picks the PIDs from the process name):
+    </li>
+   </ul>
+   <p>
+    <pre><code>top -p $(pgrep -d ',' {{process_name}})</code></pre>
+   </p>
+   <ul>
+    <li>
+     Get help about interactive commands:
+    </li>
+   </ul>
+   <p>
+    <pre><code>?</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

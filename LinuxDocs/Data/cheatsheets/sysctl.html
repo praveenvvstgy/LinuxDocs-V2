@@ -1,0 +1,63 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    sysctl
+   </h1>
+   <blockquote>
+    <p>
+     List and change kernel runtime variables.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Show all available variables and their values:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sysctl -a</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set a changeable kernel state variable:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sysctl -w {{section.tunable}}={{value}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Get currently open file handlers:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sysctl fs.file-nr</code></pre>
+   </p>
+   <ul>
+    <li>
+     Get limit for simultaneous open files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sysctl fs.file-max</code></pre>
+   </p>
+   <ul>
+    <li>
+     Apply changes from /etc/sysctl.conf:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sysctl -p</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

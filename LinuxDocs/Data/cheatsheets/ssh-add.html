@@ -1,0 +1,64 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    ssh-add
+   </h1>
+   <blockquote>
+    <p>
+     Manage loaded ssh keys in the ssh-agent.
+  Ensure that ssh-agent is up and running for the keys to be loaded in it.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Add the default ssh keys in "~/.ssh" to the ssh-agent:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ssh-add</code></pre>
+   </p>
+   <ul>
+    <li>
+     Add a specific key to the ssh-agent:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ssh-add {{path/to/private_key}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List fingerprints of currently loaded keys:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ssh-add -l</code></pre>
+   </p>
+   <ul>
+    <li>
+     Delete a key from the ssh-agent:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ssh-add -d {{path/to/private_key}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Delete all currently loaded keys from the ssh-agent:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ssh-add -D</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

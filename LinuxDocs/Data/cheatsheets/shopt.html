@@ -1,0 +1,72 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    shopt
+   </h1>
+   <blockquote>
+    <p>
+     Manage Bash shell options: variables (stored in
+     <pre><code>$BASHOPTS</code></pre>
+     ) that control behavior specific to the Bash shell.
+  Generic POSIX shell variables (stored in
+     <pre><code>$SHELLOPTS</code></pre>
+     ) are managed with the
+     <pre><code>set</code></pre>
+     command instead.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     List of all settable options and whether they are set:
+    </li>
+   </ul>
+   <p>
+    <pre><code>shopt</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set an option:
+    </li>
+   </ul>
+   <p>
+    <pre><code>shopt -s {{option_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Unset an option:
+    </li>
+   </ul>
+   <p>
+    <pre><code>shopt -u {{option_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Print a list of all options and their status formatted as runnable
+     <pre><code>shopt</code></pre>
+     commands:
+    </li>
+   </ul>
+   <p>
+    <pre><code>shopt -p</code></pre>
+   </p>
+   <ul>
+    <li>
+     Show help for the command:
+    </li>
+   </ul>
+   <p>
+    <pre><code>help shopt</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

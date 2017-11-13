@@ -1,0 +1,48 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    cmake
+   </h1>
+   <blockquote>
+    <p>
+     Cross-platform build system generator.
+  It generates Makefiles, Visual Studio projects or others, depending on the target system.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Generate a Makefile and use it to compile a project in the same folder as the source:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cmake &amp;&amp; make</code></pre>
+   </p>
+   <ul>
+    <li>
+     Generate a Makefile and use it to compile a project in a separate "build" folder (out-of-source build):
+    </li>
+   </ul>
+   <p>
+    <pre><code>cmake -H. -B{{build}} &amp;&amp; make -C {{build}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run cmake in interactive mode (it will ask for each variable, instead of using defaults):
+    </li>
+   </ul>
+   <p>
+    <pre><code>cmake -i</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

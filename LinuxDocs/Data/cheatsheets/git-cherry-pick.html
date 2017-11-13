@@ -1,0 +1,50 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git cherry-pick
+   </h1>
+   <blockquote>
+    <p>
+     Apply the changes introduced by existing commits to the current branch.
+  To apply changes to another branch, first use git-checkout to switch to the desired branch.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Apply a commit to the current branch:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git cherry-pick {{commit}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Apply a range of commits to the current branch (see also
+     <pre><code>git rebase --onto</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>git cherry-pick {{start_commit}}~..{{end_commit}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Apply multiple (non-sequential) commits to the current branch:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git cherry-pick {{commit_1}} {{commit_2}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

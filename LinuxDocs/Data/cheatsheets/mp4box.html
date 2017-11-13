@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    mp4box
+   </h1>
+   <blockquote>
+    <p>
+     MPEG-4 Systems Toolbox - Muxes streams into MP4 container.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Display information about an existing MP4 file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mp4box -info {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Add an SRT subtitle file into an MP4 file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mp4box -add {{input_subs.srt}}:lang=eng -add {{input.mp4}} {{output.mp4}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Combine audio from one file and video from another:
+    </li>
+   </ul>
+   <p>
+    <pre><code>mp4box -add {{input1.mp4}}#audio -add {{input2.mp4}}#video {{output.mp4}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

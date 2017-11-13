@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    setfacl
+   </h1>
+   <blockquote>
+    <p>
+     Set file access control lists (ACL).
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Modify ACL of a file for user with read and write access:
+    </li>
+   </ul>
+   <p>
+    <pre><code>setfacl -m u:{{username}}:rw {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Modify default ACL of a file for all users:
+    </li>
+   </ul>
+   <p>
+    <pre><code>setfacl -d -m u::rw {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove ACL of a file for an user:
+    </li>
+   </ul>
+   <p>
+    <pre><code>setfacl -x u:{{username}} {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove all ACL entries of a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>setfacl -b {{file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

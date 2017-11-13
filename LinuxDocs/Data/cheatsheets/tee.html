@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    tee
+   </h1>
+   <blockquote>
+    <p>
+     Read from standard input and write to standard output and files (or commands).
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Copy standard input to each FILE, and also to standard output:
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo "example" | tee {{FILE}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Append to the given FILEs, do not overwrite:
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo "example" | tee -a {{FILE}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Create a folder called "example", count the number of characters in "example" and write "example" to the terminal:
+    </li>
+   </ul>
+   <p>
+    <pre><code>echo "example" | tee &gt;(xargs mkdir) &gt;(wc -c)</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

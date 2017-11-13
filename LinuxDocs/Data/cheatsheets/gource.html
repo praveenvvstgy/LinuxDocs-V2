@@ -1,0 +1,72 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    gource
+   </h1>
+   <blockquote>
+    <p>
+     Renders an animated tree diagram of Git, SVN, Mercurial and Bazaar repositories.
+  It shows files and folders being created, modified or removed over time.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Run gource in a directory (if it isn't the repository's root directory, the root is seeked up from there):
+    </li>
+   </ul>
+   <p>
+    <pre><code>gource {{path/to/repository}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run gource in the current directory, with a custom output resolution:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gource -{{width}}x{{height}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set a custom time scale for the animation:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gource -c {{time_scale_multiplier}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set how long each day should be in the animation (this combines with -c, if provided):
+    </li>
+   </ul>
+   <p>
+    <pre><code>gource -s {{seconds}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set fullscreen mode and a custom background color:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gource -f -b {{hex_color_code}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Set a title for the animation:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gource --title {{title}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

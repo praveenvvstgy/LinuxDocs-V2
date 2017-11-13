@@ -1,0 +1,65 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    sort
+   </h1>
+   <blockquote>
+    <p>
+     Sort lines of text files.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Sort a file in ascending order:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sort {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Sort a file in descending order:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sort -r {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Sort a file using numeric rather than alphabetic order:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sort -n {{filename}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Sort the passwd file by the 3rd field, numerically:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sort -t: -k 3n /etc/passwd</code></pre>
+   </p>
+   <ul>
+    <li>
+     Sort human-readable numbers (in this case the 5th field of
+     <pre><code>ls -lh</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>ls -lh | sort -h -k 5</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

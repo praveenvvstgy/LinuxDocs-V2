@@ -1,0 +1,71 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    julia
+   </h1>
+   <blockquote>
+    <p>
+     A high-level, high-performance dynamic programming language for technical computing.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Start a Julia REPL session:
+    </li>
+   </ul>
+   <p>
+    <pre><code>julia</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute a Julia program and exit:
+    </li>
+   </ul>
+   <p>
+    <pre><code>julia {{program.jl}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Execute a Julia program that takes arguments:
+    </li>
+   </ul>
+   <p>
+    <pre><code>julia {{program.jl}} {{arguments}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Evaluate a string containing Julia code:
+    </li>
+   </ul>
+   <p>
+    <pre><code>julia -e '{{julia_code}}'</code></pre>
+   </p>
+   <ul>
+    <li>
+     Evaluate a string of Julia code, passing arguments to it:
+    </li>
+   </ul>
+   <p>
+    <pre><code>julia -e '{{for x in ARGS; println(x); end}}' {{arguments}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start Julia in parallel mode, using N worker processes:
+    </li>
+   </ul>
+   <p>
+    <pre><code>julia -p {{N}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    grep
+   </h1>
+   <blockquote>
+    <p>
+     Matches patterns in input text.
+  Supports simple patterns and regular expressions.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Search for an exact string:
+    </li>
+   </ul>
+   <p>
+    <pre><code>grep {{search_string}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search in case-insensitive mode:
+    </li>
+   </ul>
+   <p>
+    <pre><code>grep -i {{search_string}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Search recursively (ignoring non-text files) in current directory for an exact string:
+    </li>
+   </ul>
+   <p>
+    <pre><code>grep -rI {{search_string}} .</code></pre>
+   </p>
+   <ul>
+    <li>
+     Use extended regular expressions (supporting
+     <pre><code>?</code></pre>
+     ,
+     <pre><code>+</code></pre>
+     ,
+     <pre><code>{}</code></pre>
+     ,
+     <pre><code>()</code></pre>
+     and
+     <pre><code>|</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>grep -E {{^regex$}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Print 3 lines of [C]ontext around, [B]efore, or [A]fter each match:
+    </li>
+   </ul>
+   <p>
+    <pre><code>grep -{{C|B|A}} 3 {{search_string}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Print the count of matches instead of the matching text:
+    </li>
+   </ul>
+   <p>
+    <pre><code>grep -c {{search_string}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Print line number for each match:
+    </li>
+   </ul>
+   <p>
+    <pre><code>grep -n {{search_string}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Print file names with matches:
+    </li>
+   </ul>
+   <p>
+    <pre><code>grep -l {{search_string}} {{path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Use the standard input instead of a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>cat {{path/to/file}} | grep {{search_string}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Invert match for excluding specific strings:
+    </li>
+   </ul>
+   <p>
+    <pre><code>grep -v {{search_string}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

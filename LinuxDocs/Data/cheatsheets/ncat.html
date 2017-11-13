@@ -1,0 +1,41 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    ncat
+   </h1>
+   <blockquote>
+    <p>
+     Use the normal
+     <pre><code>cat</code></pre>
+     functionality over networks.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Listen for input on the specified port and write it to the specified file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ncat -l {{port}} &gt; {{/path/to/file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Write output of specified file to the specified host on the specified port:
+    </li>
+   </ul>
+   <p>
+    <pre><code>ncat {{address}} {{port}} &lt; {{/path/to/file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

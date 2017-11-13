@@ -1,0 +1,41 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    timeout
+   </h1>
+   <blockquote>
+    <p>
+     Run a command with a time limit.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Run
+     <pre><code>sleep 10</code></pre>
+     and kill it, if it's running after 3 seconds:
+    </li>
+   </ul>
+   <p>
+    <pre><code>timeout {{3s}} {{sleep 10}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Specify the signal to be sent to the command after the time limit expires. (By default, TERM is sent):
+    </li>
+   </ul>
+   <p>
+    <pre><code>timeout --signal {{INT}} {{5s}} {{sleep 10}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

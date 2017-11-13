@@ -1,0 +1,79 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    docker
+   </h1>
+   <blockquote>
+    <p>
+     Manage Docker containers and images.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     List currently running docker containers:
+    </li>
+   </ul>
+   <p>
+    <pre><code>docker container ls</code></pre>
+   </p>
+   <ul>
+    <li>
+     List all docker containers (running and stopped):
+    </li>
+   </ul>
+   <p>
+    <pre><code>docker container ls -a</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start a container:
+    </li>
+   </ul>
+   <p>
+    <pre><code>docker container start {{container}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Stop a container:
+    </li>
+   </ul>
+   <p>
+    <pre><code>docker container stop {{container}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Start a container from an image and get a shell inside of it:
+    </li>
+   </ul>
+   <p>
+    <pre><code>docker container run -it {{image}} bash</code></pre>
+   </p>
+   <ul>
+    <li>
+     Run a command inside of an already running container:
+    </li>
+   </ul>
+   <p>
+    <pre><code>docker container exec {{container}} {{command}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove a stopped container:
+    </li>
+   </ul>
+   <p>
+    <pre><code>docker container rm {{container}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

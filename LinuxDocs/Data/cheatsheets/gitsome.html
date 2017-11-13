@@ -1,0 +1,78 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    gitsome
+   </h1>
+   <blockquote>
+    <p>
+     A terminal-based interface for GitHub, accessed via the
+     <pre><code>gh</code></pre>
+     command.
+  It also provides menu-style autocomplete suggestions for
+     <pre><code>git</code></pre>
+     commands.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Enter the gitsome shell (optional), to enable autocompletion and interactive help for git (and gh) commands:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gitsome</code></pre>
+   </p>
+   <ul>
+    <li>
+     Setup GitHub integration with the current account:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gh configure</code></pre>
+   </p>
+   <ul>
+    <li>
+     List notifications for the current account (as would be seen in https://github.com/notifications):
+    </li>
+   </ul>
+   <p>
+    <pre><code>gh notifications</code></pre>
+   </p>
+   <ul>
+    <li>
+     List the current account's starred repos, filtered by a given search string:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gh starred "{{python 3}}"</code></pre>
+   </p>
+   <ul>
+    <li>
+     View the recent activity feed of a given GitHub repository:
+    </li>
+   </ul>
+   <p>
+    <pre><code>gh feed {{tldr-pages/tldr}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     View the recent activity feed for a given GitHub user, using the default pager (e.g.
+     <pre><code>less</code></pre>
+     ):
+    </li>
+   </ul>
+   <p>
+    <pre><code>gh feed {{torvalds}} -p</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

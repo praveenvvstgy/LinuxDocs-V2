@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    md5sum
+   </h1>
+   <blockquote>
+    <p>
+     Calculate MD5 cryptographic checksums.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Calculate the MD5 checksum for a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>md5sum {{filename1}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Calculate MD5 checksums for multiple files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>md5sum {{filename1}} {{filename2}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Read a file of MD5SUMs and verify all files have matching checksums:
+    </li>
+   </ul>
+   <p>
+    <pre><code>md5sum -c {{filename.md5}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

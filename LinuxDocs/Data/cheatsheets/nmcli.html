@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    nmcli
+   </h1>
+   <blockquote>
+    <p>
+     A command line tool for controlling NetworkManager.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     List all NetworkManager connections (shows name, uuid, type and device):
+    </li>
+   </ul>
+   <p>
+    <pre><code>nmcli connection</code></pre>
+   </p>
+   <ul>
+    <li>
+     Activate a connection by specifying an uuid:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nmcli connection up uuid {{uuid}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Deactivate a connection:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nmcli connection down uuid {{uuid}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Print statuses of network interfaces:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nmcli device status</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

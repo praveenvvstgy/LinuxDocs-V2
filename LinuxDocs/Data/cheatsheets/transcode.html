@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    transcode
+   </h1>
+   <blockquote>
+    <p>
+     Transcode video and audio codecs, and convert between media formats.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Create stabilisation file to be able to remove camera shakes:
+    </li>
+   </ul>
+   <p>
+    <pre><code>transcode -J stabilize -i {{input_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove camera shakes after creating stabilisation file, transform video using xvid:
+    </li>
+   </ul>
+   <p>
+    <pre><code>transcode -J transform -i {{input_file}} -y xvid -o {{output_file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Resize the video to 640x480 pixels and convert to MPEG4 codec using xvid:
+    </li>
+   </ul>
+   <p>
+    <pre><code>transcode -Z 640x480 -i {{input_file}} -y xvid -o {{output_file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

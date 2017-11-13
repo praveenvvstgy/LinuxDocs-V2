@@ -1,0 +1,55 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    avrdude
+   </h1>
+   <blockquote>
+    <p>
+     Driver program for Atmel AVR microcontrollers programming.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Read AVR microcontroller:
+    </li>
+   </ul>
+   <p>
+    <pre><code>avrdude -p {{AVR_device}} -c {{programmer}} -U flash:r:{{file.hex}}:i</code></pre>
+   </p>
+   <ul>
+    <li>
+     Write AVR microcontroller:
+    </li>
+   </ul>
+   <p>
+    <pre><code>avrdude -p {{AVR_device}} -c {{programmer}} -U flash:w:{{file.hex}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     List available AVR devices:
+    </li>
+   </ul>
+   <p>
+    <pre><code>avrdude -p \?</code></pre>
+   </p>
+   <ul>
+    <li>
+     List available AVR programmers:
+    </li>
+   </ul>
+   <p>
+    <pre><code>avrdude -c \?</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

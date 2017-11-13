@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    fping
+   </h1>
+   <blockquote>
+    <p>
+     A more powerful ping which can ping multiple hosts.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     List alive hosts within a subnet generated from a netmask:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fping -a -g 192.168.1.0/24</code></pre>
+   </p>
+   <ul>
+    <li>
+     List alive hosts within a subnet generated from an IP range:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fping -a -g 192.168.1.1 192.168.1.254</code></pre>
+   </p>
+   <ul>
+    <li>
+     List unreachable hosts within a subnet generated from a netmask:
+    </li>
+   </ul>
+   <p>
+    <pre><code>fping -u -g 192.168.1.0/24</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

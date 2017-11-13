@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    nl
+   </h1>
+   <blockquote>
+    <p>
+     A utility for numbering lines, either from a file, or from standard input.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Number lines in a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nl {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Number only the lines with printable text:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nl -t {{file}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Number only the body lines that match a basic regular expression (BRE) pattern:
+    </li>
+   </ul>
+   <p>
+    <pre><code>nl -b p'FooBar[0-9]' {{file}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

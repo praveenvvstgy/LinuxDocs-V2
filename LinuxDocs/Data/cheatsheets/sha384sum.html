@@ -1,0 +1,47 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    sha384sum
+   </h1>
+   <blockquote>
+    <p>
+     Calculate SHA384 cryptographic checksums.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Calculate the SHA384 checksum for a file:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sha384sum {{filename1}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Calculate SHA384 checksums for multiple files:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sha384sum {{filename1}} {{filename2}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Read a file of SHA384 sums and verify all files have matching checksums:
+    </li>
+   </ul>
+   <p>
+    <pre><code>sha384sum -c {{filename.sha384}}</code></pre>
+   </p>
+  </article>
+ </body>
+</html>

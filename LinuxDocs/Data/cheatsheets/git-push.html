@@ -1,0 +1,79 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="./cheatsheetstyle.css" rel="stylesheet">
+    </link>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <article class="markdown-body">
+   <h1>
+    git push
+   </h1>
+   <blockquote>
+    <p>
+     Push commits to a remote repository.
+    </p>
+   </blockquote>
+   <ul>
+    <li>
+     Send local changes in the current branch to its remote counterpart:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git push</code></pre>
+   </p>
+   <ul>
+    <li>
+     Send local changes in a given branch to its remote counterpart:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git push {{remote_name}} {{local_branch}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Publish the current branch to a remote repository, setting the remote branch name:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git push {{remote_name}} -u {{remote_branch}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Send changes on all local branches to their counterparts in a given remote repository:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git push --all {{remote_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Delete a branch in a remote repository:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git push {{remote_name}} --delete {{remote_branch}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Remove remote branches that don't have a local counterpart:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git push --prune {{remote_name}}</code></pre>
+   </p>
+   <ul>
+    <li>
+     Publish tags that aren't yet in the remote repository:
+    </li>
+   </ul>
+   <p>
+    <pre><code>git push --tags</code></pre>
+   </p>
+  </article>
+ </body>
+</html>
