@@ -8,7 +8,10 @@
 
 import Foundation
 
-enum Constant {
-    static let manPagesLocation = Bundle.main.path(forResource: "manpages", ofType: "json")
-    static let cheatsheetsLocation = Bundle.main.path(forResource: "cheatsheets", ofType: "json")
+struct ManPages {
+    static let location = Bundle.main.path(forResource: "manpages", ofType: "json")
+}
+
+struct Cheatsheets {
+    static let location = Bundle.main.path(forResource: "cheatsheets", ofType: "json")
 }

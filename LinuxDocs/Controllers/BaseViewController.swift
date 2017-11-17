@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BaseViewController.swift
 //  LinuxDocs
 //
 //  Created by Praveen Gowda I V on 11/10/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

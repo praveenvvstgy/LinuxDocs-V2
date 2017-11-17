@@ -20,11 +20,13 @@ class HomeTabBarViewController: UITabBarController {
     }
     
     private var manPagesVC: UIViewController {
-        let manPages: [String: [ManPage]] = loadDoc(atPath: Constant.manPagesLocation)
+        let manPages: [String: [ManPage]] = addUnifiedCategory(docIndex: loadDoc(atPath: ManPages.location))
+        let segmentColors = Color.colors(forCategories: manPages.flatMap{ $0.0 })
         let manPagesVC = DocsTableViewController<ManPage, DocTableViewCell>(docs: manPages) { (cell, manPage) in
             cell.nameLabel.text = manPage.name
             cell.descriptionLabel.text = manPage.description
             cell.categoryLabel.text = "Section \(manPage.section)"
+            cell.categoryLabel.backgroundColor = segmentColors[manPage.section]
         }
         manPagesVC.tabBarItem = UITabBarItem(title: "ManPages", image: #imageLiteral(resourceName: "manpage"), tag: 1)
         manPagesVC.title = "ManPages"
@@ -36,15 +38,15 @@ class HomeTabBarViewController: UITabBarController {
                 manPagesVC.navigationController?.pushViewController(browser, animated: true)
             }
         }
-        manPagesVC.searchHandler = { searchText, docIndex, completion in
+        manPagesVC.searchHandler = { searchText, scope,  docIndex, completion in
             DispatchQueue.global(qos: .background).async {
                 let results: [ManPage]
                 if searchText.isEmpty {
-                    results = docIndex.flatMap{ $0.1 }
+                    results = docIndex[scope] ?? []
                 } else {
-                    results = docIndex.flatMap{ $0.1 }.filter({ (manPage) -> Bool in
+                    results = docIndex[scope]?.filter({ (manPage) -> Bool in
                         return manPage.name.lowercased().contains(searchText.lowercased())
-                    })
+                    }) ?? []
                 }
                 completion?(results)
             }
@@ -55,11 +57,13 @@ class HomeTabBarViewController: UITabBarController {
     }
     
     private var cheatsheetsVC: UIViewController {
-        let cheatsheets: [String: [Cheatsheet]] = loadDoc(atPath: Constant.cheatsheetsLocation)
+        let cheatsheets: [String: [Cheatsheet]] = addUnifiedCategory(docIndex: loadDoc(atPath: Cheatsheets.location))
+        let segmentColors = Color.colors(forCategories: cheatsheets.flatMap{ $0.0 })
         let cheatsheetsVC = DocsTableViewController<Cheatsheet, DocTableViewCell>(docs: cheatsheets) { (cell, cheatsheet) in
             cell.nameLabel.text = cheatsheet.name
             cell.descriptionLabel.text = cheatsheet.description
             cell.categoryLabel.text = cheatsheet.platform
+            cell.categoryLabel.backgroundColor = segmentColors[cheatsheet.platform]
         }
         cheatsheetsVC.tabBarItem = UITabBarItem(title: "Cheatsheets", image: #imageLiteral(resourceName: "cheatsheet"), tag: 1)
         cheatsheetsVC.title = "Cheatsheets"
@@ -71,15 +75,15 @@ class HomeTabBarViewController: UITabBarController {
                 cheatsheetsVC.navigationController?.pushViewController(browser, animated: true)
             }
         }
-        cheatsheetsVC.searchHandler = { searchText, docIndex, completion in
+        cheatsheetsVC.searchHandler = { searchText, scope, docIndex, completion in
             DispatchQueue.global(qos: .background).async {
                 let results: [Cheatsheet]
                 if searchText.isEmpty {
-                    results = docIndex.flatMap{ $0.1 }
+                    results = docIndex[scope] ?? []
                 } else {
-                    results = docIndex.flatMap{ $0.1 }.filter({ (manPage) -> Bool in
+                    results = docIndex[scope]?.filter({ (manPage) -> Bool in
                         return manPage.name.lowercased().contains(searchText.lowercased())
-                    })
+                    }) ?? []
                 }
                 completion?(results)
             }
@@ -101,6 +105,12 @@ class HomeTabBarViewController: UITabBarController {
             }
         }
         return [:]
+    }
+    
+    func addUnifiedCategory<Doc>(docIndex: [String: [Doc]]) -> [String: [Doc]] {
+        var docIndex = docIndex
+        docIndex["All"] = docIndex.flatMap{ $0.1 }
+        return docIndex
     }
 
     override func didReceiveMemoryWarning() {

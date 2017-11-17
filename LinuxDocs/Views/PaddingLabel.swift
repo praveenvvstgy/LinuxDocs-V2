@@ -8,8 +8,6 @@
 
 import UIKit
 
-import UIKit
-
 class PaddingLabel: UILabel {
     
     @IBInspectable var topInset: CGFloat = 5.0

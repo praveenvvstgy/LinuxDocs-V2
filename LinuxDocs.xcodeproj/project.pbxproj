@@ -21,6 +21,8 @@
 		AC3087FA1FB79C0B007846FC /* ManPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087F91FB79C0B007846FC /* ManPage.swift */; };
 		AC3087FC1FB7D6BC007846FC /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087FB1FB7D6BC007846FC /* HomeTabBarViewController.swift */; };
 		AC3087FF1FB7D751007846FC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3087FE1FB7D751007846FC /* Constant.swift */; };
+		AC8026471FBF436800A937B2 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8026461FBF436800A937B2 /* Color.swift */; };
+		AC8026491FBF480200A937B2 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8026481FBF480200A937B2 /* CollectionExtensions.swift */; };
 		AC9B16991FB817D800BA395F /* DocTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B16971FB817D800BA395F /* DocTableViewCell.swift */; };
 		AC9B169A1FB817D800BA395F /* DocTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9B16981FB817D800BA395F /* DocTableViewCell.xib */; };
 		AC9B169D1FB81BD200BA395F /* CALayerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B169C1FB81BD200BA395F /* CALayerExtensions.swift */; };
@@ -39,6 +41,8 @@
 		AC9B21571FB977F600BA395F /* man3 in Resources */ = {isa = PBXBuildFile; fileRef = AC9B21501FB977F400BA395F /* man3 */; };
 		AC9B21581FB977F600BA395F /* man7 in Resources */ = {isa = PBXBuildFile; fileRef = AC9B21511FB977F500BA395F /* man7 */; };
 		AC9B21591FB977F600BA395F /* man4 in Resources */ = {isa = PBXBuildFile; fileRef = AC9B21521FB977F600BA395F /* man4 */; };
+		ACD1B9881FBD989F003BDF60 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1B9871FBD989F003BDF60 /* UIImageExtensions.swift */; };
+		ACD1B98A1FBD9D65003BDF60 /* UISegmentedControlExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD1B9891FBD9D65003BDF60 /* UISegmentedControlExtensions.swift */; };
 		FE0214645E9936396215BF98 /* Pods_LinuxDocsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4AC1B64180C9AF9E834A8D /* Pods_LinuxDocsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +86,8 @@
 		AC3087F91FB79C0B007846FC /* ManPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManPage.swift; sourceTree = "<group>"; };
 		AC3087FB1FB7D6BC007846FC /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
 		AC3087FE1FB7D751007846FC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		AC8026461FBF436800A937B2 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		AC8026481FBF480200A937B2 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
 		AC9B16971FB817D800BA395F /* DocTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocTableViewCell.swift; sourceTree = "<group>"; };
 		AC9B16981FB817D800BA395F /* DocTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocTableViewCell.xib; sourceTree = "<group>"; };
 		AC9B169C1FB81BD200BA395F /* CALayerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtensions.swift; sourceTree = "<group>"; };
@@ -100,6 +106,8 @@
 		AC9B21501FB977F400BA395F /* man3 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = man3; sourceTree = "<group>"; };
 		AC9B21511FB977F500BA395F /* man7 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = man7; sourceTree = "<group>"; };
 		AC9B21521FB977F600BA395F /* man4 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = man4; sourceTree = "<group>"; };
+		ACD1B9871FBD989F003BDF60 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		ACD1B9891FBD9D65003BDF60 /* UISegmentedControlExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlExtensions.swift; sourceTree = "<group>"; };
 		AD4AC1B64180C9AF9E834A8D /* Pods_LinuxDocsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinuxDocsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9DEF5EB1B9218C5D6123A7 /* Pods-LinuxDocsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinuxDocsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinuxDocsTests/Pods-LinuxDocsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E05C6B1764F55C6470FF9B74 /* Pods_LinuxDocsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinuxDocsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				AC3087FE1FB7D751007846FC /* Constant.swift */,
+				AC8026461FBF436800A937B2 /* Color.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -279,6 +288,9 @@
 			children = (
 				AC9B169C1FB81BD200BA395F /* CALayerExtensions.swift */,
 				AC9B169E1FB81CAE00BA395F /* UIKitExtensions.swift */,
+				ACD1B9871FBD989F003BDF60 /* UIImageExtensions.swift */,
+				ACD1B9891FBD9D65003BDF60 /* UISegmentedControlExtensions.swift */,
+				AC8026481FBF480200A937B2 /* CollectionExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -311,6 +323,7 @@
 				AC3087B51FB64C74007846FC /* Resources */,
 				06F33FD303F1148BE49DFCBB /* [CP] Embed Pods Frameworks */,
 				19640B2F1FFB060CBA4C0CE0 /* [CP] Copy Pods Resources */,
+				AC16D2EA1FBCADCA00609DCE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -457,11 +470,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LinuxDocs/Pods-LinuxDocs-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/VegaScrollFlowLayout/VegaScrollFlowLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VegaScrollFlowLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -549,6 +562,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LinuxDocsUITests/Pods-LinuxDocsUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AC16D2EA1FBCADCA00609DCE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 8a4d7ef10a9619936e99973e4855e6db26030b24 ccb643ff31e6638f3ae59c1b1de90d6aa8e8b7f7c1453252296f674061a64d24";
+		};
 		BC6086FEC88267FF0ED3B000 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -605,11 +631,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9B16A71FB8BC1F00BA395F /* PaddingLabel.swift in Sources */,
+				AC8026491FBF480200A937B2 /* CollectionExtensions.swift in Sources */,
 				AC3087FF1FB7D751007846FC /* Constant.swift in Sources */,
+				ACD1B98A1FBD9D65003BDF60 /* UISegmentedControlExtensions.swift in Sources */,
 				AC9B16A31FB8B0B100BA395F /* Cheatsheet.swift in Sources */,
 				AC3087FA1FB79C0B007846FC /* ManPage.swift in Sources */,
 				AC9B169F1FB81CAE00BA395F /* UIKitExtensions.swift in Sources */,
+				ACD1B9881FBD989F003BDF60 /* UIImageExtensions.swift in Sources */,
 				AC3087EE1FB66DBC007846FC /* DocsTableViewController.swift in Sources */,
+				AC8026471FBF436800A937B2 /* Color.swift in Sources */,
 				AC3087FC1FB7D6BC007846FC /* HomeTabBarViewController.swift in Sources */,
 				AC9B16AE1FB8BFCE00BA395F /* DocBrowseViewController.swift in Sources */,
 				AC9B16991FB817D800BA395F /* DocTableViewCell.swift in Sources */,
@@ -786,7 +816,7 @@
 				DEVELOPMENT_TEAM = 42K4FLWU7X;
 				INFOPLIST_FILE = "$(SRCROOT)/LinuxDocs/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.praveengowda.app.LinuxDocs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveengowda.LinuxDocs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -802,7 +832,7 @@
 				DEVELOPMENT_TEAM = 42K4FLWU7X;
 				INFOPLIST_FILE = "$(SRCROOT)/LinuxDocs/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.praveengowda.app.LinuxDocs;
+				PRODUCT_BUNDLE_IDENTIFIER = com.praveengowda.LinuxDocs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

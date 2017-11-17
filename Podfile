@@ -6,7 +6,9 @@ target 'LinuxDocs' do
   use_frameworks!
 
   # Pods for LinuxDocs
-	pod 'VegaScrollFlowLayout'
+  pod 'Fabric'
+  pod 'Crashlytics'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git', :branch => 'wip/swift4'
 
   target 'LinuxDocsTests' do
     inherit! :search_paths
