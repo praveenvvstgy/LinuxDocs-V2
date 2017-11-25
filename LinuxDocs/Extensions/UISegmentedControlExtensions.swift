@@ -22,7 +22,6 @@ extension UISegmentedControl{
     
     func addBottomBorder(activeColor: UIColor, inActiveColor: UIColor) {
         removeBorder()
-        let borderWidth: CGFloat = self.bounds.size.width / CGFloat(self.numberOfSegments)
         let borderHeight: CGFloat = 2.0
         
         let inActiveBorderWidth: CGFloat = self.bounds.size.width
